@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import pearVC from '../../../public/logos/pearvc.svg';
-import skydeck from '../../../public/logos/skydeck.png';
-import unusualVentures from '../../../public/logos/unusual-ventures.svg';
-import theHouseFund from '../../../public/logos/the-house-fund.svg';
-import raytheon from '../../../public/logos/raytheon.svg';
+import pearVC from '@/logos/pearvc.svg';
+import skydeck from '@/logos/skydeck.png';
+import unusualVentures from '@/logos/unusual-ventures.svg';
+import theHouseFund from '@/logos/the-house-fund.svg';
+import raytheon from '@/logos/raytheon.svg';
 
 const Logos = () => (
   <section className="mt-60 border-dashed border-white/5 pb-10 lg:border-b">
