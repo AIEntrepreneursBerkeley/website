@@ -21,4 +21,16 @@
   .container {
     @apply mx-auto max-w-7xl px-4 md:px-6;
   }
+  .marquee {
+    animation: scroll-left 50s linear infinite;
+    animation-direction: reverse;
+  }
+  @keyframes scroll-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 2rem));
+    }
+  }
 }
