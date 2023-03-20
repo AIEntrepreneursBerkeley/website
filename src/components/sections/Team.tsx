@@ -5,7 +5,7 @@ const Team: FC = () => (
   <section className="px-4">
     <h2>We Make Ideas Real</h2>
     <p />
-    <div className="container grid grid-cols-1 gap-y-3.5 gap-x-3.5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <div className="container grid grid-cols-1 gap-y-3.5 gap-x-3.5 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       <Card
         name="Julius Ritter"
         image="/images/julius.jpg"
@@ -37,16 +37,16 @@ const Team: FC = () => (
         linkedin="https://www.linkedin.com/in/jatingupta16"
       />
       <Card
-        name="Vardaan Tekriwal"
-        image="/images/vardaan.jpg"
-        position="VP of Finance"
-        linkedin="https://www.linkedin.com/in/vtekriwal2211"
-      />
-      <Card
         name="Emily Park"
         image="/images/emily.jpg"
         position="VP of Partnerships"
         linkedin="https://www.linkedin.com/in/mlapark"
+      />
+      <Card
+        name="Vardaan Tekriwal"
+        image="/images/vardaan.jpg"
+        position="VP of Finance"
+        linkedin="https://www.linkedin.com/in/vtekriwal2211"
       />
       <Card
         name="Victoria Raulet"

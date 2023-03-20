@@ -9,7 +9,7 @@ const config = {
         sans: ['var(--font-inter)', ...fontFamily.sans],
       },
       screens: {
-        xs: '425px',
+        xs: '540px',
       },
     },
   },

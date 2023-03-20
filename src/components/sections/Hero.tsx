@@ -52,7 +52,7 @@ const Background = () => (
         </div>
         <div className="absolute -inset-px bg-gray-900/50" />
         <div className="absolute -inset-px bg-gradient-to-b from-transparent via-transparent to-gray-900" />
-        <div className="hidden absolute -inset-px bg-gradient-to-l from-transparent via-transparent to-gray-900 lg:block" />
+        <div className="absolute -inset-px hidden bg-gradient-to-l from-transparent via-transparent to-gray-900 lg:block" />
       </div>
       <div className="relative flex justify-center overflow-hidden">
         <Image
