@@ -1,7 +1,7 @@
-import { useState, useEffect, useRef } from 'react';
+import { type FC, useState, useEffect, useRef } from 'react';
 import Globe, { type GlobeMethods } from 'react-globe.gl';
 
-const ReactGlobe = () => {
+const ReactGlobe: FC = () => {
   const checkWidth = (newWidth?: number) => {
     if (newWidth === undefined) {
       return 1000;

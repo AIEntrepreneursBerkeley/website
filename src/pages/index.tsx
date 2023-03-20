@@ -6,7 +6,6 @@ import Hero from '~/components/sections/Hero';
 import Logos from '~/components/sections/Logos';
 import About from '~/components/sections/About';
 import Team from '~/components/sections/Team';
-import FAQ from '~/components/sections/FAQ';
 import Newsletter from '~/components/sections/Newsletter';
 import Globe from '~/components/sections/Globe';
 
@@ -22,7 +21,6 @@ const Home: NextPage = () => (
       <Logos />
       <About />
       <Team />
-      <FAQ />
       <Newsletter />
     </main>
     <footer>

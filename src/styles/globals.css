@@ -8,7 +8,7 @@
   }
 
   h1 {
-    @apply scroll-m-20 text-4xl font-extrabold tracking-tight md:text-5xl md:leading-[1.1] lg:col-span-2 lg:text-[64px] lg:leading-[1.125] lg:tracking-[-0.0375em];
+    @apply scroll-m-20 text-4xl font-extrabold tracking-tight text-white md:text-5xl md:leading-[1.1] lg:col-span-2 lg:text-[64px] lg:leading-[1.125] lg:tracking-[-0.0375em];
   }
 
   h2 {

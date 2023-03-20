@@ -1,6 +1,7 @@
+import { type FC } from 'react';
 import Card from '~/components/ui/Card';
 
-const Team = () => (
+const Team: FC = () => (
   <section className="container px-4">
     <h2>We Make Ideas Real</h2>
     <p />

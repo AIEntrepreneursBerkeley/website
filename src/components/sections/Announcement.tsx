@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { type FC, useState } from 'react';
 
-const Announcement = () => {
+const Announcement: FC = () => {
   const [visible, setVisible] = useState(true);
 
   return (
@@ -11,7 +11,7 @@ const Announcement = () => {
             <svg
               fill="none"
               viewBox="0 0 848 513"
-              className="absolute right-1/2 -z-10 h-[513px] w-[848px] translate-x-[235px] translate-y-[-90px] transform sm:hidden"
+              className="absolute right-1/2 h-[513px] w-[848px] translate-x-[235px] translate-y-[-90px] transform sm:hidden"
             >
               <path
                 fill="#fff"
@@ -83,7 +83,7 @@ const Announcement = () => {
             <svg
               fill="none"
               viewBox="0 0 848 513"
-              className="absolute right-1/2 -z-10 hidden h-[513px] w-[848px] translate-x-[-150px] translate-y-[-250px] transform sm:block"
+              className="hidden absolute right-1/2 h-[513px] w-[848px] translate-x-[-150px] translate-y-[-250px] transform sm:block"
             >
               <path
                 fill="#fff"
@@ -137,7 +137,7 @@ const Announcement = () => {
             <svg
               fill="none"
               viewBox="0 0 848 513"
-              className="absolute left-1/2 -z-10 hidden h-[513px] w-[848px] translate-x-[330px] translate-y-[-357px] transform sm:block"
+              className="hidden absolute left-1/2 h-[513px] w-[848px] translate-x-[330px] translate-y-[-357px] transform sm:block"
             >
               <path
                 fill="#fff"
@@ -177,7 +177,7 @@ const Announcement = () => {
               </p>
               <button
                 type="button"
-                className="text-xs sm:text-sm"
+                className="z-10 text-xs sm:text-sm"
                 onClick={() => setVisible(false)}
               >
                 &#10005;

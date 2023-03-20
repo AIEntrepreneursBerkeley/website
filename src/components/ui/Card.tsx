@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { type FC, useEffect, useRef } from 'react';
 import Image from 'next/image';
 
 type CardProps = {
@@ -8,7 +8,7 @@ type CardProps = {
   linkedin: string;
 };
 
-const Card = ({ name, image, position, linkedin }: CardProps) => {
+const Card: FC = ({ name, image, position, linkedin }: CardProps) => {
   const card = useRef<HTMLDivElement>(null);
 
   const mouseMove = (e: MouseEvent) => {

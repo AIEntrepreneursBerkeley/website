@@ -1,3 +1,4 @@
+import { type FC } from 'react';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 
@@ -5,7 +6,7 @@ const ReactGlobe = dynamic(() => import('~/components/ui/ReactGlobe'), {
   ssr: false,
 });
 
-const Globe = () => (
+const Globe: FC = () => (
   <section className="relative overflow-hidden">
     <Image
       src="/images/stars.svg"

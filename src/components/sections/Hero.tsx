@@ -1,6 +1,7 @@
+import { type FC } from 'react';
 import Image from 'next/image';
 
-const Hero = () => (
+const Hero: FC = () => (
   <section className="relative flex flex-col">
     <Background />
     <div className="mt-28 border-y border-dashed border-white/5 py-2 md:mt-32 lg:mt-36">
@@ -13,12 +14,12 @@ const Hero = () => (
           Your AI Startup.
         </h1>
         <div className="mt-8 max-w-lg md:max-w-xl">
-          <p>
+          <p className="mb-6">
             AI Entrepreneurs Berkeley is dedicated to fostering a tight
             community of students and industry professionals who are passionate
             about Artificial Intelligence and Entrepreneurship.
           </p>
-          <p className="mt-6">
+          <p>
             Collaborate on our cutting-edge projects, learn from the biggest
             names in the space, and connect with top VC firms.
           </p>
@@ -51,7 +52,7 @@ const Background = () => (
         </div>
         <div className="absolute -inset-px bg-gray-900/50" />
         <div className="absolute -inset-px bg-gradient-to-b from-transparent via-transparent to-gray-900" />
-        <div className="absolute -inset-px hidden bg-gradient-to-l from-transparent via-transparent to-gray-900 lg:block" />
+        <div className="hidden absolute -inset-px bg-gradient-to-l from-transparent via-transparent to-gray-900 lg:block" />
       </div>
       <div className="relative flex justify-center overflow-hidden">
         <Image
