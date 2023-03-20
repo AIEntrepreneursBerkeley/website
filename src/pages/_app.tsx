@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
-  <div className={`${inter.variable} font-sans`}>
+  <div className={`${inter.variable} relative font-sans`}>
     <Component {...pageProps} />
   </div>
 );

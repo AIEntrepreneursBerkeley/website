@@ -3,7 +3,7 @@ import Image from 'next/image';
 const Hero = () => (
   <section className="relative flex flex-col">
     <Background />
-    <div className="mb-12 mt-64 border-dashed border-white/5 md:mt-28 lg:mt-28 lg:mb-0 lg:border-y lg:py-2">
+    <div className="mt-28 border-y border-dashed border-white/5 py-2 md:mt-32 lg:mt-36">
       <header className="container">
         <h1 className="text-3xl font-extrabold tracking-tight md:text-[40px] md:leading-[1.1] lg:col-span-2 lg:text-[64px] lg:leading-[1.125em] lg:tracking-[-0.0375em]">
           The Premier
@@ -14,7 +14,7 @@ const Hero = () => (
         </h1>
         <div className="mt-8 max-w-lg space-y-6 text-lg leading-[1.4] md:max-w-xl lg:text-xl">
           <p>
-            <em>AI Entrepreneurs Berkeley</em> is dedicated to fostering a tight
+            AI Entrepreneurs Berkeley is dedicated to fostering a tight
             community of students and industry professionals who are passionate
             about Artificial Intelligence and Entrepreneurship.
           </p>

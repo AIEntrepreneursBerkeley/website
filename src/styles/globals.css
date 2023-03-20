@@ -21,10 +21,12 @@
   .container {
     @apply mx-auto max-w-7xl px-4 md:px-6;
   }
+
   .marquee {
     animation: scroll-left 50s linear infinite;
     animation-direction: reverse;
   }
+
   @keyframes scroll-left {
     from {
       transform: translateX(0);
@@ -32,5 +34,93 @@
     to {
       transform: translateX(calc(-100% - 2rem));
     }
+  }
+
+  .card {
+    padding: 8px 8px 0;
+    border: 1px solid #333;
+    transform: translateZ(0);
+    position: relative;
+    overflow: hidden;
+    background: hsla(0, 0%, 0%, 0.4);
+    width: 100%;
+  }
+
+  .card:after,
+  .card:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(
+      800px circle at calc(var(--x) * 1) calc(var(--y) * 1),
+      hsla(0, 0%, 100%, 0.2),
+      transparent 40%
+    );
+  }
+
+  .avatar {
+    position: relative;
+    width: 100%;
+    height: 270px;
+  }
+
+  .image {
+    filter: grayscale(1);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    inset: 0px;
+    color: transparent;
+    object-fit: cover;
+  }
+
+  .image-blur {
+    transform: scale(1.1) translateZ(0);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: 0;
+    filter: blur(32px) grayscale(1) saturate(200%);
+    will-change: filter;
+    pointer-events: none;
+    object-fit: cover;
+  }
+
+  .image,
+  .image-blur {
+    transition: filter 0.4s ease;
+  }
+
+  .card:hover .image {
+    filter: grayscale(0);
+  }
+
+  .card:hover .image-blur {
+    filter: blur(32px) grayscale(0) saturate(200%);
+  }
+
+  .info {
+    padding: 12px 8px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .info p {
+    font-size: 11px;
   }
 }
