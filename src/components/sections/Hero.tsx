@@ -59,6 +59,7 @@ const Background = () => (
           width={640}
           height={1124}
           className="sm:hidden"
+          priority
           alt=""
         />
         <Image
@@ -66,6 +67,7 @@ const Background = () => (
           width={1024}
           height={1124}
           className="hidden sm:block lg:hidden"
+          priority
           alt=""
         />
         <Image
@@ -73,6 +75,7 @@ const Background = () => (
           width={2510}
           height={1168}
           className="hidden max-w-none lg:block"
+          priority
           alt=""
         />
       </div>

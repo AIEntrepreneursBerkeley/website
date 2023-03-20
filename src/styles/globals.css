@@ -37,6 +37,7 @@
   }
 
   .card {
+    border-radius: 16px;
     padding: 8px 8px 0;
     border: 1px solid #333;
     transform: translateZ(0);
@@ -69,6 +70,7 @@
   }
 
   .image {
+    border-radius: 12px;
     filter: grayscale(1);
     position: absolute;
     height: 100%;

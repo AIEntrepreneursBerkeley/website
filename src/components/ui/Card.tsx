@@ -23,7 +23,7 @@ const Card = ({ name, image, position, linkedin }: CardProps) => {
   }, []);
 
   return (
-    <a className="px-2" href={linkedin} target="_blank" rel="noreferrer">
+    <a href={linkedin} target="_blank" rel="noreferrer">
       <div className="card" ref={card}>
         <div className="avatar">
           <Image
@@ -35,6 +35,10 @@ const Card = ({ name, image, position, linkedin }: CardProps) => {
             placeholder="blur"
             blurDataURL={image}
             className="image"
+            sizes="100vw,
+              (min-width: 640px) 50vw,
+              (min-width: 768px) 33vw,
+              (min-width: 1024px) 25vw"
           />
           <Image
             src={image}
@@ -47,6 +51,10 @@ const Card = ({ name, image, position, linkedin }: CardProps) => {
             placeholder="blur"
             blurDataURL={image}
             className="image-blur"
+            sizes="100vw,
+              (min-width: 640px) 50vw,
+              (min-width: 768px) 33vw,
+              (min-width: 1024px) 25vw"
           />
         </div>
         <div className="info">

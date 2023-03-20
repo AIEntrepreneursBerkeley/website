@@ -4,7 +4,7 @@ const Team = () => (
   <section className="container px-4">
     <h2>We Make Ideas Real</h2>
     <p />
-    <div className="grid grid-cols-1 gap-y-6 gap-x-3.5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <div className="grid grid-cols-1 gap-y-3.5 gap-x-3.5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       <Card
         name="Julius Ritter"
         image="/images/julius.jpg"
