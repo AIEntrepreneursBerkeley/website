@@ -128,4 +128,8 @@
   .info p {
     font-size: 11px;
   }
+
+  .noise {
+    background: url(/images/noise.png);
+  }
 }

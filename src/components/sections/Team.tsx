@@ -2,10 +2,10 @@ import { type FC } from 'react';
 import Card from '~/components/ui/Card';
 
 const Team: FC = () => (
-  <section className="container px-4">
+  <section className="px-4">
     <h2>We Make Ideas Real</h2>
     <p />
-    <div className="grid grid-cols-1 gap-y-3.5 gap-x-3.5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <div className="container grid grid-cols-1 gap-y-3.5 gap-x-3.5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       <Card
         name="Julius Ritter"
         image="/images/julius.jpg"
@@ -25,16 +25,10 @@ const Team: FC = () => (
         linkedin="https://www.linkedin.com/in/ethan-hou10"
       />
       <Card
-        name="Anthony Kuang"
-        image="/images/anthony.jpg"
-        position="VP of Software"
-        linkedin="https://www.linkedin.com/in/kuanganthony"
-      />
-      <Card
-        name="Vardaan Tekriwal"
-        image="/images/vardaan.jpg"
-        position="VP of Finance"
-        linkedin="https://www.linkedin.com/in/vtekriwal2211"
+        name="Jyoti Rani"
+        image="/images/jyoti.jpg"
+        position="VP of Projects"
+        linkedin="https://www.linkedin.com/in/jyotiinar"
       />
       <Card
         name="Jatin Gupta"
@@ -43,22 +37,28 @@ const Team: FC = () => (
         linkedin="https://www.linkedin.com/in/jatingupta16"
       />
       <Card
+        name="Vardaan Tekriwal"
+        image="/images/vardaan.jpg"
+        position="VP of Finance"
+        linkedin="https://www.linkedin.com/in/vtekriwal2211"
+      />
+      <Card
         name="Emily Park"
         image="/images/emily.jpg"
         position="VP of Partnerships"
         linkedin="https://www.linkedin.com/in/mlapark"
       />
       <Card
-        name="Jyoti Rani"
-        image="/images/jyoti.jpg"
-        position="VP of Projects"
-        linkedin="https://www.linkedin.com/in/jyotiinar"
-      />
-      <Card
         name="Victoria Raulet"
         image="/images/victoria.jpg"
         position="VP of Marketing"
         linkedin="https://www.linkedin.com/in/victoria-raulet-2b710b204"
+      />
+      <Card
+        name="Anthony Kuang"
+        image="/images/anthony.jpg"
+        position="VP of Software"
+        linkedin="https://www.linkedin.com/in/kuanganthony"
       />
     </div>
   </section>

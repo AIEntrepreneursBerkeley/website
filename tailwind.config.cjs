@@ -8,6 +8,9 @@ const config = {
       fontFamily: {
         sans: ['var(--font-inter)', ...fontFamily.sans],
       },
+      screens: {
+        xs: '425px',
+      },
     },
   },
   plugins: [],

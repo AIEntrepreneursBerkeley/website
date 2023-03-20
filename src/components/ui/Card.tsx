@@ -8,7 +8,7 @@ type CardProps = {
   linkedin: string;
 };
 
-const Card: FC = ({ name, image, position, linkedin }: CardProps) => {
+const Card: FC<CardProps> = ({ name, image, position, linkedin }) => {
   const card = useRef<HTMLDivElement>(null);
 
   const mouseMove = (e: MouseEvent) => {

@@ -7,7 +7,7 @@ const ReactGlobe = dynamic(() => import('~/components/ui/ReactGlobe'), {
 });
 
 const Globe: FC = () => (
-  <section className="relative overflow-hidden">
+  <section className="noise relative overflow-hidden border-t border-white/20 bg-[#0a1324]">
     <Image
       src="/images/stars.svg"
       alt=""
@@ -15,7 +15,7 @@ const Globe: FC = () => (
       draggable={false}
       className="absolute left-1/2 rotate-[37deg] scale-150 object-contain"
     />
-    <div className="-mb-80 flex justify-center sm:-mb-96 md:-mb-[530px] lg:-mb-[570px] xl:-mb-[630px]">
+    <div className="-mb-60 flex justify-center xs:-mb-72 sm:-mb-96 md:-mb-[530px] lg:-mb-[570px] xl:-mb-[630px]">
       <h2 className="absolute top-72 text-6xl font-semibold">
         Let's Create Seismic Change.
       </h2>
