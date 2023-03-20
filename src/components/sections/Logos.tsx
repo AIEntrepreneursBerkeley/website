@@ -14,30 +14,35 @@ const Logos = () => (
           className="h-full w-auto object-contain"
           src={pearVC}
           alt="Pear VC"
+          draggable={false}
           priority
         />
         <Image
           className="h-full w-auto object-contain"
           src={skydeck}
           alt="Skydeck"
+          draggable={false}
           priority
         />
         <Image
           className="h-full w-auto object-contain"
           src={unusualVentures}
           alt="Unusual Ventures"
+          draggable={false}
           priority
         />
         <Image
           className="h-full w-auto object-contain"
           src={theHouseFund}
           alt="The House Fund"
+          draggable={false}
           priority
         />
         <Image
           className="h-full w-auto object-contain"
           src={raytheon}
           alt="Raytheon"
+          draggable={false}
           priority
         />
       </Marquee>

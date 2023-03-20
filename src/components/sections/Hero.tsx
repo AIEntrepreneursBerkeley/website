@@ -5,20 +5,20 @@ const Hero = () => (
     <Background />
     <div className="mt-28 border-y border-dashed border-white/5 py-2 md:mt-32 lg:mt-36">
       <header className="container">
-        <h1 className="text-3xl font-extrabold tracking-tight md:text-[40px] md:leading-[1.1] lg:col-span-2 lg:text-[64px] lg:leading-[1.125em] lg:tracking-[-0.0375em]">
-          The Premier
-          <br />
-          Community to Build
-          <br />
+        <h1>
+          The Premier{` `}
+          <br className="hidden sm:block" />
+          Community to Build{` `}
+          <br className="hidden sm:block" />
           Your AI Startup.
         </h1>
-        <div className="mt-8 max-w-lg space-y-6 text-lg leading-[1.4] md:max-w-xl lg:text-xl">
+        <div className="mt-8 max-w-lg md:max-w-xl">
           <p>
             AI Entrepreneurs Berkeley is dedicated to fostering a tight
             community of students and industry professionals who are passionate
             about Artificial Intelligence and Entrepreneurship.
           </p>
-          <p>
+          <p className="mt-6">
             Collaborate on our cutting-edge projects, learn from the biggest
             names in the space, and connect with top VC firms.
           </p>
@@ -59,6 +59,7 @@ const Background = () => (
           width={640}
           height={1124}
           className="sm:hidden"
+          draggable={false}
           priority
           alt=""
         />
@@ -67,6 +68,7 @@ const Background = () => (
           width={1024}
           height={1124}
           className="hidden sm:block lg:hidden"
+          draggable={false}
           priority
           alt=""
         />
@@ -75,6 +77,7 @@ const Background = () => (
           width={2510}
           height={1168}
           className="hidden max-w-none lg:block"
+          draggable={false}
           priority
           alt=""
         />

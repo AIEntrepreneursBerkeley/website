@@ -11,7 +11,7 @@ const Announcement = () => {
             <svg
               fill="none"
               viewBox="0 0 848 513"
-              className="absolute right-1/2 h-[513px] w-[848px] translate-x-[235px] translate-y-[-90px] transform sm:hidden"
+              className="absolute right-1/2 -z-10 h-[513px] w-[848px] translate-x-[235px] translate-y-[-90px] transform sm:hidden"
             >
               <path
                 fill="#fff"
@@ -83,7 +83,7 @@ const Announcement = () => {
             <svg
               fill="none"
               viewBox="0 0 848 513"
-              className="absolute right-1/2 hidden h-[513px] w-[848px] translate-x-[-150px] translate-y-[-250px] transform sm:block"
+              className="absolute right-1/2 -z-10 hidden h-[513px] w-[848px] translate-x-[-150px] translate-y-[-250px] transform sm:block"
             >
               <path
                 fill="#fff"
@@ -137,7 +137,7 @@ const Announcement = () => {
             <svg
               fill="none"
               viewBox="0 0 848 513"
-              className="absolute left-1/2 hidden h-[513px] w-[848px] translate-x-[330px] translate-y-[-357px] transform sm:block"
+              className="absolute left-1/2 -z-10 hidden h-[513px] w-[848px] translate-x-[330px] translate-y-[-357px] transform sm:block"
             >
               <path
                 fill="#fff"
@@ -170,13 +170,14 @@ const Announcement = () => {
                 </linearGradient>
               </defs>
             </svg>
-            <div className="relative flex items-center justify-center">
+            <div className="container flex items-center justify-between">
+              <div className="h-full w-3" />
               <p className="text-xs font-medium text-white sm:text-sm">
                 April 22nd — Fireside Chat with Unusual Ventures
               </p>
               <button
                 type="button"
-                className="ml-4 text-xs sm:text-sm"
+                className="text-xs sm:text-sm"
                 onClick={() => setVisible(false)}
               >
                 &#10005;
