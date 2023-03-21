@@ -2,10 +2,11 @@ import { type FC } from 'react';
 import Card from '~/components/ui/Card';
 
 const Team: FC = () => (
-  <section className="px-4">
-    <h2>We Make Ideas Real</h2>
-    <p />
-    <div className="container grid grid-cols-1 gap-y-3.5 gap-x-3.5 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+  <section className="container px-4 py-12 md:py-32">
+    <h2 className="mb-16 text-center text-9xl text-gray-800 opacity-30">
+      The Team
+    </h2>
+    <div className="grid grid-cols-1 gap-y-6 gap-x-3.5 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       <Card
         name="Julius Ritter"
         image="/images/julius.jpg"

@@ -7,7 +7,7 @@ const ReactGlobe = dynamic(() => import('~/components/ui/ReactGlobe'), {
 });
 
 const Globe: FC = () => (
-  <section className="noise relative overflow-hidden border-t border-white/20 bg-[#0a1324]">
+  <section className="noise relative overflow-hidden border-t border-white/20 bg-[#151e30]/20">
     <Image
       src="/images/stars.svg"
       alt=""

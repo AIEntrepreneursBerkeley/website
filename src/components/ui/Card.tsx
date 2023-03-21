@@ -23,7 +23,7 @@ const Card: FC<CardProps> = ({ name, image, position, linkedin }) => {
   }, []);
 
   return (
-    <a href={linkedin} target="_blank" rel="noreferrer">
+    <a href={linkedin} target="_blank" rel="noreferrer" className="px-2">
       <div className="card" ref={card}>
         <div className="avatar">
           <Image

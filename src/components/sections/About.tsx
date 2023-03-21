@@ -196,7 +196,7 @@ const About = () => (
               <div>
                 <p className="mt-1 ml-12 text-gray-300 lg:mt-3">
                   Get involved in our industry-oriented research and real
-                  product development!
+                  product development.
                 </p>
               </div>
             </div>
