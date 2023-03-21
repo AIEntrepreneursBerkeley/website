@@ -16,7 +16,7 @@ const Globe: FC = () => (
       className="absolute left-1/2 rotate-[37deg] scale-150 object-contain"
     />
     <div className="-mb-60 flex justify-center xs:-mb-72 sm:-mb-96 md:-mb-[530px] lg:-mb-[570px] xl:-mb-[630px]">
-      <h2 className="absolute top-1/2 z-10 text-2xl font-semibold xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+      <h2 className="absolute top-1/2 z-10 text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
         Let's Create Seismic Change.
       </h2>
       <ReactGlobe />

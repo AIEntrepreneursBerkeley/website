@@ -46,7 +46,7 @@ const About = () => (
                   Build Your Startup.
                 </p>
                 <p>
-                  AI Project Studio members build products through porjects for
+                  AI Project Studio members build products through projects for
                   companies and Build Your Startup members learn and network
                   through weekly events.
                 </p>
