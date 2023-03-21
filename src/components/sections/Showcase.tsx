@@ -53,7 +53,7 @@ const Showcase: FC = () => {
     };
   }, [inView, setLines]);
   return (
-    <section ref={ref} className="container [perspective:2000px]">
+    <section ref={ref} className="container my-24 [perspective:2000px]">
       <div
         className={classNames(
           'relative rounded-lg border border-white border-opacity-5 bg-white bg-opacity-[0.01] bg-hero-gradient',
