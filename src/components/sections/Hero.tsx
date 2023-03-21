@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Hero: FC = () => (
   <section className="relative flex flex-col">
     <Background />
-    <div className="mt-28 border-y border-dashed border-white/5 py-2 md:mt-32 lg:mt-36">
+    <div className="mt-28 border-y border-dashed border-white/10 py-2 md:mt-32 lg:mt-36">
       <header className="container">
         <h1>
           The Premier{` `}

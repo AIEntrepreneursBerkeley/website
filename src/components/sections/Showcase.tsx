@@ -53,7 +53,7 @@ const Showcase: FC = () => {
     };
   }, [inView, setLines]);
   return (
-    <section ref={ref} className="container mt-[12.8rem] [perspective:2000px]">
+    <section ref={ref} className="container [perspective:2000px]">
       <div
         className={classNames(
           'relative rounded-lg border border-white border-opacity-5 bg-white bg-opacity-[0.01] bg-hero-gradient',
@@ -106,7 +106,7 @@ const Showcase: FC = () => {
             'relative z-10 object-contain transition-opacity delay-[680ms]',
             inView ? 'opacity-100' : 'opacity-0'
           )}
-          src="/images/ethan.jpg"
+          src="/images/showcase.jpg"
           alt="Showcase image"
         />
       </div>

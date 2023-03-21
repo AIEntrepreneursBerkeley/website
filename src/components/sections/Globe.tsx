@@ -21,7 +21,7 @@ const Globe: FC = () => (
       </h2>
       <ReactGlobe />
     </div>
-    <div className="relative h-12 bg-gray-900/5 backdrop-blur-3xl md:h-14 lg:h-16">
+    <div className="relative h-12 bg-gray-900/10 backdrop-blur-3xl md:h-14 lg:h-16">
       <div className="flex h-full items-center justify-center" />
       <div
         aria-hidden

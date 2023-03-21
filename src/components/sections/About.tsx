@@ -33,7 +33,7 @@ const About = () => (
       <div className="noise absolute inset-0 bg-left opacity-10" />
     </div>
     <div className="relative mx-auto">
-      <div className="border-white/5 lg:border-y">
+      <div className="border-white/10 lg:border-y">
         <div className="mx-auto py-2 px-2 md:px-4 lg:max-w-7xl lg:px-4">
           <div className="px-2">
             <h2 className="text-3xl font-semibold leading-none tracking-tight text-white lg:text-[40px]">
@@ -57,7 +57,7 @@ const About = () => (
           </div>
         </div>
       </div>
-      <div className="mt-24 border-white/5 lg:mt-32 lg:border-y">
+      <div className="mt-24 border-white/10 lg:mt-32 lg:border-y">
         <div className="mx-auto max-w-7xl px-4 py-2">
           <p className="text-xl font-semibold text-white lg:px-2 lg:text-2xl">
             The Perks
