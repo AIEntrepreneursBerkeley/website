@@ -83,7 +83,7 @@ const Announcement: FC = () => {
             <svg
               fill="none"
               viewBox="0 0 848 513"
-              className="hidden absolute right-1/2 h-[513px] w-[848px] translate-x-[-150px] translate-y-[-250px] transform sm:block"
+              className="absolute right-1/2 hidden h-[513px] w-[848px] translate-x-[-150px] translate-y-[-250px] transform sm:block"
             >
               <path
                 fill="#fff"
@@ -137,7 +137,7 @@ const Announcement: FC = () => {
             <svg
               fill="none"
               viewBox="0 0 848 513"
-              className="hidden absolute left-1/2 h-[513px] w-[848px] translate-x-[330px] translate-y-[-357px] transform sm:block"
+              className="absolute left-1/2 hidden h-[513px] w-[848px] translate-x-[330px] translate-y-[-357px] transform sm:block"
             >
               <path
                 fill="#fff"

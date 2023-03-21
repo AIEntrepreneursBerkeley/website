@@ -36,9 +36,7 @@ const About = () => (
       <div className="border-white/10 lg:border-y">
         <div className="mx-auto py-2 px-2 md:px-4 lg:max-w-7xl lg:px-4">
           <div className="px-2">
-            <h2 className="text-3xl font-semibold leading-none tracking-tight text-white lg:text-[40px]">
-              What We Do
-            </h2>
+            <h2>What We Do</h2>
           </div>
           <div className="mt-4 grid gap-x-3.5 lg:mt-11 lg:grid-cols-3">
             <div className="px-2 lg:col-span-2">
