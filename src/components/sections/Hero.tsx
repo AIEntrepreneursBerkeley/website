@@ -38,7 +38,7 @@ const Background = () => (
             className="flex aspect-square items-center md:aspect-video"
             data-vimeo-initialized="true"
           >
-            <iframe
+            {/* <iframe
               src="https://player.vimeo.com/video/804797342?h=51726ce665&amp;dnt=1&amp;loop=1&amp;background=1&amp;app_id=58479"
               width="426"
               height="240"
@@ -47,7 +47,7 @@ const Background = () => (
               title="AIEB"
               data-ready="true"
               className="h-full w-full"
-            />
+            /> */}
           </div>
         </div>
         <div className="absolute -inset-px bg-gray-900/50" />
