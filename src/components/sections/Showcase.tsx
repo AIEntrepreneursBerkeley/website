@@ -53,10 +53,7 @@ const Showcase: FC = () => {
     };
   }, [inView, setLines]);
   return (
-    <section
-      ref={ref}
-      className="container mt-40 mb-32 overflow-hidden [perspective:2000px]"
-    >
+    <section ref={ref} className="container mt-40 mb-32 [perspective:2000px]">
       <div
         className={classNames(
           'relative rounded-lg border border-white border-opacity-5 bg-white bg-opacity-[0.01] bg-hero-gradient',
@@ -78,7 +75,7 @@ const Showcase: FC = () => {
                 } as CSSProperties
               }
               className={classNames(
-                'absolute top-0 block h-[1px] w-[10rem] bg-glow-lines',
+                'absolute top-0 block h-[1px] w-[10rem] overflow-hidden bg-glow-lines',
                 line.direction === 'to left' &&
                   `left-0 h-[1px] w-[calc(var(--size)*0.5rem)] animate-glow-line-horizontal md:w-[calc(var(--size)*1rem)]`,
                 line.direction === 'to top' &&
