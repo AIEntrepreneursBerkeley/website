@@ -15,7 +15,9 @@ const Navbar: FC = () => (
         />
       </Link>
     </figure>
-    <button type="button">Berkeley, CA</button>
+    <button type="button" className="text-lg font-medium">
+      Berkeley, CA
+    </button>
   </nav>
 );
 

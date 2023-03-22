@@ -44,7 +44,8 @@ const ReactGlobe: FC = () => {
       backgroundColor="rgba(0,0,0,0)"
       width={width}
       height={width}
-      animateIn
+      atmosphereColor="lightskyblue"
+      showGraticules
     />
   );
 };

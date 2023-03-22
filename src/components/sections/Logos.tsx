@@ -5,7 +5,8 @@ import pearVC from '@/logos/pearvc.svg';
 import skydeck from '@/logos/skydeck.png';
 import unusualVentures from '@/logos/unusual-ventures.svg';
 import theHouseFund from '@/logos/the-house-fund.svg';
-import raytheon from '@/logos/raytheon.svg';
+import antler from '@/logos/antler.svg';
+import courtyardVentures from '@/logos/courtyard-ventures.webp';
 
 const Logos: FC = () => (
   <section className="mt-24 border-b border-dashed border-white/10 pb-6 md:mt-40 lg:mt-52">
@@ -41,8 +42,15 @@ const Logos: FC = () => (
         />
         <Image
           className="h-full w-auto object-contain"
-          src={raytheon}
-          alt="Raytheon"
+          src={antler}
+          alt="Antler"
+          draggable={false}
+          priority
+        />
+        <Image
+          className="h-full w-auto object-contain"
+          src={courtyardVentures}
+          alt="Courtyard Ventures"
           draggable={false}
           priority
         />

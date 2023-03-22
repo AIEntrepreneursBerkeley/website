@@ -55,13 +55,13 @@ const config = {
           '0%': { opacity: '0', transform: 'translateX(0)' },
           '5%': { opacity: '1', transform: 'translateX(0)' },
           '90%': { opacity: '1' },
-          '100%': { opacity: '0', transform: 'translateX(min(60vw, 45rem))' },
+          '100%': { opacity: '0', transform: 'translateX(min(40vw, 35rem))' },
         },
         'glow-line-vertical': {
           '0%': { opacity: '0', transform: 'translateY(0)' },
           '5%': { opacity: '1', transform: 'translateY(0)' },
           '90%': { opacity: '1' },
-          '100%': { opacity: '0', transform: 'translateY(min(21vw, 45rem))' },
+          '100%': { opacity: '0', transform: 'translateY(min(15vw, 25rem))' },
         },
       },
       screens: {
