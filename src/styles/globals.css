@@ -28,6 +28,7 @@
   .marquee {
     animation: scroll-left 50s linear infinite;
     animation-direction: reverse;
+    will-change: transform;
   }
 
   @keyframes scroll-left {
@@ -35,7 +36,7 @@
       transform: translateX(0);
     }
     to {
-      transform: translateX(calc(-100% - 2rem));
+      transform: translateX(calc(-100% - 3rem));
     }
   }
 
