@@ -23,50 +23,52 @@ const Card: FC<CardProps> = ({ name, image, position, linkedin }) => {
   }, []);
 
   return (
-    <a href={linkedin} target="_blank" rel="noreferrer" className="px-2">
-      <div className="card" ref={card}>
-        <div className="avatar">
-          <Image
-            src={image}
-            alt="My avatar"
-            fill
-            draggable={false}
-            loading="lazy"
-            placeholder="blur"
-            blurDataURL={image}
-            className="image"
-            sizes="100vw,
+    <div className="px-2">
+      <a href={linkedin} target="_blank" rel="noreferrer">
+        <div className="card" ref={card}>
+          <div className="avatar">
+            <Image
+              src={image}
+              alt="My avatar"
+              fill
+              draggable={false}
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={image}
+              className="image"
+              sizes="100vw,
               (min-width: 640px) 50vw,
               (min-width: 768px) 33vw,
               (min-width: 1024px) 25vw"
-          />
-          <Image
-            src={image}
-            aria-hidden
-            width={550}
-            height={550}
-            alt="Profile picture blur"
-            draggable={false}
-            loading="lazy"
-            placeholder="blur"
-            blurDataURL={image}
-            className="image-blur"
-            sizes="100vw,
+            />
+            <Image
+              src={image}
+              aria-hidden
+              width={550}
+              height={550}
+              alt="Profile picture blur"
+              draggable={false}
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={image}
+              className="image-blur"
+              sizes="100vw,
               (min-width: 640px) 50vw,
               (min-width: 768px) 33vw,
               (min-width: 1024px) 25vw"
-          />
-        </div>
-        <div className="info">
-          <div className="row">
-            <h2 className="name">{name}</h2>
+            />
           </div>
-          <div className="row">
-            <p>{position}</p>
+          <div className="info">
+            <div className="row">
+              <h2 className="name">{name}</h2>
+            </div>
+            <div className="row">
+              <p>{position}</p>
+            </div>
           </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
   );
 };
 

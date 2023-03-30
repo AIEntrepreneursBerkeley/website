@@ -29,6 +29,7 @@
     "react-dom": "18.2.0",
     "react-globe.gl": "^2.23.3",
     "react-intersection-observer": "^9.4.3",
+    "react-masonry-css": "^1.0.16",
     "superjson": "1.9.1",
     "tailwind-merge": "^1.10.0",
     "tailwindcss-animate": "^1.0.5",

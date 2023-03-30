@@ -22,6 +22,9 @@ const config = {
         'glow-lines':
           'linear-gradient(var(--direction),#9d9bf2 0.43%,#7877c6 14.11%,rgba(120,119,198,0) 62.95%)',
       },
+      colors: {
+        background: '#040410',
+      },
       fontFamily: {
         sans: ['var(--font-inter)', ...fontFamily.sans],
       },

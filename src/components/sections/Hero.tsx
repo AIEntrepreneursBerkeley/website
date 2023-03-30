@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Hero: FC = () => (
   <section className="relative flex flex-col">
     <Background />
-    <div className="mt-28 border-y border-dashed border-white/10 py-2 md:mt-32 lg:mt-36">
+    <div className="mt-28 border-y border-dashed border-white/5 py-2 md:mt-32 lg:mt-36">
       <header className="container">
         <h1>
           The Premier{` `}
@@ -50,11 +50,11 @@ const Background = () => (
             />
           </div>
         </div>
-        <div className="absolute -inset-px bg-gray-900/50" />
-        <div className="absolute -inset-px bg-gradient-to-b from-transparent via-transparent to-gray-900" />
-        <div className="absolute -inset-px hidden bg-gradient-to-l from-transparent via-transparent to-gray-900 lg:block" />
+        <div className="absolute -inset-px bg-background/50" />
+        <div className="absolute -inset-px bg-gradient-to-b from-transparent via-transparent to-background" />
+        <div className="absolute -inset-px hidden bg-gradient-to-l from-transparent via-transparent to-background lg:block" />
       </div>
-      <div className="relative flex justify-center overflow-hidden">
+      <div className="relative flex justify-center overflow-hidden saturate-50">
         <Image
           src="/images/gradient-small.webp"
           width={640}

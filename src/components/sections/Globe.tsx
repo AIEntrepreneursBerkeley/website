@@ -7,7 +7,7 @@ const ReactGlobe = dynamic(() => import('~/components/ui/ReactGlobe'), {
 });
 
 const Globe: FC = () => (
-  <section className="relative overflow-hidden border-t border-white/20 bg-[#050c1a]/90">
+  <section className="relative overflow-hidden border-t border-white/20">
     <Image
       src="/images/stars.svg"
       alt=""
@@ -15,7 +15,7 @@ const Globe: FC = () => (
       draggable={false}
       className="absolute left-1/2 rotate-[37deg] scale-150 object-contain"
     />
-    <div className="absolute inset-0 flex justify-center overflow-hidden">
+    <div className="absolute inset-0 flex justify-center overflow-hidden saturate-50">
       <Image
         src="/images/gradient-small.webp"
         width={640}
@@ -48,7 +48,7 @@ const Globe: FC = () => (
     <div className="-mb-60 flex justify-center xs:-mb-72 sm:-mb-96 md:-mb-[530px] lg:-mb-[570px] xl:-mb-[630px]">
       <ReactGlobe />
     </div>
-    <div className="relative h-12 bg-gray-900/10 backdrop-blur-3xl md:h-14 lg:h-16">
+    <div className="relative h-12 bg-background/10 backdrop-blur-3xl md:h-14 lg:h-16">
       <div className="flex h-full items-center justify-center" />
       <div
         aria-hidden
