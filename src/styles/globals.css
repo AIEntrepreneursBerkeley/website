@@ -12,7 +12,7 @@
   }
 
   h2 {
-    @apply scroll-m-20 text-5xl font-bold tracking-tight;
+    @apply scroll-m-20 md:text-6xl sm:text-5xl text-4xl font-bold tracking-tight;
   }
 
   p {
@@ -132,5 +132,11 @@
 
   .noise {
     background: url(/images/noise.png);
+  }
+
+  .text-gradient {
+    background: linear-gradient(to right bottom, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.38));
+    background-clip: text;
+    color: transparent;
   }
 }

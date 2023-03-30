@@ -1,6 +1,7 @@
 import { type FC } from 'react';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
+import aieb from '@/logos/aieb.svg';
 
 const ReactGlobe = dynamic(() => import('~/components/ui/ReactGlobe'), {
   ssr: false,
@@ -8,6 +9,17 @@ const ReactGlobe = dynamic(() => import('~/components/ui/ReactGlobe'), {
 
 const Globe: FC = () => (
   <section className="relative overflow-hidden border-t border-white/20">
+    <h2 className="text-gradient absolute top-1/4 left-1/2 -translate-x-1/2 text-7xl text-gray-100">
+      Planet of the{' '}
+      <figure className="h-30 relative inline-flex w-14 lg:w-44">
+        <Image
+          src={aieb}
+          alt="AIEB Logo"
+          className="h-full"
+          draggable={false}
+        />
+      </figure>
+    </h2>
     <Image
       src="/images/stars.svg"
       alt=""

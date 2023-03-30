@@ -4,7 +4,7 @@ import Card from '~/components/ui/Card';
 import Spotlight from '~/components/ui/Spotlight';
 
 const Team: FC = () => (
-  <section className="relative py-12 md:py-32">
+  <section className="relative md:pb-56 md:pt-16">
     <div className="absolute inset-0 flex justify-center overflow-hidden saturate-[0.25]">
       <Image
         src="/images/gradient-small.webp"
@@ -36,8 +36,8 @@ const Team: FC = () => (
       <div className="noise absolute inset-0 bg-left opacity-10" />
     </div>
     <Spotlight color="194,97,254" colorDark="40,53,77">
-      <h2 className="text-gradient mb-11 translate-y-[40%] pt-[12rem] text-center text-5xl [transition:transform_1000ms_cubic-bezier(0.3,_1.17,_0.55,_0.99)_0s] md:pt-0 md:text-6xl [.is-visible_&]:translate-y-0">
-        A Passionate Team
+      <h2 className="text-gradient mb-16 translate-y-[40%] text-center [transition:transform_1000ms_cubic-bezier(0.3,_1.17,_0.55,_0.99)_0s] [.is-visible_&]:translate-y-0">
+        People of AIEB
       </h2>
       <div className="container grid grid-cols-1 gap-y-6 gap-x-3.5 px-4 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <Card

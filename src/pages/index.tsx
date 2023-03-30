@@ -8,6 +8,7 @@ import About from '~/components/sections/About';
 import Team from '~/components/sections/Team';
 import Newsletter from '~/components/sections/Newsletter';
 import Globe from '~/components/sections/Globe';
+import Showcase from '~/components/sections/Showcase';
 
 const Home: NextPage = () => (
   <>
@@ -19,6 +20,7 @@ const Home: NextPage = () => (
     <main>
       <Hero />
       <Logos />
+      {/* <Showcase /> */}
       <About />
       <Team />
       <Newsletter />

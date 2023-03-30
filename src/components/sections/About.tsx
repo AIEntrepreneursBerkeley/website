@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 const About = () => (
-  <section className="relative bg-gray-700/20 py-12 md:py-32">
+  <section className="relative bg-gray-900/20 py-12 md:py-32">
     <div className="absolute inset-0 flex justify-center overflow-hidden">
       <Image
         src="/images/gradient-small.webp"
