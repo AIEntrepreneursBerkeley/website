@@ -9,26 +9,37 @@ import Team from '~/components/sections/Team';
 import Newsletter from '~/components/sections/Newsletter';
 import Globe from '~/components/sections/Globe';
 import Showcase from '~/components/sections/Showcase';
+import { useEffect } from 'react';
 
-const Home: NextPage = () => (
-  <>
-    <Lines />
-    <header>
-      <Announcement />
-      <Navbar />
-    </header>
-    <main>
-      <Hero />
-      <Logos />
-      <Showcase />
-      <About />
-      <Team />
-      <Newsletter />
-    </main>
-    <footer>
-      <Globe />
-    </footer>
-  </>
-);
+const Home: NextPage = () => {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      alert('APRIL FOOLS');
+      window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+    }, 3000);
+    return () => clearTimeout(timer);
+  });
+
+  return (
+    <>
+      <Lines />
+      <header>
+        <Announcement />
+        <Navbar />
+      </header>
+      <main>
+        <Hero />
+        <Logos />
+        <Showcase />
+        <About />
+        <Team />
+        <Newsletter />
+      </main>
+      <footer>
+        <Globe />
+      </footer>
+    </>
+  );
+};
 
 export default Home;
