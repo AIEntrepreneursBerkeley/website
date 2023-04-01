@@ -4,6 +4,7 @@ import Image from 'next/image';
 const Hero: FC = () => (
   <section className="relative flex flex-col">
     <Background />
+    <Stripe />
     <div className="mt-28 border-y border-dashed border-white/5 py-2 md:mt-32 lg:mt-36">
       <header className="container">
         <h1>
@@ -29,7 +30,7 @@ const Hero: FC = () => (
   </section>
 );
 
-const Background = () => (
+const Background: FC = () => (
   <div className="absolute inset-0 -top-16 -z-10 lg:-top-20">
     <div style={{ opacity: 1, transform: 'none' }}>
       <div className="absolute inset-x-0 top-0 max-w-7xl overflow-hidden lg:bottom-auto lg:right-0 lg:left-auto lg:w-[80%]">
@@ -85,6 +86,10 @@ const Background = () => (
       </div>
     </div>
   </div>
+);
+
+const Stripe: FC = () => (
+  <div className="bg-stripe-gradient absolute top-0 h-full w-full md:top-10" />
 );
 
 export default Hero;
