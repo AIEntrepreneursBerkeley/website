@@ -4,7 +4,7 @@ import Card from '~/components/ui/Card';
 import Spotlight from '~/components/ui/Spotlight';
 
 const Team: FC = () => (
-  <section className="relative md:pb-56">
+  <section className="relative pb-36 md:pb-56">
     <div className="absolute inset-0 flex justify-center overflow-hidden saturate-0">
       <Image
         src="/images/gradient-small.webp"

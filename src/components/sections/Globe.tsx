@@ -17,13 +17,15 @@ const Globe: FC = () => {
       <h2
         ref={ref}
         className={classNames(
-          'text-gradient absolute left-1/2 flex -translate-x-1/2 items-end text-7xl text-gray-100 transition-transform duration-1000',
-          inView && 'translate-y-24',
+          'text-gradient absolute left-1/2 z-50 flex -translate-x-1/2 items-end text-gray-100 transition-transform duration-1000 lg:z-0',
+          inView && 'translate-y-12 xl:translate-y-20',
           !inView && 'translate-y-48'
         )}
       >
-        <p className="text-6xl">Planet of the </p>
-        <figure className="relative inline-flex h-full w-36">
+        <p className="w-max text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+          Planet of the{' '}
+        </p>
+        <figure className="relative inline-flex h-full w-16 pb-2 xs:w-20 sm:w-24 md:w-32 lg:w-36">
           <Image
             src={aieb}
             alt="AIEB Logo"
