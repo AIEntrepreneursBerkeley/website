@@ -54,13 +54,14 @@ const Showcase: FC = () => (
           fill
         />
       </figure>
-      <iframe
-        src="https://www.linkedin.com/embed/feed/update/urn:li:share:7046889759952031744"
-        height="767"
-        width="504"
-        title="Embedded post"
-        className="mb-6 h-72 w-full"
-      />
+      <figure className="relative mb-6 h-64">
+        <Image
+          src="/images/IMG_7060.JPG"
+          alt="Meet up"
+          className="w-full object-cover"
+          fill
+        />
+      </figure>
     </Masonry>
   </section>
 );

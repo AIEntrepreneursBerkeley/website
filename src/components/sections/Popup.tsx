@@ -106,7 +106,7 @@ const Popup: FC = () => {
             'relative z-10 object-contain transition-opacity delay-[680ms]',
             inView ? 'opacity-100' : 'opacity-0'
           )}
-          src="https://linear.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero%404x.15e3a396.jpg&w=3840&q=75"
+          src="/images/venn-diagram.webp"
           alt="Showcase"
         />
       </div>

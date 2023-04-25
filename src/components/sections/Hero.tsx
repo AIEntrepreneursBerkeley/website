@@ -5,7 +5,7 @@ const Hero: FC = () => (
   <section className="relative flex flex-col">
     <Background />
     <Stripe />
-    <div className="mt-28 border-y border-dashed border-white/5 py-2 md:mt-32 lg:mt-36">
+    <div className="mt-24 border-y border-dashed border-white/5 py-2 md:mt-28 lg:mt-32">
       <header className="container">
         <h1>
           The Premier{` `}
@@ -25,6 +25,26 @@ const Hero: FC = () => (
             names in the space, and connect with top VC firms.
           </p>
         </div>
+        <div className="mt-12 flex max-w-lg justify-between md:max-w-xl">
+          <div>
+            <span className="block text-3xl font-semibold md:text-4xl lg:text-5xl">
+              11
+            </span>{' '}
+            Startups
+          </div>
+          <div className="">
+            <span className="block text-3xl font-semibold md:text-4xl lg:text-5xl">
+              9
+            </span>{' '}
+            VC Partners
+          </div>
+          <div>
+            <span className="block text-3xl font-semibold md:text-4xl lg:text-5xl">
+              654
+            </span>{' '}
+            Attendees
+          </div>
+        </div>
       </header>
     </div>
   </section>
@@ -40,7 +60,7 @@ const Background: FC = () => (
             data-vimeo-initialized="true"
           >
             <iframe
-              src="https://player.vimeo.com/video/810387165?h=efbfc3311d&amp;dnt=1&amp;loop=1&amp;background=1&amp;app_id=58479"
+              src="https://player.vimeo.com/video/820763534?h=7363b7ae4f&amp;dnt=1&amp;loop=1&amp;background=1&amp;app_id=58479"
               width="426"
               height="240"
               allow="autoplay; fullscreen; picture-in-picture"

@@ -167,7 +167,7 @@ const Announcement: FC = () => (
           </defs>
         </svg>
         <p className="text-center text-xs font-medium text-white sm:text-sm">
-          March 22nd — Fireside Chat with Unusual Ventures
+          April 25th — <b className="font-bold">Demo DAI</b> @ Berkeley SkyDeck
         </p>
       </div>
     </div>

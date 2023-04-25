@@ -2,10 +2,11 @@ import { type FC } from 'react';
 import Image from 'next/image';
 import Card from '~/components/ui/Card';
 import Spotlight from '~/components/ui/Spotlight';
+import VerticalCarousel from '~/components/ui/VerticalCarousel';
 
 const Team: FC = () => (
   <section className="relative pb-36 md:pb-56">
-    <div className="absolute inset-0 flex justify-center overflow-hidden saturate-0">
+    <div className="absolute inset-0 flex justify-center overflow-hidden brightness-50 saturate-0">
       <Image
         src="/images/gradient-small.webp"
         width={640}
@@ -94,6 +95,9 @@ const Team: FC = () => (
           position="VP of Software"
           linkedin="https://www.linkedin.com/in/kuanganthony"
         />
+      </div>
+      <div className="container mt-24">
+        <VerticalCarousel />
       </div>
     </Spotlight>
   </section>
