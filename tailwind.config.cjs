@@ -13,6 +13,8 @@ const config = {
           'glow-line-horizontal var(--animation-duration) ease-in forwards',
         'glow-line-vertical':
           'glow-line-vertical var(--animation-duration) ease-in forwards',
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out',
       },
       backgroundImage: {
         'hero-gradient':
@@ -21,6 +23,8 @@ const config = {
           'conic-gradient(from 230.29deg at 51.63% 52.16%, rgb(36, 0, 255) 0deg, rgb(0, 135, 255) 67.5deg, rgb(108, 39, 157) 198.75deg, rgb(24, 38, 163) 251.25deg, rgb(54, 103, 196) 301.88deg, rgb(105, 30, 255) 360deg)',
         'glow-lines':
           'linear-gradient(var(--direction),#9d9bf2 0.43%,#7877c6 14.11%,rgba(120,119,198,0) 62.95%)',
+        texture:
+          'url(/glow-texture.png), radial-gradient(var(--color-primary), transparent 70%)',
       },
       colors: {
         background: '#040410',
@@ -65,6 +69,14 @@ const config = {
           '5%': { opacity: '1', transform: 'translateY(0)' },
           '90%': { opacity: '1' },
           '100%': { opacity: '0', transform: 'translateY(min(15vw, 25rem))' },
+        },
+        'accordion-down': {
+          from: { height: '0' },
+          to: { height: 'var(--radix-accordion-content-height)' },
+        },
+        'accordion-up': {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: '0' },
         },
       },
       screens: {

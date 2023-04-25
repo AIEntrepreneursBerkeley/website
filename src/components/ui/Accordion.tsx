@@ -32,7 +32,7 @@ const AccordionTrigger = forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        'flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180',
+        'flex flex-1 items-center justify-between py-4 text-sm font-medium transition-all hover:underline xs:text-base sm:text-lg md:text-xl [&[data-state=open]>svg]:rotate-180',
         className
       )}
       {...props}
@@ -51,7 +51,7 @@ const AccordionContent = forwardRef<
   <AccordionPrimitive.Content
     ref={ref}
     className={cn(
-      'data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up overflow-hidden text-sm transition-all',
+      'overflow-hidden text-sm transition-all data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up',
       className
     )}
     {...props}

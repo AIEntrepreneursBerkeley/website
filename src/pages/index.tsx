@@ -9,6 +9,8 @@ import Team from '~/components/sections/Team';
 import Newsletter from '~/components/sections/Newsletter';
 import Globe from '~/components/sections/Globe';
 import Showcase from '~/components/sections/Showcase';
+import Popup from '~/components/sections/Popup';
+import FAQ from '~/components/sections/FAQ';
 
 const Home: NextPage = () => (
   <>
@@ -22,7 +24,9 @@ const Home: NextPage = () => (
       <Logos />
       <Showcase />
       <About />
+      <Popup />
       <Team />
+      <FAQ />
       <Newsletter />
     </main>
     <footer>

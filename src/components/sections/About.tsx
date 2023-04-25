@@ -36,19 +36,22 @@ const About = () => (
       <div className="border-dashed border-white/5 lg:border-y">
         <div className="mx-auto py-2 px-2 md:px-4 lg:max-w-7xl lg:px-4">
           <div className="px-2">
-            <h2>What We Do</h2>
+            <h2>The Program</h2>
           </div>
           <div className="mt-4 grid gap-x-3.5 lg:mt-11 lg:grid-cols-3">
             <div className="px-2 lg:col-span-2">
               <div className="mt-8 space-y-4 text-gray-300 md:grid md:grid-cols-2 md:gap-6 md:space-y-0 lg:mt-6 lg:block lg:space-y-4 lg:text-lg">
                 <p>
-                  We offer two tracks for all members, AI Project Studio and
-                  Build Your Startup.
+                  We host weekly, member-exclusive Hacking Sessions with
+                  exceptional founders in AI. Our members are technical and
+                  build their companies in the Generative AI, Computer Vision
+                  and Robotics space!
                 </p>
                 <p>
-                  AI Project Studio members build products through projects for
-                  companies and Build Your Startup members learn and network
-                  through weekly events.
+                  We regularly bring in notable speakers from companies such as
+                  Meta AI, Pear VC, or OpenAI. Recent topics have included LLM
+                  Architecture, Open Source Projects, and Enterprise
+                  Applications of Generative AI.
                 </p>
               </div>
             </div>
@@ -57,8 +60,8 @@ const About = () => (
       </div>
       <div className="mt-24 border-dashed border-white/5 lg:mt-32 lg:border-y">
         <div className="mx-auto max-w-7xl px-4 py-2">
-          <p className="text-xl font-semibold text-white lg:px-2 lg:text-2xl">
-            The Perks
+          <p className="text-2xl font-semibold text-white md:text-3xl lg:px-2 lg:text-4xl">
+            Benefits
           </p>
           <div className="mt-11 grid gap-x-3.5 gap-y-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-16">
             <div className="lg:px-2">
@@ -78,14 +81,14 @@ const About = () => (
                     d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                <p className="font-semibold text-white">
-                  Community of Founders
-                </p>
+                <p className="font-semibold text-white">Workshops</p>
               </div>
               <div>
                 <p className="mt-1 ml-12 text-gray-300 lg:mt-3">
-                  Connect with founders and startups through an incubator-like
-                  community.
+                  We want you to get your start-up funded. We've hosted special
+                  workshops with General Partners from PearVC and will have Y
+                  Combinator on campus in August to specifically prepare
+                  AIEB-members for their next cohort in Winter 2024.
                 </p>
               </div>
             </div>
@@ -106,13 +109,14 @@ const About = () => (
                     d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                <p className="font-semibold text-white">
-                  Weekly Hacking Sessions
-                </p>
+                <p className="font-semibold text-white">VC Partners</p>
               </div>
               <div>
                 <p className="mt-1 ml-12 text-gray-300 lg:mt-3">
-                  Network and build in our Hackathons, grants, and competitions.
+                  The VC Partners in our network are more than just logos. Many
+                  of them offer office hours, their calendly link, or guarantee
+                  an interview with a General Partner once your first prototype
+                  is ready.
                 </p>
               </div>
             </div>
@@ -133,9 +137,7 @@ const About = () => (
                     d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                <p className="font-semibold text-white">
-                  An Educational Foundation
-                </p>
+                <p className="font-semibold text-white">Education</p>
               </div>
               <div>
                 <p className="mt-1 ml-12 text-gray-300 lg:mt-3">
@@ -161,40 +163,14 @@ const About = () => (
                     d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                <p className="font-semibold text-white">Fast-track to VC's</p>
+                <p className="font-semibold text-white">Advisors</p>
               </div>
               <div>
                 <p className="mt-1 ml-12 text-gray-300 lg:mt-3">
-                  We are partnered with leading VC firms such as Pear VC,
-                  Unusual Ventures, and Courtyard Ventures.
-                </p>
-              </div>
-            </div>
-            <div className="lg:px-2">
-              <div className="flex items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                  className="mr-4 h-8 w-8 shrink-0 text-white"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                <p className="font-semibold text-white">
-                  Tech Entrepreneurship
-                </p>
-              </div>
-              <div>
-                <p className="mt-1 ml-12 text-gray-300 lg:mt-3">
-                  Get involved in our industry-oriented research and real
-                  product development.
+                  We are thankful for the time and committment of our advisors,
+                  consisting of researchers from Berkeley/Stanford, exited
+                  founders, and industry professionals. All one slack message or
+                  email away.
                 </p>
               </div>
             </div>
