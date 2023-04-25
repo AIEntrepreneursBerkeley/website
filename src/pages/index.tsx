@@ -1,4 +1,5 @@
 import { type NextPage } from 'next';
+import Head from 'next/head';
 import Lines from '~/components/sections/Lines';
 import Announcement from '~/components/sections/Announcement';
 import Navbar from '~/components/sections/Navbar';
@@ -14,6 +15,9 @@ import FAQ from '~/components/sections/FAQ';
 
 const Home: NextPage = () => (
   <>
+    <Head>
+      <title>AI Entrepreneurs Berkeley</title>
+    </Head>
     <Lines />
     <header>
       <Announcement />
