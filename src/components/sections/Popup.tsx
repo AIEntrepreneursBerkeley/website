@@ -112,7 +112,7 @@ const Popup: FC = () => {
           />
         </div>
       </div>
-      <p className="mt-8 flex-1 text-2xl md:mt-0 lg:text-3xl">
+      <p className="mt-8 flex-1 text-2xl text-gray-100 md:mt-0 lg:text-3xl">
         Our Innovation Engine: Powered by{' '}
         <b className="font-bold">Entrepreneurial Support</b> and{' '}
         <b className="font-bold">AI Research</b> with a{' '}

@@ -78,7 +78,7 @@ const Team: FC = () => (
         />
         <Card
           name="Blaze Harrison"
-          image="/images/blaze.png"
+          image="/images/blaze.jpeg"
           position="Senior Investment Partner"
           linkedin="https://www.linkedin.com/in/blazeharrison/"
         />
@@ -90,13 +90,13 @@ const Team: FC = () => (
         />
         <Card
           name="Marcus Lannie"
-          image="/images/marcus.jpg"
+          image="/images/marcus.jpeg"
           position="Community Advisor"
           linkedin="https://www.linkedin.com/in/marcuslannie/"
         />
         <Card
           name="Olaf Groth, PhD"
-          image="/images/olaf groth.jpg"
+          image="/images/olaf.jpeg"
           position="Senior Advisor"
           linkedin="https://www.linkedin.com/in/olafgroth/"
         />
@@ -107,8 +107,8 @@ const Team: FC = () => (
           linkedin="https://www.linkedin.com/in/janik-sauerbier/"
         />
         <Card
-          name="Ali E Al-Ebrahim"
-          image="/images/Ali.jpeg"
+          name="Ali Al-Ebrahim"
+          image="/images/ali.jpeg"
           position="Community Advisor"
           linkedin="https://www.linkedin.com/in/alebrahimali/"
         />
@@ -120,25 +120,25 @@ const Team: FC = () => (
         />
         <Card
           name="Jeremy Zhou"
-          image="/images/jeremy.png"
+          image="/images/jeremy.jpeg"
           position="PM Advisor"
           linkedin="https://www.linkedin.com/in/jeremy-zhou/"
         />
         <Card
           name="Dr. Chandra Vadhana"
-          image="/images/chandra.png"
+          image="/images/chandra.jpeg"
           position="Senior Academic Advisor"
           linkedin="https://www.linkedin.com/in/connectceevee/"
         />
         <Card
           name="Sridhar Narahari"
-          image="/images/sridhar.png"
+          image="/images/sridhar.jpeg"
           position="Advisor for Management"
           linkedin="https://www.linkedin.com/in/sridhar-narahari-8ab3a212/"
         />
         <Card
           name="Armaan Goel"
-          image="/images/armaan.png"
+          image="/images/armaan.jpeg"
           position="Technical Advisor"
           linkedin="https://www.linkedin.com/in/armaangoel/"
         />
@@ -156,7 +156,7 @@ const Team: FC = () => (
         />
         <Card
           name="Eric Han"
-          image="/images/eric.png"
+          image="/images/eric.jpeg"
           position="Technical Advisor for LLMs and ML"
           linkedin="https://www.linkedin.com/in/eric-han1/"
         />
@@ -168,7 +168,7 @@ const Team: FC = () => (
         />
         <Card
           name="Lucas Chu"
-          image="/images/lucas.png"
+          image="/images/lucas.jpeg"
           position="Advisor"
           linkedin="https://www.linkedin.com/in/chulucas/"
         />

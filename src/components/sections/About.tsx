@@ -2,7 +2,10 @@ import { type FC } from 'react';
 import Image from 'next/image';
 
 const About: FC = () => (
-  <section id="program" className="relative bg-gray-900/90 py-12 md:py-32">
+  <section
+    id="program"
+    className="relative -mt-24 bg-gray-900/90 py-28 sm:py-32 md:py-36"
+  >
     <div className="absolute inset-0 flex justify-center overflow-hidden">
       <Image
         src="/images/gradient-small.webp"
