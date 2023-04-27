@@ -53,7 +53,7 @@ const Popup: FC = () => {
     };
   }, [inView, setLines]);
   return (
-    <section className="container mt-40 mb-32 items-center justify-between gap-8 md:flex">
+    <section className="container mt-64 mb-56 items-center justify-between gap-8 md:flex">
       <div ref={ref} className="flex-1 [perspective:2000px]">
         <div
           className={classNames(

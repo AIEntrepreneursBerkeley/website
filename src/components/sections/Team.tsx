@@ -1,42 +1,10 @@
 import { type FC } from 'react';
-import Image from 'next/image';
 import Card from '~/components/ui/Card';
 import Spotlight from '~/components/ui/Spotlight';
-import VerticalCarousel from '~/components/ui/VerticalCarousel';
 
 const Team: FC = () => (
-  <section className="relative pb-36 md:pb-56">
-    <div className="absolute inset-0 flex justify-center overflow-hidden brightness-50 saturate-0">
-      <Image
-        src="/images/gradient-small.webp"
-        width={640}
-        height={1124}
-        className="max-w-none origin-top scale-125 sm:hidden"
-        draggable={false}
-        priority
-        alt=""
-      />
-      <Image
-        src="/images/gradient-medium.webp"
-        width={1024}
-        height={1124}
-        className="hidden max-w-none origin-top scale-125 sm:block lg:hidden"
-        draggable={false}
-        priority
-        alt=""
-      />
-      <Image
-        src="/images/gradient-large.webp"
-        width={2510}
-        height={1168}
-        className="hidden max-w-none origin-top scale-125 lg:block"
-        draggable={false}
-        priority
-        alt=""
-      />
-      <div className="noise absolute inset-0 bg-left opacity-10" />
-    </div>
-    <Spotlight color="194,97,254" colorDark="40,53,77">
+  <section id="team" className="relative pb-36 md:pb-56">
+    <Spotlight color="160,77,234" colorDark="30,43,67">
       <h2 className="text-gradient mb-16 translate-y-[40%] text-center [transition:transform_1000ms_cubic-bezier(0.3,_1.17,_0.55,_0.99)_0s] [.is-visible_&]:translate-y-0">
         Executive Team
       </h2>
@@ -97,7 +65,7 @@ const Team: FC = () => (
         />
       </div>
     </Spotlight>
-    <Spotlight color="137,112,219" colorDark="35,10,70">
+    <Spotlight color="70,112,219" colorDark="34,25,60">
       <h2 className="text-gradient mb-16 translate-y-[40%] text-center [transition:transform_1000ms_cubic-bezier(0.3,_1.17,_0.55,_0.99)_0s] [.is-visible_&]:translate-y-0">
         Advisors
       </h2>

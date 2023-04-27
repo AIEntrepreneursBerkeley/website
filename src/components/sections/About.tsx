@@ -1,7 +1,8 @@
+import { type FC } from 'react';
 import Image from 'next/image';
 
-const About = () => (
-  <section className="relative bg-gray-900/20 py-12 md:py-32">
+const About: FC = () => (
+  <section id="program" className="relative bg-gray-900/90 py-12 md:py-32">
     <div className="absolute inset-0 flex justify-center overflow-hidden">
       <Image
         src="/images/gradient-small.webp"
@@ -58,7 +59,7 @@ const About = () => (
           </div>
         </div>
       </div>
-      <div className="mt-24 border-dashed border-white/5 lg:mt-32 lg:border-y">
+      <div className="mt-16 border-dashed border-white/5 lg:mt-24 lg:border-y">
         <div className="mx-auto max-w-7xl px-4 py-2">
           <p className="text-2xl font-semibold text-white md:text-3xl lg:px-2 lg:text-4xl">
             Benefits
@@ -85,10 +86,11 @@ const About = () => (
               </div>
               <div>
                 <p className="mt-1 ml-12 text-gray-300 lg:mt-3">
-                  We want you to get your start-up funded. We've hosted special
-                  workshops with General Partners from PearVC and will have Y
-                  Combinator on campus in August to specifically prepare
-                  AIEB-members for their next cohort in Winter 2024.
+                  We want you to get your start-up funded, which is why we have
+                  hosted special workshops and events with Pear VC, Unusual
+                  Ventures, and will have Y Combinator on campus in August to
+                  specifically prepare AIEB members for their next cohort in
+                  Winter 2024.
                 </p>
               </div>
             </div>
@@ -142,7 +144,8 @@ const About = () => (
               <div>
                 <p className="mt-1 ml-12 text-gray-300 lg:mt-3">
                   We offer seminars, mentorship, and workshops on the latest AI
-                  Developments. DeCal planned.
+                  developments with a focus on Generative AI, Foundation Models,
+                  and the Production Stack. DeCal planned.
                 </p>
               </div>
             </div>
@@ -168,9 +171,37 @@ const About = () => (
               <div>
                 <p className="mt-1 ml-12 text-gray-300 lg:mt-3">
                   We are thankful for the time and committment of our advisors,
-                  consisting of researchers from Berkeley/Stanford, exited
-                  founders, and industry professionals. All one slack message or
-                  email away.
+                  consisting of researchers from Berkeley and Stanford, exited
+                  founders, and industry professionals - only one Slack, text
+                  message, or email away.
+                </p>
+              </div>
+            </div>
+            <div className="lg:px-2">
+              <div className="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  className="mr-4 h-8 w-8 shrink-0 text-white"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <p className="font-semibold text-white">Community</p>
+              </div>
+              <div>
+                <p className="mt-1 ml-12 text-gray-300 lg:mt-3">
+                  Members of AIEB understand how hard it is to be a founder. We
+                  help each other strategically and emotional to navigate the
+                  startup environment. We go to events together, give feed back
+                  to each others' pitch decks and socialize outside of work.
                 </p>
               </div>
             </div>

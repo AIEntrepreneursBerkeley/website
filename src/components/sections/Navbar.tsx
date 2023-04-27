@@ -16,6 +16,40 @@ const Navbar: FC = () => (
         />
       </Link>
     </figure>
+    <ul className="flex items-center gap-4">
+      <li>
+        <a
+          href="#program"
+          className="font-medium text-gray-300 transition-colors hover:text-gray-200"
+        >
+          Program
+        </a>
+      </li>
+      <li>
+        <a
+          href="#team"
+          className="font-medium text-gray-300 transition-colors hover:text-gray-200"
+        >
+          Team
+        </a>
+      </li>
+      <li>
+        <a
+          href="#application"
+          className="font-medium text-gray-300 transition-colors hover:text-gray-200"
+        >
+          Application
+        </a>
+      </li>
+      <li>
+        <a
+          href="#faq"
+          className="font-medium text-gray-300 transition-colors hover:text-gray-200"
+        >
+          FAQ
+        </a>
+      </li>
+    </ul>
     <div className="flex items-start gap-3">
       <a
         href="https://www.linkedin.com/company/aientrepreneurs/"
