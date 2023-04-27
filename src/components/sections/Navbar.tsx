@@ -6,7 +6,7 @@ import { Linkedin, Instagram, Youtube } from 'lucide-react';
 
 const Navbar: FC = () => (
   <nav className="container flex h-16 items-center justify-between lg:h-20">
-    <figure className="relative h-full w-12 sm:w-14 lg:w-16">
+    <figure className="relative h-full w-10 xs:w-12 sm:w-14 lg:w-16">
       <Link href="/">
         <Image
           src={aieb}
@@ -16,11 +16,11 @@ const Navbar: FC = () => (
         />
       </Link>
     </figure>
-    <ul className="flex items-center gap-2 sm:gap-3 md:gap-4">
+    <ul className="flex items-center gap-1 xs:gap-2 sm:gap-3 md:gap-4">
       <li>
         <a
           href="#program"
-          className="text-sm font-medium text-gray-300 transition-colors hover:text-gray-200 sm:text-base"
+          className="text-xs xs:text-sm font-medium text-gray-300 transition-colors hover:text-gray-200 sm:text-base"
         >
           Program
         </a>
@@ -28,7 +28,7 @@ const Navbar: FC = () => (
       <li>
         <a
           href="#team"
-          className="text-sm font-medium text-gray-300 transition-colors hover:text-gray-200 sm:text-base"
+          className="text-xs xs:text-sm font-medium text-gray-300 transition-colors hover:text-gray-200 sm:text-base"
         >
           Team
         </a>
@@ -36,7 +36,7 @@ const Navbar: FC = () => (
       <li>
         <a
           href="#application"
-          className="text-sm font-medium text-gray-300 transition-colors hover:text-gray-200 sm:text-base"
+          className="text-xs xs:text-sm font-medium text-gray-300 transition-colors hover:text-gray-200 sm:text-base"
         >
           Application
         </a>
@@ -44,7 +44,7 @@ const Navbar: FC = () => (
       <li>
         <a
           href="#faq"
-          className="text-sm font-medium text-gray-300 transition-colors hover:text-gray-200 sm:text-base"
+          className="text-xs xs:text-sm font-medium text-gray-300 transition-colors hover:text-gray-200 sm:text-base"
         >
           FAQ
         </a>
