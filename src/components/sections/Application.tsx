@@ -5,7 +5,7 @@ const Application: FC = () => (
     id="application"
     className="relative pt-0 pb-28 sm:pt-8 sm:pb-24 md:pt-16 md:pb-32 lg:pb-40 lg:pt-24"
   >
-    <div className="bg-stripe-gradient absolute top-0 h-full w-full md:top-10" />
+    <div className="bg-stripe-gradient absolute top-0 -z-10 h-full w-full md:top-10" />
     <div className="container">
       <h2 className="mb-8 text-2xl sm:text-3xl md:text-4xl">
         Membership — Non-Bullsh*t Application
@@ -29,8 +29,14 @@ const Application: FC = () => (
       </p>
       <p>
         Although we are past our recruitment cycle, we do take on new start-ups
-        and members on a case-by-case basis. Kindly reach out to
-        contact@aientrepreneurs.org.
+        and members on a case-by-case basis. Kindly reach out to{' '}
+        <a
+          className="text-blue-500 transition-colors hover:text-blue-400"
+          href="mailto:contact@aientrepreneurs.org"
+        >
+          contact@aientrepreneurs.org
+        </a>
+        .
       </p>
     </div>
   </section>
