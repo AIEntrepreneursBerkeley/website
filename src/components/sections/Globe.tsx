@@ -36,7 +36,7 @@ const Globe: FC = () => {
       </h2>
       <Image
         src="/images/stars.svg"
-        alt=""
+        alt="stars"
         fill
         draggable={false}
         className="absolute left-1/2 rotate-[37deg] scale-150 object-contain"
