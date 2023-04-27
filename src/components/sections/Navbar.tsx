@@ -6,7 +6,7 @@ import { Linkedin, Instagram, Youtube } from 'lucide-react';
 
 const Navbar: FC = () => (
   <nav className="container flex h-16 items-center justify-between lg:h-20">
-    <figure className="relative h-full w-14 lg:w-16">
+    <figure className="relative h-full w-12 sm:w-14 lg:w-16">
       <Link href="/">
         <Image
           src={aieb}
@@ -16,11 +16,11 @@ const Navbar: FC = () => (
         />
       </Link>
     </figure>
-    <ul className="flex items-center gap-4">
+    <ul className="flex items-center gap-2 sm:gap-3 md:gap-4">
       <li>
         <a
           href="#program"
-          className="font-medium text-gray-300 transition-colors hover:text-gray-200"
+          className="text-sm font-medium text-gray-300 transition-colors hover:text-gray-200 sm:text-base"
         >
           Program
         </a>
@@ -28,7 +28,7 @@ const Navbar: FC = () => (
       <li>
         <a
           href="#team"
-          className="font-medium text-gray-300 transition-colors hover:text-gray-200"
+          className="text-sm font-medium text-gray-300 transition-colors hover:text-gray-200 sm:text-base"
         >
           Team
         </a>
@@ -36,7 +36,7 @@ const Navbar: FC = () => (
       <li>
         <a
           href="#application"
-          className="font-medium text-gray-300 transition-colors hover:text-gray-200"
+          className="text-sm font-medium text-gray-300 transition-colors hover:text-gray-200 sm:text-base"
         >
           Application
         </a>
@@ -44,13 +44,13 @@ const Navbar: FC = () => (
       <li>
         <a
           href="#faq"
-          className="font-medium text-gray-300 transition-colors hover:text-gray-200"
+          className="text-sm font-medium text-gray-300 transition-colors hover:text-gray-200 sm:text-base"
         >
           FAQ
         </a>
       </li>
     </ul>
-    <div className="flex items-start gap-3">
+    <div className="flex scale-90 items-center gap-2 sm:scale-100 sm:gap-3 md:h-full">
       <a
         href="https://www.linkedin.com/company/aientrepreneurs/"
         target="_blank"
