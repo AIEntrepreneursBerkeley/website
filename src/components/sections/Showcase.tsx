@@ -48,7 +48,7 @@ const Showcase: FC = () => (
       </figure>
       <figure className="relative mb-6 h-64">
         <Image
-          src="/images/AIEB Event 1.JPG"
+          src="/images/genai-event.JPG"
           alt="Meet up"
           className="w-full object-cover"
           fill
