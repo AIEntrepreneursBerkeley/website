@@ -3,16 +3,20 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
-    @apply bg-background text-gray-300;
+    @apply overflow-x-hidden bg-background text-gray-300;
   }
 
   h1 {
-    @apply scroll-m-20 text-4xl font-extrabold tracking-tight text-white md:text-5xl md:leading-[1.1] lg:col-span-2 lg:text-[64px] lg:leading-[1.125] lg:tracking-[-0.0375em];
+    @apply scroll-m-20 text-4xl font-extrabold tracking-tight text-white md:text-5xl md:leading-[1.1] lg:col-span-2 lg:text-[64px] lg:leading-[1.2] lg:tracking-[-0.0375em];
   }
 
   h2 {
-    @apply scroll-m-20 md:text-6xl sm:text-5xl text-4xl font-bold tracking-tight;
+    @apply scroll-m-20 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl;
   }
 
   p {
@@ -135,12 +139,23 @@
   }
 
   .text-gradient {
-    background: linear-gradient(to right bottom, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.38));
+    background: linear-gradient(
+      to right bottom,
+      rgb(255, 255, 255) 30%,
+      rgba(255, 255, 255, 0.38)
+    );
     background-clip: text;
     color: transparent;
   }
 
   .bg-stripe-gradient {
-    background-image: linear-gradient(6deg, transparent 25.60739517211914%, rgba(85,238,230,0.15) 42.41046905517578%, rgba(0,170,240,0.22) 52.1204948425293%, rgba(175,141,255,0.23) 61.8046760559082%, transparent 75.95748901367188%);
+    background-image: linear-gradient(
+      6deg,
+      transparent 25.60739517211914%,
+      rgba(85, 238, 230, 0.15) 42.41046905517578%,
+      rgba(0, 170, 240, 0.22) 52.1204948425293%,
+      rgba(175, 141, 255, 0.23) 61.8046760559082%,
+      transparent 75.95748901367188%
+    );
   }
 }

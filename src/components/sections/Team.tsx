@@ -1,42 +1,10 @@
 import { type FC } from 'react';
-import Image from 'next/image';
 import Card from '~/components/ui/Card';
 import Spotlight from '~/components/ui/Spotlight';
-import VerticalCarousel from '~/components/ui/VerticalCarousel';
 
 const Team: FC = () => (
-  <section className="relative pb-36 md:pb-56">
-    <div className="absolute inset-0 flex justify-center overflow-hidden brightness-50 saturate-0">
-      <Image
-        src="/images/gradient-small.webp"
-        width={640}
-        height={1124}
-        className="max-w-none origin-top scale-125 sm:hidden"
-        draggable={false}
-        priority
-        alt=""
-      />
-      <Image
-        src="/images/gradient-medium.webp"
-        width={1024}
-        height={1124}
-        className="hidden max-w-none origin-top scale-125 sm:block lg:hidden"
-        draggable={false}
-        priority
-        alt=""
-      />
-      <Image
-        src="/images/gradient-large.webp"
-        width={2510}
-        height={1168}
-        className="hidden max-w-none origin-top scale-125 lg:block"
-        draggable={false}
-        priority
-        alt=""
-      />
-      <div className="noise absolute inset-0 bg-left opacity-10" />
-    </div>
-    <Spotlight color="194,97,254" colorDark="40,53,77">
+  <section id="team" className="relative pb-36 md:pb-56">
+    <Spotlight color="160,77,234" colorDark="30,43,67">
       <h2 className="text-gradient mb-16 translate-y-[40%] text-center [transition:transform_1000ms_cubic-bezier(0.3,_1.17,_0.55,_0.99)_0s] [.is-visible_&]:translate-y-0">
         Executive Team
       </h2>
@@ -97,7 +65,7 @@ const Team: FC = () => (
         />
       </div>
     </Spotlight>
-    <Spotlight color="137,112,219" colorDark="35,10,70">
+    <Spotlight color="70,112,219" colorDark="34,25,60">
       <h2 className="text-gradient mb-16 translate-y-[40%] text-center [transition:transform_1000ms_cubic-bezier(0.3,_1.17,_0.55,_0.99)_0s] [.is-visible_&]:translate-y-0">
         Advisors
       </h2>
@@ -110,7 +78,7 @@ const Team: FC = () => (
         />
         <Card
           name="Blaze Harrison"
-          image="/images/blaze.png"
+          image="/images/blaze.jpeg"
           position="Senior Investment Partner"
           linkedin="https://www.linkedin.com/in/blazeharrison/"
         />
@@ -122,13 +90,13 @@ const Team: FC = () => (
         />
         <Card
           name="Marcus Lannie"
-          image="/images/marcus.jpg"
+          image="/images/marcus.jpeg"
           position="Community Advisor"
           linkedin="https://www.linkedin.com/in/marcuslannie/"
         />
         <Card
           name="Olaf Groth, PhD"
-          image="/images/olaf groth.jpg"
+          image="/images/olaf.jpeg"
           position="Senior Advisor"
           linkedin="https://www.linkedin.com/in/olafgroth/"
         />
@@ -139,8 +107,8 @@ const Team: FC = () => (
           linkedin="https://www.linkedin.com/in/janik-sauerbier/"
         />
         <Card
-          name="Ali E Al-Ebrahim"
-          image="/images/Ali.jpeg"
+          name="Ali Al-Ebrahim"
+          image="/images/ali.jpeg"
           position="Community Advisor"
           linkedin="https://www.linkedin.com/in/alebrahimali/"
         />
@@ -152,25 +120,25 @@ const Team: FC = () => (
         />
         <Card
           name="Jeremy Zhou"
-          image="/images/jeremy.png"
+          image="/images/jeremy.jpeg"
           position="PM Advisor"
           linkedin="https://www.linkedin.com/in/jeremy-zhou/"
         />
         <Card
           name="Dr. Chandra Vadhana"
-          image="/images/chandra.png"
+          image="/images/chandra.jpeg"
           position="Senior Academic Advisor"
           linkedin="https://www.linkedin.com/in/connectceevee/"
         />
         <Card
           name="Sridhar Narahari"
-          image="/images/sridhar.png"
+          image="/images/sridhar.jpeg"
           position="Advisor for Management"
           linkedin="https://www.linkedin.com/in/sridhar-narahari-8ab3a212/"
         />
         <Card
           name="Armaan Goel"
-          image="/images/armaan.png"
+          image="/images/armaan.jpeg"
           position="Technical Advisor"
           linkedin="https://www.linkedin.com/in/armaangoel/"
         />
@@ -188,7 +156,7 @@ const Team: FC = () => (
         />
         <Card
           name="Eric Han"
-          image="/images/eric.png"
+          image="/images/eric.jpeg"
           position="Technical Advisor for LLMs and ML"
           linkedin="https://www.linkedin.com/in/eric-han1/"
         />
@@ -200,7 +168,7 @@ const Team: FC = () => (
         />
         <Card
           name="Lucas Chu"
-          image="/images/lucas.png"
+          image="/images/lucas.jpeg"
           position="Advisor"
           linkedin="https://www.linkedin.com/in/chulucas/"
         />

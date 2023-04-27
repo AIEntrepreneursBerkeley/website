@@ -5,12 +5,12 @@ const Hero: FC = () => (
   <section className="relative flex flex-col">
     <Background />
     <Stripe />
-    <div className="mt-24 border-y border-dashed border-white/5 py-2 md:mt-28 lg:mt-32">
+    <div className="mt-20 border-y border-dashed border-white/5 py-2 md:mt-24 lg:mt-28">
       <header className="container">
         <h1>
-          The Premier{` `}
+          AI Entrepreneurs{` `}
           <br className="hidden sm:block" />
-          Community to Build{` `}
+          at Berkeley — Build{` `}
           <br className="hidden sm:block" />
           Your AI Startup.
         </h1>

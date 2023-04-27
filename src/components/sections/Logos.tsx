@@ -13,42 +13,42 @@ const Logos: FC = () => (
     <div className="container">
       <Marquee>
         <Image
-          className="h-full w-auto object-contain brightness-0 invert"
+          className="h-14 w-auto object-cover brightness-0 invert"
           src={pearVC}
           alt="Pear VC"
           draggable={false}
           priority
         />
         <Image
-          className="h-full w-auto object-contain brightness-0 invert"
+          className="h-10 w-auto object-cover brightness-0 invert"
           src={skydeck}
           alt="Skydeck"
           draggable={false}
           priority
         />
         <Image
-          className="h-full w-auto object-contain brightness-0 invert"
+          className="h-10 w-auto object-cover brightness-0 invert"
           src={unusualVentures}
           alt="Unusual Ventures"
           draggable={false}
           priority
         />
         <Image
-          className="h-full w-auto object-contain brightness-0 invert"
+          className="h-10 w-auto object-cover brightness-0 invert"
           src={theHouseFund}
           alt="The House Fund"
           draggable={false}
           priority
         />
         <Image
-          className="h-full w-auto object-contain brightness-0 invert"
+          className="h-10 w-auto object-cover brightness-0 invert"
           src={antler}
           alt="Antler"
           draggable={false}
           priority
         />
         <Image
-          className="h-full w-auto object-contain brightness-0 invert"
+          className="h-10 w-auto object-cover brightness-0 invert"
           src={courtyardVentures}
           alt="Courtyard Ventures"
           draggable={false}

@@ -53,7 +53,7 @@ const Popup: FC = () => {
     };
   }, [inView, setLines]);
   return (
-    <section className="container mt-40 mb-32 items-center justify-between gap-8 md:flex">
+    <section className="container mt-64 mb-56 items-center justify-between gap-8 md:flex">
       <div ref={ref} className="flex-1 [perspective:2000px]">
         <div
           className={classNames(
@@ -112,7 +112,7 @@ const Popup: FC = () => {
           />
         </div>
       </div>
-      <p className="mt-8 flex-1 text-2xl md:mt-0 lg:text-3xl">
+      <p className="mt-8 flex-1 text-2xl text-gray-100 md:mt-0 lg:text-3xl">
         Our Innovation Engine: Powered by{' '}
         <b className="font-bold">Entrepreneurial Support</b> and{' '}
         <b className="font-bold">AI Research</b> with a{' '}

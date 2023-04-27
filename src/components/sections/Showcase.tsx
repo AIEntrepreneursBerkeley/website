@@ -32,7 +32,7 @@ const Showcase: FC = () => (
       />
       <figure className="relative mb-6 h-64">
         <Image
-          src="/images/IMG_7060.JPG"
+          src="/images/pearvc-event.jpg"
           alt="Meet up"
           className="w-full object-cover"
           fill
@@ -62,7 +62,32 @@ const Showcase: FC = () => (
           fill
         />
       </figure>
+      <figure className="relative mb-6 h-64">
+        <Image
+          src="/images/pearvc-event2.jpg"
+          alt="Meet up"
+          className="w-full object-cover"
+          fill
+        />
+      </figure>
+      <figure className="relative mb-6 h-56 brightness-150">
+        <Image
+          src="/images/pearvc-event3.jpg"
+          alt="Meet up"
+          className="w-full object-cover"
+          fill
+        />
+      </figure>
+      <figure className="relative mb-6 h-72">
+        <Image
+          src="/images/pearvc-event4.jpg"
+          alt="Meet up"
+          className="w-full object-cover"
+          fill
+        />
+      </figure>
     </Masonry>
+    <div className="pointer-events-none sticky inset-x-0 bottom-0 -mt-52 flex justify-center bg-gradient-to-t from-background pt-32 pb-16 opacity-100" />
   </section>
 );
 

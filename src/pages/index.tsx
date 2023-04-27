@@ -12,6 +12,7 @@ import Globe from '~/components/sections/Globe';
 import Showcase from '~/components/sections/Showcase';
 import Popup from '~/components/sections/Popup';
 import FAQ from '~/components/sections/FAQ';
+import Application from '~/components/sections/Application';
 
 const Home: NextPage = () => (
   <>
@@ -30,6 +31,7 @@ const Home: NextPage = () => (
       <About />
       <Popup />
       <Team />
+      <Application />
       <FAQ />
       <Newsletter />
     </main>
