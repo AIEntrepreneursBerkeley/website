@@ -109,6 +109,7 @@ const Popup: FC = () => {
             )}
             src="/images/venn-diagram.webp"
             alt="Showcase"
+            draggable={false}
           />
         </div>
       </div>

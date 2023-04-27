@@ -21,6 +21,7 @@ const Showcase: FC = () => (
           alt="Meet up"
           className="w-full object-cover"
           fill
+          draggable={false}
         />
       </figure>
       <iframe
@@ -36,6 +37,7 @@ const Showcase: FC = () => (
           alt="Meet up"
           className="w-full object-cover"
           fill
+          draggable={false}
         />
       </figure>
       <figure className="relative mb-6 h-64">
@@ -44,6 +46,7 @@ const Showcase: FC = () => (
           alt="Meet up"
           className="w-full object-cover"
           fill
+          draggable={false}
         />
       </figure>
       <figure className="relative mb-6 h-64">
@@ -52,6 +55,7 @@ const Showcase: FC = () => (
           alt="Meet up"
           className="w-full object-cover"
           fill
+          draggable={false}
         />
       </figure>
       <figure className="relative mb-6 h-64">
@@ -60,6 +64,7 @@ const Showcase: FC = () => (
           alt="Meet up"
           className="w-full object-cover"
           fill
+          draggable={false}
         />
       </figure>
       <figure className="relative mb-6 h-64">
@@ -68,6 +73,7 @@ const Showcase: FC = () => (
           alt="Meet up"
           className="w-full object-cover"
           fill
+          draggable={false}
         />
       </figure>
       <figure className="relative mb-6 h-56 brightness-150">
@@ -76,6 +82,7 @@ const Showcase: FC = () => (
           alt="Meet up"
           className="w-full object-cover"
           fill
+          draggable={false}
         />
       </figure>
       <figure className="relative mb-6 h-72">
@@ -84,6 +91,7 @@ const Showcase: FC = () => (
           alt="Meet up"
           className="w-full object-cover"
           fill
+          draggable={false}
         />
       </figure>
     </Masonry>
