@@ -17,11 +17,11 @@ const Navbar: FC = () => (
         />
       </Link>
     </figure>
-    <ul className="flex items-center gap-1 xs:gap-2 sm:gap-3 md:gap-4">
+    <ul className="flex items-center gap-2 sm:gap-3 md:gap-4">
       <li>
         <a
           href="#program"
-          className="text-sm font-medium text-gray-300 transition-colors hover:text-gray-200 sm:text-base"
+          className="text-xs font-medium text-gray-300 transition-colors hover:text-gray-200 xs:text-sm sm:text-base"
         >
           Program
         </a>
@@ -29,7 +29,7 @@ const Navbar: FC = () => (
       <li>
         <a
           href="#team"
-          className="text-sm font-medium text-gray-300 transition-colors hover:text-gray-200 sm:text-base"
+          className="text-xs font-medium text-gray-300 transition-colors hover:text-gray-200 xs:text-sm sm:text-base"
         >
           Team
         </a>
@@ -37,7 +37,7 @@ const Navbar: FC = () => (
       <li>
         <a
           href="#application"
-          className="text-sm font-medium text-gray-300 transition-colors hover:text-gray-200 sm:text-base"
+          className="text-xs font-medium text-gray-300 transition-colors hover:text-gray-200 xs:text-sm sm:text-base"
         >
           Application
         </a>
@@ -45,13 +45,13 @@ const Navbar: FC = () => (
       <li>
         <a
           href="#faq"
-          className="text-sm font-medium text-gray-300 transition-colors hover:text-gray-200 sm:text-base"
+          className="text-xs font-medium text-gray-300 transition-colors hover:text-gray-200 xs:text-sm sm:text-base"
         >
           FAQ
         </a>
       </li>
     </ul>
-    <div className="flex scale-90 items-center gap-2 sm:scale-100 sm:gap-3 md:h-full">
+    <div className="flex scale-90 items-center gap-1 xs:gap-2 sm:scale-100 sm:gap-3 md:h-full">
       <a
         href="https://www.linkedin.com/company/aientrepreneurs/"
         target="_blank"
