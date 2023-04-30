@@ -21,7 +21,7 @@ const Navbar: FC = () => (
       <li>
         <a
           href="#program"
-          className="text-xs font-medium text-gray-300 transition-colors hover:text-gray-200 xs:text-sm sm:text-base"
+          className="text-[13px] font-medium text-gray-300 transition-colors hover:text-gray-200 xs:text-sm sm:text-base"
         >
           Program
         </a>
@@ -29,7 +29,7 @@ const Navbar: FC = () => (
       <li>
         <a
           href="#team"
-          className="text-xs font-medium text-gray-300 transition-colors hover:text-gray-200 xs:text-sm sm:text-base"
+          className="text-[13px] font-medium text-gray-300 transition-colors hover:text-gray-200 xs:text-sm sm:text-base"
         >
           Team
         </a>
@@ -37,7 +37,7 @@ const Navbar: FC = () => (
       <li>
         <a
           href="#application"
-          className="text-xs font-medium text-gray-300 transition-colors hover:text-gray-200 xs:text-sm sm:text-base"
+          className="text-[13px] font-medium text-gray-300 transition-colors hover:text-gray-200 xs:text-sm sm:text-base"
         >
           Application
         </a>
@@ -45,7 +45,7 @@ const Navbar: FC = () => (
       <li>
         <a
           href="#faq"
-          className="text-xs font-medium text-gray-300 transition-colors hover:text-gray-200 xs:text-sm sm:text-base"
+          className="text-[13px] font-medium text-gray-300 transition-colors hover:text-gray-200 xs:text-sm sm:text-base"
         >
           FAQ
         </a>
