@@ -2,6 +2,8 @@
  * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation.
  * This is especially useful for Docker builds.
  */
+import { withContentlayer } from 'next-contentlayer';
+
 !process.env.SKIP_ENV_VALIDATION && (await import('./src/env.mjs'));
 
 /** @type {import("next").NextConfig} */
@@ -23,5 +25,13 @@ const config = {
     locales: ['en'],
     defaultLocale: 'en',
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 's3.us-west-2.amazonaws.com',
+      },
+    ],
+  },
 };
-export default config;
+export default withContentlayer(config);
