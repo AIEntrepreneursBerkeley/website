@@ -202,7 +202,7 @@ const About: FC = () => (
               <div>
                 <p className="mt-1 ml-12 text-gray-300 lg:mt-3">
                   Members of AIEB understand how hard it is to be a founder. We
-                  help each other strategically and emotional to navigate the
+                  help each other strategically and emotionally to navigate the
                   startup environment. We go to events together, give feed back
                   to each others' pitch decks and socialize outside of work.
                 </p>
