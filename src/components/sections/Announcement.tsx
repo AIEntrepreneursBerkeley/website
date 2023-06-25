@@ -167,7 +167,15 @@ const Announcement: FC = () => (
           </defs>
         </svg>
         <p className="text-center text-xs font-medium text-white sm:text-sm">
-          April 25th — <b className="font-bold">Demo DAI</b> @ Berkeley SkyDeck
+          Applications for the Marketing Team are open —{' '}
+          <a
+            href="https://forms.gle/7TovTWvGcp4phG3x7"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <b className="font-bold">Apply here</b>
+          </a>
+          !
         </p>
       </div>
     </div>
