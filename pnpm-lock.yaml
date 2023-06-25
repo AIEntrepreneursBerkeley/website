@@ -22,7 +22,7 @@ specifiers:
   class-variance-authority: ^0.4.0
   classnames: ^2.3.2
   clsx: ^1.2.1
-  contentlayer: ^0.3.2
+  contentlayer: 0.3.2
   contentlayer-source-notion: 0.0.1-alpha.26
   date-fns: ^2.30.0
   eslint: ^8.34.0
@@ -33,7 +33,7 @@ specifiers:
   lucide-react: ^0.126.0
   next: ^13.2.1
   next-auth: ^4.19.0
-  next-contentlayer: ^0.3.2
+  next-contentlayer: 0.3.2
   postcss: ^8.4.14
   prettier: ^2.8.1
   prettier-plugin-tailwindcss: ^0.2.1
@@ -453,7 +453,7 @@ packages:
       remark-parse: 10.0.2
       remark-rehype: 10.1.0
       source-map-support: 0.5.21
-      type-fest: 3.11.1
+      type-fest: 3.12.0
       unified: 10.1.2
     transitivePeerDependencies:
       - '@effect-ts/otel-node'
@@ -520,9 +520,9 @@ packages:
       hash-wasm: 4.9.0
       inflection: 2.0.1
       memfs: 3.5.3
-      oo-ascii-tree: 1.83.0
+      oo-ascii-tree: 1.84.0
       ts-pattern: 4.3.0
-      type-fest: 3.11.1
+      type-fest: 3.12.0
     dev: false
 
   /@effect-ts/core/0.60.5:
@@ -836,8 +836,8 @@ packages:
     resolution: {integrity: sha512-cEee/Z+I12mZcFJshKcCqC8tuX5hG3s+d+9nZ3LabqKF1vKdF41B92pJVCBggjAGORAeOzyyDDKrZwIkLffeOQ==}
     dev: false
 
-  /@grpc/grpc-js/1.8.15:
-    resolution: {integrity: sha512-H2Bu/w6+oQ58DsRbQol66ERBk3V5ZIak/z/MDx0T4EgDnJWps807I6BvTjq0v6UvZtOcLO+ur+Q9wvniqu3OJA==}
+  /@grpc/grpc-js/1.8.16:
+    resolution: {integrity: sha512-Nvlq4V7XQmdRVDGgecR8ZPPCeY+uH1LhzbC+QxklwAahpQlq8YLsiOQgfkub9FiakRiohaDy361xqlTLkq9EHw==}
     engines: {node: ^8.13.0 || >=10.10.0}
     dependencies:
       '@grpc/proto-loader': 0.7.7
@@ -1135,7 +1135,7 @@ packages:
   /@notion-render/client/0.0.1-alpha.3:
     resolution: {integrity: sha512-+jU8pauQCU38vcGkBz/m/pQsq1HvDMhOQOJzEA1t0N2jaN0FjY0iwnyCp3WIl3NMPAQlG4Gp2Q+qlEXHr5FZzg==}
     dependencies:
-      sanitize-html: 2.10.0
+      sanitize-html: 2.11.0
     dev: false
 
   /@notionhq/client/2.2.5:
@@ -1196,7 +1196,7 @@ packages:
     peerDependencies:
       '@opentelemetry/api': ^1.0.0
     dependencies:
-      '@grpc/grpc-js': 1.8.15
+      '@grpc/grpc-js': 1.8.16
       '@grpc/proto-loader': 0.6.13
       '@opentelemetry/api': 1.4.1
       '@opentelemetry/core': 1.5.0_@opentelemetry+api@1.4.1
@@ -1222,7 +1222,7 @@ packages:
     peerDependencies:
       '@opentelemetry/api': ^1.0.0
     dependencies:
-      '@grpc/grpc-js': 1.8.15
+      '@grpc/grpc-js': 1.8.16
       '@grpc/proto-loader': 0.6.13
       '@opentelemetry/api': 1.4.1
       '@opentelemetry/core': 1.5.0_@opentelemetry+api@1.4.1
@@ -4957,9 +4957,9 @@ packages:
       wrappy: 1.0.2
     dev: true
 
-  /oo-ascii-tree/1.83.0:
-    resolution: {integrity: sha512-Fib3Py1moaeRkIRCZyKmqHvuWGf1x3SXE5vjFc5L13EMgycO6edNgkLFa/0zSy+oZHzkNneLY3Ozt7UZFy0k6g==}
-    engines: {node: '>= 14.6.0'}
+  /oo-ascii-tree/1.84.0:
+    resolution: {integrity: sha512-8bvsAKFAQ7HwU3lAEDwsKYDkTqsDTsRTkr3J0gvH1U805d2no9rUNYptWzg3oYku5h5mr9Bko+BIh1pjSD8qrg==}
+    engines: {node: '>= 14.17.0'}
     dev: false
 
   /open/8.4.2:
@@ -5560,8 +5560,8 @@ packages:
       is-regex: 1.1.4
     dev: true
 
-  /sanitize-html/2.10.0:
-    resolution: {integrity: sha512-JqdovUd81dG4k87vZt6uA6YhDfWkUGruUu/aPmXLxXi45gZExnt9Bnw/qeQU8oGf82vPyaE0vO4aH0PbobB9JQ==}
+  /sanitize-html/2.11.0:
+    resolution: {integrity: sha512-BG68EDHRaGKqlsNjJ2xUB7gpInPA8gVx/mvjO743hZaeMCZ2DwzW7xvsqZ+KNU4QKwj86HJ3uu2liISf2qBBUA==}
     dependencies:
       deepmerge: 4.3.1
       escape-string-regexp: 4.0.0
@@ -6017,8 +6017,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /type-fest/3.11.1:
-    resolution: {integrity: sha512-aCuRNRERRVh33lgQaJRlUxZqzfhzwTrsE98Mc3o3VXqmiaQdHacgUtJ0esp+7MvZ92qhtzKPeusaX6vIEcoreA==}
+  /type-fest/3.12.0:
+    resolution: {integrity: sha512-qj9wWsnFvVEMUDbESiilKeXeHL7FwwiFcogfhfyjmvT968RXSvnl23f1JOClTHYItsi7o501C/7qVllscUP3oA==}
     engines: {node: '>=14.16'}
     dev: false
 
