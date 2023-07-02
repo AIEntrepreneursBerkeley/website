@@ -48,7 +48,6 @@ const Globe: FC = () => {
           height={1124}
           className="max-w-none origin-top scale-125 sm:hidden"
           draggable={false}
-          priority
           alt=""
         />
         <Image
@@ -57,7 +56,6 @@ const Globe: FC = () => {
           height={1124}
           className="hidden max-w-none origin-top scale-125 sm:block lg:hidden"
           draggable={false}
-          priority
           alt=""
         />
         <Image
@@ -66,7 +64,6 @@ const Globe: FC = () => {
           height={1168}
           className="hidden max-w-none origin-top scale-125 lg:block"
           draggable={false}
-          priority
           alt=""
         />
         <div className="noise absolute inset-0 bg-left opacity-10" />

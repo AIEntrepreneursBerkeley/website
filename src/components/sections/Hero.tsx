@@ -60,7 +60,7 @@ const Background: FC = () => (
             data-vimeo-initialized="true"
           >
             <iframe
-              src="https://player.vimeo.com/video/820763534?h=7363b7ae4f&amp;dnt=1&amp;loop=1&amp;background=1&amp;app_id=58479"
+              src="https://player.vimeo.com/video/810387165?h=7363b7ae4f&amp;dnt=1&amp;loop=1&amp;background=1&amp;app_id=58479"
               width="426"
               height="240"
               allow="autoplay; fullscreen; picture-in-picture"
@@ -82,7 +82,6 @@ const Background: FC = () => (
           height={1124}
           className="sm:hidden"
           draggable={false}
-          priority
           alt=""
         />
         <Image
@@ -91,7 +90,6 @@ const Background: FC = () => (
           height={1124}
           className="hidden sm:block lg:hidden"
           draggable={false}
-          priority
           alt=""
         />
         <Image
@@ -100,7 +98,6 @@ const Background: FC = () => (
           height={1168}
           className="hidden max-w-none lg:block"
           draggable={false}
-          priority
           alt=""
         />
       </div>

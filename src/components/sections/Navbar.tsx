@@ -13,7 +13,6 @@ const Navbar: FC = () => (
           alt="AIEB Logo"
           className="h-full"
           draggable={false}
-          priority
         />
       </Link>
     </figure>
