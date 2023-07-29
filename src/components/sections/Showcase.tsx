@@ -24,13 +24,6 @@ const Showcase: FC = () => (
           draggable={false}
         />
       </figure>
-      <iframe
-        src="https://www.linkedin.com/embed/feed/update/urn:li:share:7042464142045167616"
-        height="767"
-        width="504"
-        title="Embedded post"
-        className="mb-6 h-80 w-full"
-      />
       <figure className="relative mb-6 h-64">
         <Image
           src="/images/pearvc-event.jpg"

@@ -6,7 +6,7 @@ const Hero: FC = () => (
     <Background />
     <Stripe />
     <div className="mt-20 border-y border-dashed border-white/5 py-2 md:mt-24 lg:mt-28">
-      <header className="container">
+      <div className="container">
         <h1>
           AI Entrepreneurs{` `}
           <br className="hidden sm:block" />
@@ -45,7 +45,7 @@ const Hero: FC = () => (
             Attendees
           </div>
         </div>
-      </header>
+      </div>
     </div>
   </section>
 );
@@ -55,23 +55,19 @@ const Background: FC = () => (
     <div style={{ opacity: 1, transform: 'none' }}>
       <div className="absolute inset-x-0 top-0 max-w-7xl overflow-hidden lg:bottom-auto lg:right-0 lg:left-auto lg:w-[80%]">
         <div className="scale-[calc(16/9)] md:scale-100">
-          <div
-            className="flex aspect-square items-center md:aspect-video"
-            data-vimeo-initialized="true"
-          >
+          <div className="flex aspect-square items-center md:aspect-video">
             <iframe
-              src="https://player.vimeo.com/video/810387165?h=7363b7ae4f&amp;dnt=1&amp;loop=1&amp;background=1&amp;app_id=58479"
+              src="https://player.vimeo.com/video/849691275?h=7363b7ae4f&amp;dnt=1&amp;loop=1&amp;background=1&amp;app_id=58479"
               width="426"
               height="240"
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
               title="AIEB"
-              data-ready="true"
               className="h-full w-full"
             />
           </div>
         </div>
-        <div className="absolute -inset-px bg-background/50" />
+        <div className="absolute -inset-px bg-background/10" />
         <div className="absolute -inset-px bg-gradient-to-b from-transparent via-transparent to-background" />
         <div className="absolute -inset-px hidden bg-gradient-to-l from-transparent via-transparent to-background lg:block" />
       </div>

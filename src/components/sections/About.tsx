@@ -34,37 +34,32 @@ const About: FC = () => (
       <div className="noise absolute inset-0 bg-left opacity-10" />
     </div>
     <div className="relative mx-auto">
-      <div className="border-dashed border-white/5 lg:border-y">
-        <div className="mx-auto py-2 px-2 md:px-4 lg:max-w-7xl lg:px-4">
-          <div className="px-2">
-            <h2>The Program</h2>
-          </div>
-          <div className="mt-4 grid gap-x-3.5 lg:mt-11 lg:grid-cols-3">
-            <div className="px-2 lg:col-span-2">
-              <div className="mt-8 space-y-4 text-gray-300 md:grid md:grid-cols-2 md:gap-6 md:space-y-0 lg:mt-6 lg:block lg:space-y-4 lg:text-lg">
-                <p>
-                  We host weekly, member-exclusive Hacking Sessions with
-                  exceptional founders in AI. Our members are technical and
-                  build their companies in the Generative AI, Computer Vision
-                  and Robotics space!
-                </p>
-                <p>
-                  We regularly bring in notable speakers from companies such as
-                  Meta AI, Pear VC, or OpenAI. Recent topics have included LLM
-                  Architecture, Open Source Projects, and Enterprise
-                  Applications of Generative AI.
-                </p>
-              </div>
+      <div className="mx-auto py-2 px-2 md:px-4 lg:max-w-7xl lg:px-4">
+        <div className="px-2">
+          <h2>Program 2023</h2>
+        </div>
+        <div className="mt-4 grid gap-x-3.5 lg:mt-11 lg:grid-cols-3">
+          <div className="px-2 lg:col-span-2">
+            <div className="mt-8 space-y-4 text-gray-300 md:grid md:grid-cols-2 md:gap-6 md:space-y-0 lg:mt-6 lg:block lg:space-y-4 lg:text-lg">
+              <p>
+                We host weekly, member-exclusive Hacking Sessions with
+                exceptional founders in AI. Our members are technical and build
+                their companies in the Generative AI, Computer Vision and
+                Robotics space!
+              </p>
+              <p>
+                We regularly bring in notable speakers from companies such as
+                Meta AI, Pear VC, or OpenAI. Recent topics have included LLM
+                Architecture, Open Source Projects, and Enterprise Applications
+                of Generative AI.
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div className="mt-16 border-dashed border-white/5 lg:mt-24 lg:border-y">
+      <div className="mt-16 lg:mt-24">
         <div className="mx-auto max-w-7xl px-4 py-2">
-          <p className="text-2xl font-semibold text-white md:text-3xl lg:px-2 lg:text-4xl">
-            Benefits
-          </p>
-          <div className="mt-11 grid gap-x-3.5 gap-y-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-16">
+          <div className="mt-6 grid gap-x-3.5 gap-y-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-16">
             <div className="lg:px-2">
               <div className="flex items-center">
                 <svg

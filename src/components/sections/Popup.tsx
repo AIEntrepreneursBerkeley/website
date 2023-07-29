@@ -36,17 +36,15 @@ const Popup: FC = () => {
           ...lines,
           {
             direction: Math.random() > 0.5 ? 'to top' : 'to left',
-            duration: randomNumberBetween(1300, 3500),
-            size: randomNumberBetween(10, 30),
+            duration: randomNumberBetween(3000, 4000),
+            size: randomNumberBetween(10, 20),
             id: Math.random().toString(36).substring(7),
           },
         ]);
-
-        renderLine(randomNumberBetween(800, 2500));
+        renderLine(randomNumberBetween(3000, 4000));
       }, timeout);
     };
-
-    renderLine(randomNumberBetween(800, 1300));
+    renderLine(randomNumberBetween(3000, 4000));
 
     return () => {
       if (timeoutRef.current) clearTimeout(timeoutRef.current);

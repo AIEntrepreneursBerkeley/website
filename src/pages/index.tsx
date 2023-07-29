@@ -20,10 +20,8 @@ const Home: NextPage = () => (
       <title>AI Entrepreneurs Berkeley</title>
     </Head>
     <Lines />
-    <header>
-      <Announcement />
-      <Navbar />
-    </header>
+    <Announcement />
+    <Navbar />
     <main>
       <Hero />
       <Logos />

@@ -31,7 +31,17 @@ export const Member = defineDatabase(() => ({
   databaseId: '7e1f3c999e9a4eec9f673e5edf722b1b',
 }));
 
+export const Event = defineDatabase(() => ({
+  name: 'Event',
+  databaseId: '032f6d66ba294df399c01499bab51cf9',
+}));
+
+export const FrontPage = defineDatabase(() => ({
+  name: 'FrontPage',
+  databaseId: '8adba69ae8c141679ec45f206fbd173c',
+}));
+
 export default makeSource({
   client,
-  databaseTypes: [Post, Member],
+  databaseTypes: [Post, Member, Event, FrontPage],
 });

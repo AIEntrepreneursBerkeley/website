@@ -3,77 +3,48 @@ import Link from 'next/link';
 import Image from 'next/image';
 import aieb from '@/logos/aieb.svg';
 import { Linkedin, Instagram, Youtube } from 'lucide-react';
+import NavigationMenu from '~/components/ui/NavigationMenu';
 
 const Navbar: FC = () => (
-  <nav className="container flex h-16 items-center justify-between lg:h-20">
-    <figure className="relative h-full w-11 sm:w-14 lg:w-16">
-      <Link href="/">
-        <Image
-          src={aieb}
-          alt="AIEB Logo"
-          className="h-full"
-          draggable={false}
-        />
-      </Link>
-    </figure>
-    <ul className="flex items-center gap-2 sm:gap-3 md:gap-4">
-      <li>
+  <header className="sticky top-0 py-0.5 z-50 border-b border-gray-700 bg-gray-900 bg-opacity-50 backdrop-blur-md backdrop-saturate-200 backdrop-filter">
+    <nav className="container flex h-16 items-center justify-between lg:h-20">
+      <figure className="relative h-full">
+        <Link href="/">
+          <Image
+            src={aieb}
+            alt="AIEB Logo"
+            className="h-full py-2 lg:w-32 w-20"
+            draggable={false}
+          />
+        </Link>
+      </figure>
+      <NavigationMenu />
+      
+      <div className="flex scale-90 items-center gap-1 xs:gap-2 sm:scale-100 sm:gap-3 md:h-full">
         <a
-          href="#program"
-          className="text-[13px] font-medium text-gray-300 transition-colors hover:text-gray-200 xs:text-sm sm:text-base"
+          href="https://www.linkedin.com/company/aientrepreneurs/"
+          target="_blank"
+          rel="noreferrer"
         >
-          Program
+          <Linkedin />
         </a>
-      </li>
-      <li>
         <a
-          href="#team"
-          className="text-[13px] font-medium text-gray-300 transition-colors hover:text-gray-200 xs:text-sm sm:text-base"
+          href="https://www.instagram.com/ai_entrepreneurs/"
+          target="_blank"
+          rel="noreferrer"
         >
-          Team
+          <Instagram />
         </a>
-      </li>
-      <li>
         <a
-          href="#application"
-          className="text-[13px] font-medium text-gray-300 transition-colors hover:text-gray-200 xs:text-sm sm:text-base"
+          href="https://www.youtube.com/@aientrepreneurs/videos"
+          target="_blank"
+          rel="noreferrer"
         >
-          Application
+          <Youtube className="ml-0.5 scale-125" />
         </a>
-      </li>
-      <li>
-        <a
-          href="#faq"
-          className="text-[13px] font-medium text-gray-300 transition-colors hover:text-gray-200 xs:text-sm sm:text-base"
-        >
-          FAQ
-        </a>
-      </li>
-    </ul>
-    <div className="flex scale-90 items-center gap-1 xs:gap-2 sm:scale-100 sm:gap-3 md:h-full">
-      <a
-        href="https://www.linkedin.com/company/aientrepreneurs/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <Linkedin />
-      </a>
-      <a
-        href="https://www.instagram.com/ai_entrepreneurs/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <Instagram />
-      </a>
-      <a
-        href="https://www.youtube.com/@aientrepreneurs/videos"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <Youtube className="ml-0.5 scale-125" />
-      </a>
-    </div>
-  </nav>
+      </div>
+    </nav>
+  </header>
 );
 
 export default Navbar;
