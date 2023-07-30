@@ -28,7 +28,7 @@ export const getStaticProps: GetStaticProps = async () => {
       executiveTeam,
       advisors,
     },
-    revalidate: 10,
+    revalidate: 60,
   };
 };
 
