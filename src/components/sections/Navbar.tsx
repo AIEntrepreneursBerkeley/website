@@ -6,20 +6,20 @@ import { Linkedin, Instagram, Youtube } from 'lucide-react';
 import NavigationMenu from '~/components/ui/NavigationMenu';
 
 const Navbar: FC = () => (
-  <header className="sticky top-0 py-0.5 z-50 border-b border-gray-700 bg-gray-900 bg-opacity-50 backdrop-blur-md backdrop-saturate-200 backdrop-filter">
+  <header className="sticky top-0 z-50 border-b border-gray-700 bg-gray-900 bg-opacity-50 py-0.5 backdrop-blur-md backdrop-saturate-200 backdrop-filter">
     <nav className="container flex h-16 items-center justify-between lg:h-20">
       <figure className="relative h-full">
         <Link href="/">
           <Image
             src={aieb}
             alt="AIEB Logo"
-            className="h-full py-2 lg:w-32 w-20"
+            className="h-full w-20 py-2 lg:w-32"
             draggable={false}
           />
         </Link>
       </figure>
       <NavigationMenu />
-      
+
       <div className="flex scale-90 items-center gap-1 xs:gap-2 sm:scale-100 sm:gap-3 md:h-full">
         <a
           href="https://www.linkedin.com/company/aientrepreneurs/"

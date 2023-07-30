@@ -1,7 +1,5 @@
-/* eslint-disable @typescript-eslint/require-await */
-
 import { type GetStaticProps } from 'next';
-import { compareDesc, format, parseISO } from 'date-fns';
+import { compareDesc } from 'date-fns';
 import { allPosts, type Post } from 'contentlayer/generated';
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -12,6 +10,7 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       posts,
     },
+    revalidate: 10,
   };
 };
 

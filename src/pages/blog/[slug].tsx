@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/require-await */
-
 import { type GetStaticPaths, type GetStaticProps } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -21,6 +19,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     props: {
       post: foundPost,
     },
+    revalidate: 10,
   };
 };
 
