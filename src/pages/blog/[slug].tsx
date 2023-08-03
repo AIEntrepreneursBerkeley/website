@@ -36,7 +36,7 @@ const PostLayout = ({ post }: PostProps) => (
       <div className="mb-6 text-center">
         <Link href="/blog">Back to blogs</Link>
       </div>
-      <Image src={post.image[0]} height={400} width={600} />
+      <Image src={post.thumbnailImage[0]} height={400} width={600} />
       <div className="mb-6 text-center">
         <h1 className="mb-1 text-3xl font-bold">{post.title}</h1>
         <time className="text-sm text-slate-600">
