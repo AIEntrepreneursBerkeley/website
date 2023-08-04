@@ -1,3 +1,3 @@
-import { allMembers, type Member } from 'contentlayer/generated';
+import { allMembers } from 'contentlayer/generated';
 
 export const getAllMembers = () => allMembers;

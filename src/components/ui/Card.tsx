@@ -31,6 +31,7 @@ const Card: FC<CardProps> = ({ name, image, position, linkedin }) => {
               src={image}
               alt="My avatar"
               fill
+              unoptimized
               draggable={false}
               loading="lazy"
               placeholder="blur"
@@ -44,6 +45,7 @@ const Card: FC<CardProps> = ({ name, image, position, linkedin }) => {
             <Image
               src={image}
               aria-hidden
+              unoptimized
               width={550}
               height={550}
               alt="Profile picture blur"
