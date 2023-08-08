@@ -24,7 +24,11 @@ const Card: FC<CardProps> = ({ name, image, position, linkedin }) => {
 
   return (
     <div className="px-2">
-      <a href={linkedin} target="_blank" rel="noreferrer">
+      <a
+        href={linkedin.replaceAll(/<[^>]*>/g, '')}
+        target="_blank"
+        rel="noreferrer"
+      >
         <div className="card" ref={card}>
           <div className="avatar">
             <Image
