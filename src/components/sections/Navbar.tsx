@@ -19,7 +19,6 @@ const Navbar: FC = () => (
         </Link>
       </figure>
       <NavigationMenu />
-
       <div className="flex scale-90 items-center gap-1 xs:gap-2 sm:scale-100 sm:gap-3 md:h-full">
         <a
           href="https://www.linkedin.com/company/aientrepreneurs/"
