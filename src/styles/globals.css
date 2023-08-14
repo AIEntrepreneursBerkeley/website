@@ -240,11 +240,10 @@
   }
 
   .NavigationMenuIndicator {
-    @apply z-50;
+    @apply z-50 mt-[8px] lg:mt-[14px];
     display: flex;
     justify-content: center;
     top: 100%;
-    margin-top: 14px;
     transition: width, transform 250ms ease;
   }
   .NavigationMenuIndicator[data-state="visible"] {
@@ -257,9 +256,8 @@
   .NavigationMenuViewport {
     position: relative;
     transform-origin: top center;
-    margin-top: 23px;
     width: 100%;
-    @apply z-40 border border-gray-700 bg-gray-900 bg-opacity-95;
+    @apply z-40 mt-[15px] border border-gray-700 bg-gray-900 bg-opacity-95 lg:mt-[23px];
     border-radius: 6px;
     overflow: hidden;
     box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
@@ -383,11 +381,8 @@
   .Arrow {
     position: relative;
     top: 0;
-    @apply border-l border-t border-gray-700 bg-gray-900 bg-opacity-95;
-    width: 20px;
-    height: 20px;
+    @apply h-[14px] w-[14px] rounded-tl-sm border-l border-t border-gray-700 bg-gray-900 bg-opacity-95 sm:h-4 sm:w-4 sm:rounded-tl-[3px] md:rounded-tl-[4px] lg:h-5 lg:w-5 lg:rounded-tl-md;
     transform: rotate(45deg);
-    border-top-left-radius: 5px;
   }
 
   @keyframes enterFromRight {
