@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "@radix-ui/colors/black-alpha.css";
-@import "@radix-ui/colors/indigo.css";
-@import "@radix-ui/colors/mauve.css";
-@import "@radix-ui/colors/purple.css";
-@import "@radix-ui/colors/violet.css";
-
 @layer base {
   html {
     @apply scroll-smooth;
@@ -240,7 +234,7 @@
   }
 
   .NavigationMenuIndicator {
-    @apply z-50 mt-[8px] lg:mt-[14px];
+    @apply z-50 mt-[9px] sm:mt-[7px] lg:mt-[14px];
     display: flex;
     justify-content: center;
     top: 100%;
@@ -306,11 +300,8 @@
     font-size: 15px;
     line-height: 1;
   }
-  .ListItemLink:focus {
-    box-shadow: 0 0 0 2px var(--violet-7);
-  }
   .ListItemLink:hover {
-    @apply bg-gray-700;
+    @apply bg-gray-800;
   }
 
   .ListItemHeading {
@@ -340,9 +331,6 @@
     text-decoration: none;
     outline: none;
     user-select: none;
-  }
-  .Callout:focus {
-    box-shadow: 0 0 0 2px var(--violet-7);
   }
 
   .CalloutHeading {
@@ -383,6 +371,22 @@
     top: 0;
     @apply h-[14px] w-[14px] rounded-tl-sm border-l border-t border-gray-700 bg-gray-900 bg-opacity-95 sm:h-4 sm:w-4 sm:rounded-tl-[3px] md:rounded-tl-[4px] lg:h-5 lg:w-5 lg:rounded-tl-md;
     transform: rotate(45deg);
+  }
+
+  .blog-header {
+    background: linear-gradient(
+        to top,
+        rgb(4, 4, 16) 0%,
+        rgba(4, 4, 16, 0) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgba(80, 227, 194, 0.2) 0%,
+        rgba(0, 112, 243, 0.2) 100%
+      );
+    background-size: 100% 100%, 100% 100%, 1440px 1px;
+    background-position: bottom;
+    background-repeat: no-repeat;
   }
 
   @keyframes enterFromRight {
