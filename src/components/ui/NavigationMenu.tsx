@@ -14,7 +14,7 @@ const NavigationMenuDemo = () => (
           <ul className="List one">
             <li style={{ gridRow: 'span 3' }}>
               <NavigationMenu.Link asChild>
-                <a className="Callout" href="/">
+                <a className="Callout" href="#program">
                   <div className="CalloutHeading">Program 2023</div>
                   <p className="CalloutText">
                     What we have planned for the next year.
@@ -29,7 +29,7 @@ const NavigationMenuDemo = () => (
             <ListItem href="" title="">
               Events
             </ListItem>
-            <ListItem href="" title="">
+            <ListItem href="/apply" title="">
               Apply
             </ListItem>
           </ul>
@@ -42,10 +42,10 @@ const NavigationMenuDemo = () => (
         </NavigationMenu.Trigger>
         <NavigationMenu.Content className="NavigationMenuContent">
           <ul className="List two">
-            <ListItem title="People" href="">
-              People
+            <ListItem title="Team" href="/team">
+              Team
             </ListItem>
-            <ListItem title="FAQ" href="">
+            <ListItem title="FAQ" href="/faq">
               Frequently Asked Questions
             </ListItem>
             <ListItem title="Press Release" href="">

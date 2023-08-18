@@ -14,7 +14,7 @@ const Newsletter: FC = () => (
           placeholder="Join the newsletter"
           className="placeholder:text-white"
         />
-        <Button type="submit" className="text-white">
+        <Button type="submit" variant="secondary" className="ml-2 text-white">
           Subscribe
         </Button>
       </div>
