@@ -73,7 +73,7 @@ const PostLayout = ({ post, content }: PostProps) => (
             </section>
             <section className="max-w-3xl flex-grow px-4 md:px-6">
               <div className="mt-20 mb-6">
-                <h1 className="font-serif text-5xl font-normal">
+                <h1 className="font-serif text-5xl font-normal leading-tight">
                   {post.title}
                 </h1>
                 <p className="mt-10 text-xl text-gray-400">
@@ -85,7 +85,7 @@ const PostLayout = ({ post, content }: PostProps) => (
                   src={post.thumbnailImage[0]}
                   unoptimized
                   fill
-                  className="blog-image object-contain"
+                  className="blog-image object-cover"
                 />
               </figure>
               <time className="text-sm text-slate-600">

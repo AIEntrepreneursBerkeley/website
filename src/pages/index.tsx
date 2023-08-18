@@ -8,6 +8,7 @@ import Showcase from '~/components/sections/Showcase';
 import Popup from '~/components/sections/Popup';
 import Application from '~/components/sections/Application';
 import Layout from '~/components/layouts/Layout';
+import Pillars from '~/components/sections/Pillars';
 
 const HomePage: NextPage = () => (
   <>
@@ -21,6 +22,7 @@ const HomePage: NextPage = () => (
         <Logos />
         <Showcase />
         <About />
+        <Pillars />
         <Popup />
         <Application />
       </main>

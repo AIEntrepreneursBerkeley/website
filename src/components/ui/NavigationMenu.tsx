@@ -48,8 +48,8 @@ const NavigationMenuDemo = () => (
             <ListItem title="FAQ" href="/faq">
               Frequently Asked Questions
             </ListItem>
-            <ListItem title="Press Release" href="">
-              Press Release
+            <ListItem title="Blog" href="/blog/open-ai-partnership">
+              Blog
             </ListItem>
           </ul>
         </NavigationMenu.Content>
