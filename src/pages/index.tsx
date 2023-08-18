@@ -22,7 +22,6 @@ const HomePage: NextPage = () => (
         <Logos />
         <Showcase />
         <About />
-        <Pillars />
         <Popup />
         <Application />
       </main>
