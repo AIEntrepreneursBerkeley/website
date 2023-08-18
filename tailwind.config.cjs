@@ -28,9 +28,11 @@ const config = {
       },
       colors: {
         background: '#040410',
+        muted: '#f1f5f9',
       },
       fontFamily: {
         sans: ['var(--font-inter)', ...fontFamily.sans],
+        serif: ['var(--font-signifier)', ...fontFamily.serif],
       },
       keyframes: {
         'image-rotate': {

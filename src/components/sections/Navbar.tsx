@@ -4,9 +4,10 @@ import Image from 'next/image';
 import aieb from '@/logos/aieb.svg';
 import { Linkedin, Instagram, Youtube } from 'lucide-react';
 import NavigationMenu from '~/components/ui/NavigationMenu';
+import { Button } from '~/components/ui/Button';
 
 const Navbar: FC = () => (
-  <header className="sticky top-0 z-50 border-b border-gray-700 bg-gray-900 bg-opacity-50 py-0.5 backdrop-blur-md backdrop-saturate-200 backdrop-filter">
+  <header className="sticky top-0 z-50 border-b border-gray-700 bg-gray-900 bg-opacity-50 py-0.5 backdrop-blur-md backdrop-saturate-200">
     <nav className="container flex h-16 items-center justify-between lg:h-20">
       <figure className="relative h-full">
         <Link href="/">
@@ -20,7 +21,7 @@ const Navbar: FC = () => (
       </figure>
       <NavigationMenu />
       <div className="flex scale-90 items-center gap-1 xs:gap-2 sm:scale-100 sm:gap-3 md:h-full">
-        <a
+        {/* <a
           href="https://www.linkedin.com/company/aientrepreneurs/"
           target="_blank"
           rel="noreferrer"
@@ -40,7 +41,10 @@ const Navbar: FC = () => (
           rel="noreferrer"
         >
           <Youtube className="ml-0.5 scale-125" />
-        </a>
+        </a> */}
+        <Link href="/apply">
+          <Button variant="default">Apply</Button>
+        </Link>
       </div>
     </nav>
   </header>
