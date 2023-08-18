@@ -109,7 +109,7 @@ const PostLayout = ({ post, content }: PostProps) => (
         </header>
         <section className="container prose prose-invert mx-auto my-16 max-w-3xl">
           <ReactMarkdown
-            remarkPlugins={remarkGfm}
+            remarkPlugins={[remarkGfm]}
             rehypePlugins={[rehypeToc, rehypePrism]}
           >
             {content}
