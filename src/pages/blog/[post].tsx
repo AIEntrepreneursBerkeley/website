@@ -63,12 +63,14 @@ const PostLayout = ({ post, content }: PostProps) => (
                 >
                   &#8592; Go Back
                 </Link>
-                <Image
-                  src={post.createdBy?.avatarUrl}
-                  width={40}
-                  height={40}
-                  className="rounded-full"
-                />
+                {post.createdBy?.avatarUrl && (
+                  <Image
+                    src={post.createdBy?.avatarUrl}
+                    width={40}
+                    height={40}
+                    className="rounded-full"
+                  />
+                )}
               </div>
             </section>
             <section className="max-w-3xl flex-grow px-4 md:px-6">
