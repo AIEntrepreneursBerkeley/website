@@ -1,7 +1,7 @@
 import { type NextPage, type GetStaticProps } from 'next';
 import { allMembers, type Member } from 'contentlayer/generated';
 import Team from '~/components/sections/Team';
-import Layout from '~/components/layouts/Layout';
+import Layout from '~/components/layouts/MainLayout';
 
 type TeamPageProps = {
   executiveTeam: Member[];

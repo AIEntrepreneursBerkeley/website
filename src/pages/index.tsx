@@ -7,7 +7,7 @@ import About from '~/components/sections/About';
 import Showcase from '~/components/sections/Showcase';
 import Popup from '~/components/sections/Popup';
 import Application from '~/components/sections/Application';
-import Layout from '~/components/layouts/Layout';
+import Layout from '~/components/layouts/MainLayout';
 import Pillars from '~/components/sections/Pillars';
 
 const HomePage: NextPage = () => (

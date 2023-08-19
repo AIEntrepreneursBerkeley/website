@@ -1,6 +1,11 @@
 import { type FC } from 'react';
 
-const Announcement: FC = () => (
+type AnnouncementProps = {
+  announcement: string;
+  link: string;
+};
+
+const Announcement: FC<AnnouncementProps> = ({ announcement, link }) => (
   <section>
     <div className="overflow-hidden border-b border-white/20 bg-gradient-to-r from-indigo-900 to-sky-900 py-1.5">
       <div className="max-w-8xl relative mx-auto px-4 sm:px-6 lg:px-8">

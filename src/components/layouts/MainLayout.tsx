@@ -5,11 +5,11 @@ import Newsletter from '~/components/sections/Newsletter';
 import Globe from '~/components/sections/Globe';
 import Contact from '~/components/sections/Contact';
 
-type LayoutType = {
+type MainLayoutType = {
   children: ReactNode;
 };
 
-const Layout = ({ children }: LayoutType) => (
+const MainLayout = ({ children }: MainLayoutType) => (
   <>
     <Announcement />
     <Navbar />
@@ -22,4 +22,4 @@ const Layout = ({ children }: LayoutType) => (
   </>
 );
 
-export default Layout;
+export default MainLayout;

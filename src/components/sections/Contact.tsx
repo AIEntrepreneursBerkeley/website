@@ -5,7 +5,7 @@ import { Button } from '~/components/ui/Button';
 const Contact: FC = () => (
   <a
     href="mailto:contact@aientrepreneurs.org"
-    className="fixed bottom-5 right-5 rounded-full"
+    className="fixed bottom-5 right-5 z-50 rounded-full"
   >
     <Button className="grid h-12 w-12 place-items-center rounded-full">
       <MailQuestion className="text-white" />

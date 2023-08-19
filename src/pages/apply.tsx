@@ -1,6 +1,6 @@
 import { type NextPage } from 'next';
 import { useState } from 'react';
-import Layout from '~/components/layouts/Layout';
+import Layout from '~/components/layouts/MainLayout';
 import { Skeleton } from '~/components/ui/Skeleton';
 
 const ApplyPage: NextPage = () => {

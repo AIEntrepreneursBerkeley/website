@@ -7,7 +7,7 @@ import Image from 'next/image';
 import remarkGfm from 'remark-gfm';
 import rehypeToc from '@jsdevtools/rehype-toc';
 import rehypePrism from 'rehype-prism-plus';
-import Layout from '~/components/layouts/Layout';
+import Layout from '~/components/layouts/MainLayout';
 import ReactMarkdown from 'react-markdown';
 import { BlogLines } from '~/components/sections/Lines';
 
