@@ -18,7 +18,8 @@ const SecondaryLayout: FC<SecondaryLayoutType> = ({ color, children }) => (
           color === 'blue' && 'layout-gradient-blue',
           color === 'purple' && 'layout-gradient-purple',
           color === 'teal' && 'layout-gradient-teal',
-          color === 'gray' && 'layout-gradient-gray'
+          color === 'gray' && 'layout-gradient-gray',
+          color === 'white' && 'layout-gradient-white'
         )}
       >
         {children}

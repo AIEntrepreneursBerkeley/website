@@ -16,6 +16,8 @@
     --green-to: 74 204 120;
     --gray-from: 122 122 122;
     --gray-to: 214 214 214;
+    --white-from: 224 224 224;
+    --white-to: 251 251 251;
   }
 
   html {
@@ -52,10 +54,10 @@
 
   .gradient-canvas {
     @apply h-full w-full blur-md;
-    --gradient-color-1: #ef008f;
-    --gradient-color-2: #6ec3f4;
-    --gradient-color-3: #7038ff;
-    --gradient-color-4: #ffba27;
+    --gradient-color-1: #7928ca;
+    --gradient-color-2: #0070f3;
+    --gradient-color-3: #1e70c8;
+    --gradient-color-4: #50e3c2;
   }
 
   @keyframes scroll-left {
@@ -705,6 +707,20 @@
         90deg,
         rgb(var(--gray-from) / 0.2) 0%,
         rgb(var(--gray-to) / 0.2) 100%
+      );
+    background-size: 100% 100%, 100% 100%, 1440px 1px;
+  }
+
+  .layout-gradient-white {
+    background: linear-gradient(
+        to top,
+        rgb(4, 4, 16) 0%,
+        rgba(4, 4, 16, 0.8) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgb(var(--white-from) / 0.8) 0%,
+        rgb(var(--white-to) / 0.8) 100%
       );
     background-size: 100% 100%, 100% 100%, 1440px 1px;
   }
