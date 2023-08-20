@@ -33,7 +33,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 const blogColors = {
   'Featured Post': 'orange',
-  Announcements: 'blue',
+  Announcements: 'teal',
   Community: 'blue',
   Engineering: 'purple',
   Events: 'green',
