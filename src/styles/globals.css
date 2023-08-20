@@ -3,6 +3,21 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --teal-from: 80 227 194;
+    --teal-to: 0 112 243;
+    --blue-from: 30 112 200;
+    --blue-to: 198 28 199;
+    --orange-from: 247 185 85;
+    --orange-to: 255 0 128;
+    --purple-from: 210 60 120;
+    --purple-to: 121 40 202;
+    --green-from: 20 184 166;
+    --green-to: 74 204 120;
+    --gray-from: 122 122 122;
+    --gray-to: 214 214 214;
+  }
+
   html {
     @apply scroll-smooth;
   }
@@ -618,8 +633,8 @@
       ),
       linear-gradient(
         90deg,
-        rgba(80, 227, 194, 0.2) 0%,
-        rgba(0, 112, 243, 0.2) 100%
+        rgb(var(--teal-from) / 0.2) 0%,
+        rgb(var(--teal-to) / 0.2) 100%
       );
     background-size: 100% 100%, 100% 100%, 1440px 1px;
   }
@@ -632,8 +647,8 @@
       ),
       linear-gradient(
         90deg,
-        rgba(30, 112, 200, 0.2) 0%,
-        rgba(198, 28, 199, 0.2) 100%
+        rgb(var(--blue-from) / 0.2) 0%,
+        rgb(var(--blue-to) / 0.2) 100%
       );
     background-size: 100% 100%, 100% 100%, 1440px 1px;
   }
@@ -646,8 +661,8 @@
       ),
       linear-gradient(
         90deg,
-        rgba(247, 185, 85, 0.2) 0%,
-        rgba(255, 0, 128, 0.2) 100%
+        rgb(var(--orange-from) / 0.2) 0%,
+        rgb(var(--orange-to) / 0.2) 100%
       );
     background-size: 100% 100%, 100% 100%, 1440px 1px;
   }
@@ -660,8 +675,8 @@
       ),
       linear-gradient(
         90deg,
-        rgba(210, 60, 120, 0.2) 0%,
-        rgba(121, 40, 202, 0.2) 100%
+        rgb(var(--purple-from) / 0.2) 0%,
+        rgb(var(--purple-to) / 0.2) 100%
       );
     background-size: 100% 100%, 100% 100%, 1440px 1px;
   }
@@ -674,8 +689,8 @@
       ),
       linear-gradient(
         90deg,
-        rgba(20, 184, 166, 0.2) 0%,
-        rgba(74, 204, 120, 0.2) 100%
+        rgb(var(--green-from) / 0.2) 0%,
+        rgb(var(--green-to) / 0.2) 100%
       );
     background-size: 100% 100%, 100% 100%, 1440px 1px;
   }
@@ -688,8 +703,8 @@
       ),
       linear-gradient(
         90deg,
-        rgba(122, 122, 122, 0.2) 0%,
-        rgba(214, 214, 214, 0.2) 100%
+        rgb(var(--gray-from) / 0.2) 0%,
+        rgb(var(--gray-to) / 0.2) 100%
       );
     background-size: 100% 100%, 100% 100%, 1440px 1px;
   }
