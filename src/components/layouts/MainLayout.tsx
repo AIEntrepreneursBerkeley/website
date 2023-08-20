@@ -1,4 +1,4 @@
-import { type ReactNode } from 'react';
+import { type FC, type ReactNode } from 'react';
 import Navbar from '~/components/sections/Navbar';
 import Newsletter from '~/components/sections/Newsletter';
 import Globe from '~/components/sections/Globe';
@@ -8,7 +8,7 @@ type MainLayoutType = {
   children: ReactNode;
 };
 
-const MainLayout = ({ children }: MainLayoutType) => (
+const MainLayout: FC<MainLayoutType> = ({ children }) => (
   <>
     <Navbar />
     {children}

@@ -35,6 +35,14 @@
     will-change: transform;
   }
 
+  .gradient-canvas {
+    @apply h-full w-full blur-md;
+    --gradient-color-1: #ef008f;
+    --gradient-color-2: #6ec3f4;
+    --gradient-color-3: #7038ff;
+    --gradient-color-4: #ffba27;
+  }
+
   @keyframes scroll-left {
     from {
       transform: translateX(0);
@@ -602,7 +610,7 @@
     content: attr(line);
   }
 
-  .blog-header {
+  .layout-gradient-teal {
     background: linear-gradient(
         to top,
         rgb(4, 4, 16) 0%,
@@ -614,8 +622,76 @@
         rgba(0, 112, 243, 0.2) 100%
       );
     background-size: 100% 100%, 100% 100%, 1440px 1px;
-    background-position: bottom;
-    background-repeat: no-repeat;
+  }
+
+  .layout-gradient-blue {
+    background: linear-gradient(
+        to top,
+        rgb(4, 4, 16) 0%,
+        rgba(4, 4, 16, 0) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgba(30, 112, 200, 0.2) 0%,
+        rgba(198, 28, 199, 0.2) 100%
+      );
+    background-size: 100% 100%, 100% 100%, 1440px 1px;
+  }
+
+  .layout-gradient-orange {
+    background: linear-gradient(
+        to top,
+        rgb(4, 4, 16) 0%,
+        rgba(4, 4, 16, 0) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgba(247, 185, 85, 0.2) 0%,
+        rgba(255, 0, 128, 0.2) 100%
+      );
+    background-size: 100% 100%, 100% 100%, 1440px 1px;
+  }
+
+  .layout-gradient-purple {
+    background: linear-gradient(
+        to top,
+        rgb(4, 4, 16) 0%,
+        rgba(4, 4, 16, 0) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgba(210, 60, 120, 0.2) 0%,
+        rgba(121, 40, 202, 0.2) 100%
+      );
+    background-size: 100% 100%, 100% 100%, 1440px 1px;
+  }
+
+  .layout-gradient-green {
+    background: linear-gradient(
+        to top,
+        rgb(4, 4, 16) 0%,
+        rgba(4, 4, 16, 0) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgba(20, 184, 166, 0.2) 0%,
+        rgba(74, 204, 120, 0.2) 100%
+      );
+    background-size: 100% 100%, 100% 100%, 1440px 1px;
+  }
+
+  .layout-gradient-gray {
+    background: linear-gradient(
+        to top,
+        rgb(4, 4, 16) 0%,
+        rgba(4, 4, 16, 0) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgba(122, 122, 122, 0.2) 0%,
+        rgba(214, 214, 214, 0.2) 100%
+      );
+    background-size: 100% 100%, 100% 100%, 1440px 1px;
   }
 
   .blog-image {
