@@ -1,7 +1,13 @@
 import { type FC } from 'react';
 import Image from 'next/image';
 
-const Hero: FC = () => (
+type HeroProps = {
+  startups: number;
+  vc: number;
+  attendees: number;
+};
+
+const Hero: FC<HeroProps> = ({ startups, vc, attendees }) => (
   <section className="relative flex flex-col">
     <Background />
     <Stripe />
@@ -28,19 +34,19 @@ const Hero: FC = () => (
         <div className="mt-12 flex max-w-lg justify-between md:max-w-xl">
           <div>
             <span className="block text-3xl font-semibold md:text-4xl lg:text-5xl">
-              11
+              {startups}
             </span>{' '}
             Startups
           </div>
           <div className="">
             <span className="block text-3xl font-semibold md:text-4xl lg:text-5xl">
-              9
+              {vc}
             </span>{' '}
             VC Partners
           </div>
           <div>
             <span className="block text-3xl font-semibold md:text-4xl lg:text-5xl">
-              654
+              {attendees}
             </span>{' '}
             Attendees
           </div>

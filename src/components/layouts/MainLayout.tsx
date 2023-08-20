@@ -1,5 +1,4 @@
 import { type ReactNode } from 'react';
-import Announcement from '~/components/sections/Announcement';
 import Navbar from '~/components/sections/Navbar';
 import Newsletter from '~/components/sections/Newsletter';
 import Globe from '~/components/sections/Globe';
@@ -11,7 +10,6 @@ type MainLayoutType = {
 
 const MainLayout = ({ children }: MainLayoutType) => (
   <>
-    <Announcement />
     <Navbar />
     {children}
     <footer>

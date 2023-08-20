@@ -1,11 +1,12 @@
+import { type FrontPage } from 'contentlayer/generated';
+import Link from 'next/link';
 import { type FC } from 'react';
 
 type AnnouncementProps = {
-  announcement: string;
-  link: string;
+  announcement: FrontPage;
 };
 
-const Announcement: FC<AnnouncementProps> = ({ announcement, link }) => (
+const Announcement: FC<AnnouncementProps> = ({ announcement }) => (
   <section>
     <div className="overflow-hidden border-b border-white/20 bg-gradient-to-r from-indigo-900 to-sky-900 py-1.5">
       <div className="max-w-8xl relative mx-auto px-4 sm:px-6 lg:px-8">
@@ -171,17 +172,27 @@ const Announcement: FC<AnnouncementProps> = ({ announcement, link }) => (
             </linearGradient>
           </defs>
         </svg>
-        <p className="text-center text-xs font-medium text-white sm:text-sm">
-          Applications for the Marketing Team are open —{' '}
-          <a
-            href="https://forms.gle/7TovTWvGcp4phG3x7"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <b className="font-bold">Apply here</b>
-          </a>
-          !
-        </p>
+        {announcement.url?.includes('http') ? (
+          <div className="text-center">
+            <a
+              className="text-xs font-medium text-white sm:text-sm"
+              href={announcement.url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {announcement.content}
+            </a>
+          </div>
+        ) : (
+          <div className="text-center">
+            <Link
+              href={announcement.url}
+              className="text-xs font-medium text-white sm:text-sm"
+            >
+              {announcement.content}
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   </section>

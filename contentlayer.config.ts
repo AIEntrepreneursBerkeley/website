@@ -38,7 +38,7 @@ export const Event = defineDatabase(() => ({
 
 export const FrontPage = defineDatabase(() => ({
   name: 'FrontPage',
-  databaseId: '8adba69ae8c141679ec45f206fbd173c',
+  databaseId: '3232e67617dd47859b2fc810c7dd2ba4',
 }));
 
 export default makeSource({
