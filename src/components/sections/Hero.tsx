@@ -15,13 +15,13 @@ const Hero: FC<HeroProps> = ({ startups, vc, attendees }) => (
       <div className="container">
         <h1>
           AI Entrepreneurs{` `}
-          <br className="hidden sm:block" />@ Berkeley — Build{` `}
+          <br className="hidden sm:block" />at Berkeley — Build{` `}
           <br className="hidden sm:block" />
           Your AI Startup.
         </h1>
         <div className="mt-8 max-w-lg md:max-w-xl">
           <p className="mb-6">
-            AI Entrepreneurs @ Berkeley is dedicated to fostering a tight
+            AI Entrepreneurs at Berkeley is dedicated to fostering a tight
             community of students and industry professionals who are passionate
             about Artificial Intelligence and Entrepreneurship.
           </p>

@@ -7,7 +7,7 @@ import About from '~/components/sections/About';
 import Showcase from '~/components/sections/Showcase';
 import Popup from '~/components/sections/Popup';
 import Application from '~/components/sections/Application';
-import Layout from '~/components/layouts/MainLayout';
+import MainLayout from '~/components/layouts/MainLayout';
 import Pillars from '~/components/sections/Pillars';
 import Announcement from '~/components/sections/Announcement';
 import { allFrontPages, type FrontPage } from 'contentlayer/generated';
@@ -27,12 +27,12 @@ const HomePage: NextPage<HomePageProps> = ({
 }) => (
   <>
     <Head>
-      <title>AI Entrepreneurs @ Berkeley</title>
+      <title>AI Entrepreneurs at Berkeley</title>
     </Head>
     <Lines />
 
     <Announcement announcement={announcement} />
-    <Layout>
+    <MainLayout>
       <main>
         <Hero startups={startups} vc={vc} attendees={attendees} />
         <Logos />
@@ -41,7 +41,7 @@ const HomePage: NextPage<HomePageProps> = ({
         <Popup />
         <Application />
       </main>
-    </Layout>
+    </MainLayout>
   </>
 );
 

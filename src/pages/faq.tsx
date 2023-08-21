@@ -8,7 +8,7 @@ import Title from '~/components/sections/Title';
 const FAQPage: NextPage = () => (
   <>
     <Head>
-      <title>FAQ — AI Entrepreneurs @ Berkeley</title>
+      <title>FAQ — AI Entrepreneurs at Berkeley</title>
     </Head>
     <Lines />
     <SecondaryLayout color="purple">

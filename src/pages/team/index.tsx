@@ -19,7 +19,7 @@ const TeamPage: NextPage<TeamPageProps> = ({
 }) => (
   <>
     <Head>
-      <title>Team — AI Entrepreneurs @ Berkeley</title>
+      <title>Team — AI Entrepreneurs at Berkeley</title>
     </Head>
     <SecondaryLayout color="gray">
       <Title title="Team and Advisors" description="" />
