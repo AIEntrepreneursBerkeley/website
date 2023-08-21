@@ -9,7 +9,7 @@ import antler from '@/logos/antler.svg';
 import courtyardVentures from '@/logos/courtyard-ventures.png';
 
 const Logos: FC = () => (
-  <section className="mt-32 border-b border-dashed border-white/5 pb-6 md:mt-40 lg:mt-28">
+  <section className="mt-28 border-b border-dashed border-white/5 pb-6 md:mt-36 lg:mt-24">
     <div className="container">
       <Marquee>
         <Image

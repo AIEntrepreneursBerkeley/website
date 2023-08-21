@@ -23,7 +23,7 @@ const TeamPage: NextPage<TeamPageProps> = ({
     </Head>
     <SecondaryLayout color="gray">
       <Title title="Team and Advisors" description="" />
-      <Lines />
+      <Lines width="max-w-7xl" numberLines={4} />
       <Team
         cofounders={cofounders}
         executives={executives}

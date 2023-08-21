@@ -23,11 +23,8 @@ const NavigationMenuDemo = () => (
               </NavigationMenu.Link>
             </li>
 
-            <ListItem href="" title="">
-              Startups
-            </ListItem>
-            <ListItem href="" title="">
-              Events
+            <ListItem href="/faq" title="">
+              FAQ
             </ListItem>
             <ListItem href="/apply" title="">
               Apply
@@ -43,13 +40,13 @@ const NavigationMenuDemo = () => (
         <NavigationMenu.Content className="NavigationMenuContent">
           <ul className="List two">
             <ListItem title="Team" href="/team">
-              Team
+              Members and Advisors
             </ListItem>
             <ListItem title="FAQ" href="/faq">
               Frequently Asked Questions
             </ListItem>
-            <ListItem title="Blog" href="/blog/open-ai-partnership">
-              Blog
+            <ListItem title="Blog" href="/blog">
+              Blog Posts
             </ListItem>
           </ul>
         </NavigationMenu.Content>

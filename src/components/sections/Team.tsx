@@ -9,7 +9,7 @@ type TeamProps = {
 };
 
 const Team: FC<TeamProps> = ({ cofounders, executives, advisors }) => (
-  <section id="team" className="relative pb-36 md:pb-56">
+  <section className="relative pb-36 md:pb-56">
     <div className="container grid grid-cols-1 gap-y-6 gap-x-3.5 px-4 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {cofounders.map((member) => (
         <Card

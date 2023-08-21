@@ -7,7 +7,7 @@ import {
 } from '~/components/ui/Accordion';
 
 const FAQ: FC = () => (
-  <section id="faq" className="container mb-0 md:mb-24">
+  <section className="container mb-0 md:mb-24">
     <Accordion type="single" collapsible>
       <AccordionItem value="item-1">
         <AccordionTrigger>

@@ -10,7 +10,7 @@ const FAQPage: NextPage = () => (
     <Head>
       <title>FAQ — AI Entrepreneurs at Berkeley</title>
     </Head>
-    <Lines />
+    <Lines width="max-w-7xl" numberLines={4} />
     <SecondaryLayout color="purple">
       <Title
         title="Frequently Asked Questions"

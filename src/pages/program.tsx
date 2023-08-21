@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import { type NextPage } from 'next';
 import Head from 'next/head';
-import MainLayout from '~/components/layouts/MainLayout';
 import Lines from '~/components/sections/Lines';
 import { Gradient } from '~/lib/gradient';
 
@@ -14,12 +13,15 @@ const ProgramPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>FAQ — AI Entrepreneurs at Berkeley</title>
+        <title>PROGRAM 2023</title>
       </Head>
-      <Lines />
-      <MainLayout>
-        <div>yes</div>
-      </MainLayout>
+      <div className="relative h-screen">
+        <canvas
+          className="gradient-canvas absolute inset-0"
+          data-js-darken-top
+          data-transition-in
+        />
+      </div>
     </>
   );
 };

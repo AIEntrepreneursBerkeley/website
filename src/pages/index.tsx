@@ -27,9 +27,9 @@ const HomePage: NextPage<HomePageProps> = ({
 }) => (
   <>
     <Head>
-      <title>AI Entrepreneurs at Berkeley</title>
+      <title>Home — AI Entrepreneurs at Berkeley</title>
     </Head>
-    <Lines />
+    <Lines width="max-w-7xl" numberLines={3} />
 
     <Announcement announcement={announcement} />
     <MainLayout>
@@ -39,7 +39,6 @@ const HomePage: NextPage<HomePageProps> = ({
         <Showcase />
         <About />
         <Popup />
-        <Application />
       </main>
     </MainLayout>
   </>

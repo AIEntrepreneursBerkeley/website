@@ -9,7 +9,7 @@ import rehypeToc from '@jsdevtools/rehype-toc';
 import rehypePrism from 'rehype-prism-plus';
 import SecondaryLayout from '~/components/layouts/SecondaryLayout';
 import ReactMarkdown from 'react-markdown';
-import { BlogLines } from '~/components/sections/Lines';
+import Lines from '~/components/sections/Lines';
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = allPosts.map((post) => post.url!);
@@ -50,7 +50,7 @@ const PostLayout = ({ post, content }: PostProps) => (
     <Head>
       <title>{post.title}</title>
     </Head>
-    <BlogLines />
+    <Lines width="max-w-3xl" numberLines={3} />
     <SecondaryLayout color={blogColors[post.tags[0]]}>
       <header className="container flex justify-between">
         <section>

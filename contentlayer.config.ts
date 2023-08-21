@@ -36,6 +36,11 @@ export const Event = defineDatabase(() => ({
   databaseId: '032f6d66ba294df399c01499bab51cf9',
 }));
 
+export const Timeline = defineDatabase(() => ({
+  name: 'Timeline',
+  databaseId: '8adba69ae8c141679ec45f206fbd173c',
+}));
+
 export const FrontPage = defineDatabase(() => ({
   name: 'FrontPage',
   databaseId: '3232e67617dd47859b2fc810c7dd2ba4',
@@ -43,5 +48,5 @@ export const FrontPage = defineDatabase(() => ({
 
 export default makeSource({
   client,
-  databaseTypes: [Post, Member, Event, FrontPage],
+  databaseTypes: [Post, Member, Event, Timeline, FrontPage],
 });

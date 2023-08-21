@@ -51,11 +51,11 @@
   }
 
   .gradient-canvas {
-    @apply h-full w-full blur-md;
-    --gradient-color-1: #7928ca;
-    --gradient-color-2: #0070f3;
-    --gradient-color-3: #1e70c8;
-    --gradient-color-4: #50e3c2;
+    @apply h-full w-full blur-xl;
+    --gradient-color-1: #1f0936;
+    --gradient-color-2: #021429;
+    --gradient-color-3: #132b45;
+    --gradient-color-4: #0e3d35;
   }
 
   @keyframes scroll-left {
@@ -250,6 +250,19 @@
     );
   }
 
+  .bg-stripe-gradient-asc {
+    @apply blur-md;
+    background-image: linear-gradient(
+      -3deg,
+      transparent 25.60739517211914%,
+      rgba(85, 238, 230, 0.15) 42.41046905517578%,
+      rgba(0, 170, 240, 0.22) 52.1204948425293%,
+      rgba(175, 141, 255, 0.23) 61.8046760559082%,
+      transparent 75.95748901367188%
+    );
+    opacity: 0.5;
+  }
+
   .NavigationMenuRoot {
     position: relative;
     display: flex;
@@ -414,11 +427,7 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-      135deg,
-      var(--purple-9) 0%,
-      var(--indigo-9) 100%
-    );
+    background: linear-gradient(135deg, #9333ea 0%, #4f46e5 100%);
     border-radius: 6px;
     padding: 25px;
     text-decoration: none;
@@ -710,13 +719,27 @@
   }
 
   .blog-image {
-    @apply bg-gray-900/25 p-6 backdrop-blur-sm;
-    box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, 0.2);
+    @apply bg-gray-900/25 shadow-border backdrop-blur-sm;
     content: "";
     width: 100%;
     height: 100%;
     position: absolute;
     border-radius: 12px;
+  }
+
+  .blog-card {
+    @apply opacity-50;
+  }
+
+  .blog-card::after {
+    @apply absolute inset-0 h-full w-full rounded-md shadow-border transition-opacity content-none;
+    background: linear-gradient(
+      180deg,
+      transparent,
+      rgba(0, 0, 0, 0.7) 50%,
+      #000 75%,
+      #000
+    );
   }
 
   @keyframes enterFromRight {

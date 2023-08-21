@@ -1,94 +1,38 @@
 import Image from 'next/image';
 import { type FC } from 'react';
-import Masonry from 'react-masonry-css';
-
-const breakpointColumns = {
-  default: 3,
-  1024: 2,
-  540: 1,
-};
 
 const Showcase: FC = () => (
-  <section className="container mt-36 mb-24">
-    <Masonry
-      breakpointCols={breakpointColumns}
-      className="-ml-6 flex w-auto grayscale"
-      columnClassName="pl-6"
-    >
-      <figure className="relative mb-6 h-72">
-        <Image
-          src="/images/AI Entrepreneurs at Berkeley Meet-Up.jpg"
-          alt="Meet up"
-          className="w-full object-cover"
-          fill
-          draggable={false}
-        />
-      </figure>
-      <figure className="relative mb-6 h-64">
-        <Image
-          src="/images/pearvc-event.jpg"
-          alt="Meet up"
-          className="w-full object-cover"
-          fill
-          draggable={false}
-        />
-      </figure>
-      <figure className="relative mb-6 h-64">
-        <Image
-          src="/images/IMG_6787.JPG"
-          alt="Meet up"
-          className="w-full object-cover"
-          fill
-          draggable={false}
-        />
-      </figure>
-      <figure className="relative mb-6 h-64">
-        <Image
-          src="/images/genai-event.JPG"
-          alt="Meet up"
-          className="w-full object-cover"
-          fill
-          draggable={false}
-        />
-      </figure>
-      <figure className="relative mb-6 h-64">
-        <Image
-          src="/images/IMG_7060.JPG"
-          alt="Meet up"
-          className="w-full object-cover"
-          fill
-          draggable={false}
-        />
-      </figure>
-      <figure className="relative mb-6 h-64">
-        <Image
-          src="/images/pearvc-event2.jpg"
-          alt="Meet up"
-          className="w-full object-cover"
-          fill
-          draggable={false}
-        />
-      </figure>
-      <figure className="relative mb-6 h-56 brightness-150">
-        <Image
-          src="/images/pearvc-event3.jpg"
-          alt="Meet up"
-          className="w-full object-cover"
-          fill
-          draggable={false}
-        />
-      </figure>
-      <figure className="relative mb-6 h-72">
-        <Image
-          src="/images/pearvc-event4.jpg"
-          alt="Meet up"
-          className="w-full object-cover"
-          fill
-          draggable={false}
-        />
-      </figure>
-    </Masonry>
-    <div className="pointer-events-none sticky inset-x-0 bottom-0 -mt-52 flex justify-center bg-gradient-to-t from-background pt-32 pb-16 opacity-100" />
+  <section className="relative my-24">
+    <div className="bg-stripe-gradient-asc absolute top-0 h-full w-full" />
+    <div className="container relative grid grid-cols-1 grid-rows-4 gap-7 sm:grid-cols-2 sm:grid-rows-2 md:grid-cols-3">
+      <a className="relative row-span-2 after:absolute after:inset-0 after:h-full after:w-full after:rounded-lg after:bg-darken-image after:shadow-border after:content-[''] sm:col-span-1 md:col-span-2">
+        <figure className="relative flex h-[500px] overflow-hidden rounded-xl">
+          <Image
+            src="/images/FALL 2023 RECRUITING.png"
+            fill
+            className="h-full w-full object-cover"
+          />
+        </figure>
+      </a>
+      <a className="relative after:absolute after:inset-0 after:h-full after:w-full after:rounded-lg after:bg-darken-image after:shadow-border after:content-['']">
+        <figure className="relative flex h-full overflow-hidden rounded-xl">
+          <Image
+            src="/images/pedro.jpg"
+            fill
+            className="h-full w-full object-cover brightness-[0.6]"
+          />
+        </figure>
+      </a>
+      <a className="relative after:absolute after:inset-0 after:h-full after:w-full after:rounded-lg after:bg-darken-image after:shadow-border after:content-['']">
+        <figure className="relative flex h-full overflow-hidden rounded-xl">
+          <Image
+            src="/images/AI Entrepreneurs at Berkeley Meet-Up.jpg"
+            fill
+            className="h-full w-full object-cover brightness-[0.6]"
+          />
+        </figure>
+      </a>
+    </div>
   </section>
 );
 

@@ -1,10 +1,7 @@
 import { type FC } from 'react';
 
 const Application: FC = () => (
-  <section
-    id="application"
-    className="relative pt-0 pb-28 sm:pt-8 sm:pb-24 md:pt-16 md:pb-32 lg:pb-40 lg:pt-24"
-  >
+  <section className="relative pt-0 pb-28 sm:pt-8 sm:pb-24 md:pt-16 md:pb-32 lg:pb-40 lg:pt-24">
     <div className="bg-stripe-gradient absolute top-0 -z-10 h-full w-full md:top-10" />
     <div className="container">
       <h2 className="mb-8 text-2xl sm:text-3xl md:text-4xl">

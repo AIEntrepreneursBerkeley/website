@@ -1,5 +1,6 @@
 import { type FC } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 type HeroProps = {
   startups: number;
@@ -15,19 +16,20 @@ const Hero: FC<HeroProps> = ({ startups, vc, attendees }) => (
       <div className="container">
         <h1>
           AI Entrepreneurs{` `}
-          <br className="hidden sm:block" />at Berkeley — Build{` `}
+          <br className="hidden sm:block" />
+          at Berkeley — Build{` `}
           <br className="hidden sm:block" />
           Your AI Startup.
         </h1>
         <div className="mt-8 max-w-lg md:max-w-xl">
           <p className="mb-6">
-            AI Entrepreneurs at Berkeley is dedicated to fostering a tight
-            community of students and industry professionals who are passionate
-            about Artificial Intelligence and Entrepreneurship.
+            AI Entrepreneurs at Berkeley is the premier AI incubator for early
+            stage startups and a community of risk-takers, researchers, and
+            investor partners.
           </p>
           <p>
-            Collaborate on our cutting-edge projects, learn from the biggest
-            names in the space, and connect with top VC firms.
+            Propel your startup to the next level.{' '}
+            <Link href="/apply" className='text-blue-500'>Apply</Link> to our 10-week incubator today.
           </p>
         </div>
         <div className="mt-12 flex max-w-lg justify-between md:max-w-xl">
