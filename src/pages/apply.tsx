@@ -16,16 +16,18 @@ const ApplyPage: NextPage = () => {
       <Head>
         <title>Apply — AI Entrepreneurs @ Berkeley</title>
       </Head>
-      <SecondaryLayout color="white">
+      <SecondaryLayout color="gray">
         <div className="relative h-screen w-full">
           {!loaded && (
             <div className="absolute h-full w-full">
-              <div className="mx-auto max-w-xl p-8">
-                <Skeleton className="h-24 w-full" />
-                <Skeleton className="mt-8 h-6 w-full" />
-                <Skeleton className="mt-12 h-72 w-full" />
+              <div className="mx-auto max-w-xl px-8 py-16">
+                <Skeleton className="h-12 w-full" />
+                <Skeleton className="mt-8 h-28 w-full" />
+                <Skeleton className="mt-16 h-12 w-full" />
                 <Skeleton className="mt-8 h-24 w-full" />
-                <Skeleton className="mt-8 h-12 w-full" />
+                <Skeleton className="mt-8 h-16 w-full" />
+                <Skeleton className="mt-16 h-12 w-full" />
+                <Skeleton className="mt-8 h-24 w-full" />
               </div>
             </div>
           )}

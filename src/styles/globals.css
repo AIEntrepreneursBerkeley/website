@@ -16,8 +16,6 @@
     --green-to: 74 204 120;
     --gray-from: 74 74 74;
     --gray-to: 155 155 155;
-    --white-from: 224 224 224;
-    --white-to: 251 251 251;
   }
 
   html {
@@ -707,20 +705,6 @@
         90deg,
         rgb(var(--gray-from) / 0.2) 0%,
         rgb(var(--gray-to) / 0.2) 100%
-      );
-    background-size: 100% 100%, 100% 100%, 1440px 1px;
-  }
-
-  .layout-gradient-white {
-    background: linear-gradient(
-        to top,
-        rgb(4, 4, 16) 0%,
-        rgba(4, 4, 16, 0.8) 100%
-      ),
-      linear-gradient(
-        90deg,
-        rgb(var(--white-from) / 0.8) 0%,
-        rgb(var(--white-to) / 0.8) 100%
       );
     background-size: 100% 100%, 100% 100%, 1440px 1px;
   }
