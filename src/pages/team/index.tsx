@@ -1,29 +1,55 @@
 import { type NextPage, type GetStaticProps } from 'next';
 import { allMembers, type Member } from 'contentlayer/generated';
 import Team from '~/components/sections/Team';
-import Layout from '~/components/layouts/MainLayout';
+import SecondaryLayout from '~/components/layouts/SecondaryLayout';
+import Title from '~/components/sections/Title';
+import Lines from '~/components/sections/Lines';
+import Head from 'next/head';
 
 type TeamPageProps = {
-  executiveTeam: Member[];
+  cofounders: Member[];
+  executives: Member[];
   advisors: Member[];
 };
 
-const TeamPage: NextPage<TeamPageProps> = ({ executiveTeam, advisors }) => (
-  <Layout>
-    <Team executiveTeam={executiveTeam} advisors={advisors} />
-  </Layout>
+const TeamPage: NextPage<TeamPageProps> = ({
+  cofounders,
+  executives,
+  advisors,
+}) => (
+  <>
+    <Head>
+      <title>Team — AI Entrepreneurs @ Berkeley</title>
+    </Head>
+    <SecondaryLayout color="gray">
+      <Title title="Team and Advisors" description="" />
+      <Lines />
+      <Team
+        cofounders={cofounders}
+        executives={executives}
+        advisors={advisors}
+      />
+    </SecondaryLayout>
+  </>
 );
 
 export const getStaticProps: GetStaticProps = async () => {
   const executiveTeam = allMembers.filter((member) =>
     member.role.includes('Executive Team')
   );
+  const cofounders = executiveTeam.filter((member) =>
+    member.role.includes('Co-Founder')
+  );
+  const executives = executiveTeam.filter(
+    (member) => !member.role.includes('Co-Founder')
+  );
   const advisors = allMembers.filter((member) =>
     member.role.includes('Advisor')
   );
   return {
     props: {
-      executiveTeam,
+      cofounders,
+      executives,
       advisors,
     },
   };

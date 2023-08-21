@@ -3,7 +3,7 @@ import { cn } from '~/utils/cn';
 import MainLayout from '~/components/layouts/MainLayout';
 
 type SecondaryLayoutType = {
-  color: string;
+  color: 'orange' | 'green' | 'blue' | 'purple' | 'teal' | 'gray' | 'white';
   children: ReactNode;
 };
 

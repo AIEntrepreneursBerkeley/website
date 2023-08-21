@@ -27,7 +27,7 @@ const HomePage: NextPage<HomePageProps> = ({
 }) => (
   <>
     <Head>
-      <title>AI Entrepreneurs at Berkeley</title>
+      <title>AI Entrepreneurs @ Berkeley</title>
     </Head>
     <Lines />
 

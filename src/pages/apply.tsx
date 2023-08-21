@@ -14,7 +14,7 @@ const ApplyPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Apply — AI Entrepreneurs at Berkeley</title>
+        <title>Apply — AI Entrepreneurs @ Berkeley</title>
       </Head>
       <SecondaryLayout color="white">
         <div className="relative h-screen w-full">

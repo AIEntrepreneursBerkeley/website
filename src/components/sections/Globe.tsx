@@ -7,7 +7,7 @@ const ReactGlobe = dynamic(() => import('~/components/ui/ReactGlobe'), {
 });
 
 const Globe: FC = () => (
-  <section className="relative overflow-hidden border-t border-white/20">
+  <section className="relative overflow-hidden">
     <Image
       src="/images/stars.svg"
       alt="stars"
