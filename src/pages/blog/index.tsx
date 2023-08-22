@@ -38,13 +38,13 @@ const BlogPage: NextPage<BlogPageProps> = ({ posts }) => (
           <h1>{post.title}</h1>
         </div>
       ))}
-      <figure className="relative mx-auto mb-36 flex h-[480px] w-[480px]">
+      <figure className="relative mx-auto mb-36 flex h-[280px] w-[280px]">
+        <p className="text-center">No posts yet</p>
         <Image
           src="/images/404 Error-rafiki.png"
           fill
           className="h-full w-full object-cover"
         />
-        <p className="text-center">No posts yet</p>
       </figure>
     </SecondaryLayout>
   </>

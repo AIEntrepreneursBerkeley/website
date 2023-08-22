@@ -14,7 +14,7 @@ const NavigationMenuDemo = () => (
           <ul className="List one">
             <li style={{ gridRow: 'span 3' }}>
               <NavigationMenu.Link asChild>
-                <a className="Callout" href="#program">
+                <a className="Callout" href="/#program">
                   <div className="CalloutHeading">Program 2023</div>
                   <p className="CalloutText">
                     What we have planned for the next year.
