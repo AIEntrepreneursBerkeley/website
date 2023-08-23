@@ -29,7 +29,7 @@ const Hero: FC<HeroProps> = ({ startups, vc, attendees }) => (
           </p>
           <p>
             Propel your startup to the next level.{' '}
-            <Link href="/apply" className="text-blue-500">
+            <Link href="/apply" className="z-50 text-blue-500">
               Apply
             </Link>{' '}
             to our 10-week incubator today.
