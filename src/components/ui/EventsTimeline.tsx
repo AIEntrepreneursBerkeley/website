@@ -12,7 +12,7 @@ const EventsTimeline: FC<EventsTimelineProps> = ({ timeline }) => (
   <>
     <ul className="mt-24 px-4 md:px-24">
       {timeline.map((event) => (
-        <li className="flex min-h-[120px] justify-between">
+        <li className="flex min-h-[160px] justify-between">
           <div className="flex-1 text-right italic">
             <p className="text-sm xs:text-base md:text-lg">
               {format(parseISO(event.date?.start), 'LLLL d, yyyy')}
