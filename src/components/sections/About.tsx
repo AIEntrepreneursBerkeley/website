@@ -1,8 +1,14 @@
 import { type FC } from 'react';
 import Image from 'next/image';
 import Logos from '~/components/sections/Logos';
+import EventsTimeline from '~/components/ui/EventsTimeline';
+import { type Timeline } from 'contentlayer/generated';
 
-const About: FC = () => (
+type AboutProps = {
+  timeline: Timeline[];
+};
+
+const About: FC<AboutProps> = ({ timeline }) => (
   <section
     id="program"
     className="relative bg-gray-900/90 py-24 sm:py-28 md:py-32"
@@ -211,9 +217,8 @@ const About: FC = () => (
             </div>
           </div>
         </div>
-        <div className="bg-background">
-          <Logos />
-        </div>
+        <Logos />
+        <EventsTimeline timeline={timeline} />
       </div>
     </div>
   </section>

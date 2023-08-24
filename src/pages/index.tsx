@@ -6,17 +6,21 @@ import Logos from '~/components/sections/Logos';
 import About from '~/components/sections/About';
 import Showcase from '~/components/sections/Showcase';
 import Popup from '~/components/sections/Popup';
-import Application from '~/components/sections/Application';
 import MainLayout from '~/components/layouts/MainLayout';
-import Pillars from '~/components/sections/Pillars';
 import Announcement from '~/components/sections/Announcement';
-import { allFrontPages, type FrontPage } from 'contentlayer/generated';
+import {
+  allFrontPages,
+  allTimelines,
+  type Timeline,
+  type FrontPage,
+} from 'contentlayer/generated';
 
 type HomePageProps = {
   announcement: FrontPage;
   startups: number;
   vc: number;
   attendees: number;
+  timeline: Timeline[];
 };
 
 const HomePage: NextPage<HomePageProps> = ({
@@ -24,6 +28,7 @@ const HomePage: NextPage<HomePageProps> = ({
   startups,
   vc,
   attendees,
+  timeline,
 }) => (
   <>
     <Head>
@@ -37,7 +42,7 @@ const HomePage: NextPage<HomePageProps> = ({
         <Hero startups={startups} vc={vc} attendees={attendees} />
         <Logos />
         <Showcase />
-        <About />
+        <About timeline={timeline} />
         <Popup />
       </main>
     </MainLayout>
@@ -55,6 +60,11 @@ export const getStaticProps: GetStaticProps = async () => {
   const attendees = allFrontPages.find(
     (entity) => entity.name === 'Attendees'
   )?.number;
+  const timeline = allTimelines.sort((a, b) => {
+    const dateA = new Date(a.date?.start);
+    const dateB = new Date(b.date?.start);
+    return dateA - dateB;
+  });
 
   return {
     props: {
@@ -62,6 +72,7 @@ export const getStaticProps: GetStaticProps = async () => {
       startups,
       vc,
       attendees,
+      timeline,
     },
   };
 };
