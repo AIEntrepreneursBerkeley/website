@@ -24,7 +24,7 @@ const config = {
         'glow-lines':
           'linear-gradient(var(--direction),#9d9bf2 0.43%,#7877c6 14.11%,rgba(120,119,198,0) 62.95%)',
         'darken-image':
-          'linear-gradient(180deg,transparent,rgba(4,4,16,.8) 70%, rgba(4,4,16,.9) 85%, rgba(4,4,16,1))',
+          'linear-gradient(180deg,transparent,rgba(4,4,16,.8) 50%, rgba(4,4,16,.9) 75%, rgba(4,4,16,1))',
         texture:
           'url(/glow-texture.png), radial-gradient(var(--color-primary), transparent 70%)',
       },

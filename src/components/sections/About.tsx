@@ -1,5 +1,6 @@
 import { type FC } from 'react';
 import Image from 'next/image';
+import Logos from '~/components/sections/Logos';
 
 const About: FC = () => (
   <section
@@ -209,6 +210,9 @@ const About: FC = () => (
               </div>
             </div>
           </div>
+        </div>
+        <div className="bg-background">
+          <Logos />
         </div>
       </div>
     </div>
