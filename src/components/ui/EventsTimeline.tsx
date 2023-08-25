@@ -3,6 +3,7 @@ import { type FC } from 'react';
 import { format, parseISO } from 'date-fns';
 import { MapPin } from 'lucide-react';
 import { Button } from '~/components/ui/Button';
+import Link from 'next/link';
 
 type EventsTimelineProps = {
   timeline: Timeline[];
@@ -12,7 +13,7 @@ const EventsTimeline: FC<EventsTimelineProps> = ({ timeline }) => (
   <>
     <ul className="mt-24 px-4 md:px-24">
       {timeline.map((event) => (
-        <li className="flex min-h-[160px] justify-between">
+        <li className="flex min-h-[120px] justify-between">
           <div className="flex-1 text-right italic">
             <p className="text-sm xs:text-base md:text-lg">
               {format(parseISO(event.date?.start), 'LLLL d, yyyy')}
@@ -30,7 +31,7 @@ const EventsTimeline: FC<EventsTimelineProps> = ({ timeline }) => (
               {event.information}
             </p>
             {event.location && (
-              <div className="mt-6 flex items-center gap-1 md:gap-2">
+              <div className="mt-4 flex items-center gap-1 pb-6 md:gap-2">
                 <MapPin />
                 <p className="text-sm xs:text-base md:text-lg">
                   {event.location}
@@ -42,7 +43,9 @@ const EventsTimeline: FC<EventsTimelineProps> = ({ timeline }) => (
       ))}
     </ul>
     <div className="mt-12 flex justify-center">
-      <Button variant="default">Apply today &rarr;</Button>
+      <Link href="/apply">
+        <Button variant="default">Apply today &rarr;</Button>
+      </Link>
     </div>
   </>
 );

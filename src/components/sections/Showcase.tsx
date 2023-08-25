@@ -15,7 +15,7 @@ const Showcase: FC = () => (
             fill
             className="h-full w-full object-cover"
           />
-          <div className="absolute bottom-0 left-0 z-50 p-6">
+          <div className="absolute bottom-0 left-0 z-30 p-6">
             <p className="text-3xl font-semibold text-gray-50">
               Fall 2023 Applications now open
             </p>
@@ -33,7 +33,7 @@ const Showcase: FC = () => (
             fill
             className="h-full w-full object-cover brightness-[0.6]"
           />
-          <div className="absolute bottom-0 left-0 z-50 p-6">
+          <div className="absolute bottom-0 left-0 z-30 p-6">
             <p className="text-xl font-semibold text-gray-50">
               AIEB Success Stories
             </p>
@@ -55,7 +55,7 @@ const Showcase: FC = () => (
             className="h-full w-full object-cover brightness-[0.6]"
           />
         </figure>
-        <div className="absolute bottom-0 left-0 z-50 p-6">
+        <div className="absolute bottom-0 left-0 z-30 p-6">
           <p className="text-xl font-semibold text-gray-50">
             Team and Advisors
           </p>
