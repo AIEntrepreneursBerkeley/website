@@ -297,7 +297,7 @@
   }
   .NavigationMenuTrigger:hover,
   .NavigationMenuLink:hover {
-    @apply bg-gray-800;
+    @apply bg-gray-900/90;
   }
 
   .NavigationMenuTrigger {
@@ -408,7 +408,7 @@
     line-height: 1;
   }
   .ListItemLink:hover {
-    @apply bg-gray-800;
+    @apply bg-gray-900/90;
   }
 
   .ListItemHeading {
