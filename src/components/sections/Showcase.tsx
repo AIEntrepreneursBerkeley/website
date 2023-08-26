@@ -1,11 +1,12 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { type FC } from 'react';
 
 const Showcase: FC = () => (
   <section className="relative my-24">
     <div className="bg-stripe-gradient-asc absolute top-0 h-full w-full" />
     <div className="container relative grid grid-cols-1 grid-rows-4 gap-7 sm:grid-cols-2 sm:grid-rows-2 md:grid-cols-3">
-      <a
+      <Link
         className="relative row-span-2 after:absolute after:inset-0 after:h-full after:w-full after:rounded-lg after:bg-darken-image after:shadow-border after:transition-opacity after:duration-300 after:content-[''] hover:after:opacity-95 sm:col-span-1 md:col-span-2"
         href="/apply"
       >
@@ -25,7 +26,7 @@ const Showcase: FC = () => (
             </p>
           </div>
         </figure>
-      </a>
+      </Link>
       <a className="relative after:absolute after:inset-0 after:h-full after:w-full after:rounded-lg after:bg-darken-image after:shadow-border after:content-['']">
         <figure className="relative flex h-full overflow-hidden rounded-xl">
           <Image
@@ -44,7 +45,7 @@ const Showcase: FC = () => (
           </div>
         </figure>
       </a>
-      <a
+      <Link
         className="relative after:absolute after:inset-0 after:h-full after:w-full after:rounded-lg after:bg-darken-image after:shadow-border after:transition-opacity after:duration-300 after:content-[''] hover:after:opacity-95"
         href="/team"
       >
@@ -64,7 +65,7 @@ const Showcase: FC = () => (
             expertise across domains.
           </p>
         </div>
-      </a>
+      </Link>
     </div>
   </section>
 );
