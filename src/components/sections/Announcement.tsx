@@ -193,7 +193,7 @@ const Announcement: FC<AnnouncementProps> = ({ announcement }) => (
               className="inline-block w-full text-xs font-medium text-white transition-colors hover:text-gray-200 sm:text-sm"
             >
               {announcement.content}{' '}
-              <span className="font-bold">Click here &rarr;</span>
+              <span className="font-bold">Join the Community &rarr;</span>
             </Link>
           </div>
         )}
