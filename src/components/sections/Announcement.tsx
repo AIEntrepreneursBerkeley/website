@@ -182,7 +182,8 @@ const Announcement: FC<AnnouncementProps> = ({ announcement }) => (
               target="_blank"
               rel="noreferrer"
             >
-              {announcement.content} Click here &rarr;
+              {announcement.content}{' '}
+              <span className="font-bold">Click here &rarr;</span>
             </a>
           </div>
         ) : (
@@ -191,7 +192,8 @@ const Announcement: FC<AnnouncementProps> = ({ announcement }) => (
               href={announcement.url}
               className="inline-block w-full text-xs font-medium text-white transition-colors hover:text-gray-200 sm:text-sm"
             >
-              {announcement.content} Click here &rarr;
+              {announcement.content}{' '}
+              <span className="font-bold">Click here &rarr;</span>
             </Link>
           </div>
         )}
