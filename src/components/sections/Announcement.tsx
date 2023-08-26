@@ -9,7 +9,7 @@ type AnnouncementProps = {
 const Announcement: FC<AnnouncementProps> = ({ announcement }) => (
   <section>
     <div className="overflow-hidden border-b border-white/20 bg-gradient-to-r from-indigo-900 to-sky-900 py-1.5">
-      <div className="max-w-8xl relative mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-8xl relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
         <svg
           fill="none"
           viewBox="0 0 848 513"
@@ -172,24 +172,26 @@ const Announcement: FC<AnnouncementProps> = ({ announcement }) => (
             </linearGradient>
           </defs>
         </svg>
+      </div>
+      <div className="relative z-50">
         {announcement.url?.includes('http') ? (
           <div className="text-center">
             <a
-              className="text-xs font-medium text-white sm:text-sm"
+              className="inline-block w-full text-xs font-medium text-white transition-colors hover:text-gray-200 sm:text-sm"
               href={announcement.url}
               target="_blank"
               rel="noreferrer"
             >
-              {announcement.content}
+              {announcement.content} Click here &rarr;
             </a>
           </div>
         ) : (
           <div className="text-center">
             <Link
               href={announcement.url}
-              className="text-xs font-medium text-white sm:text-sm"
+              className="inline-block w-full text-xs font-medium text-white transition-colors hover:text-gray-200 sm:text-sm"
             >
-              {announcement.content}
+              {announcement.content} Click here &rarr;
             </Link>
           </div>
         )}
