@@ -183,7 +183,7 @@ const Announcement: FC<AnnouncementProps> = ({ announcement }) => (
               rel="noreferrer"
             >
               {announcement.content}{' '}
-              <span className="font-bold">Click here &rarr;</span>
+              <span className="font-bold">Join the Community &rarr;</span>
             </a>
           </div>
         ) : (
