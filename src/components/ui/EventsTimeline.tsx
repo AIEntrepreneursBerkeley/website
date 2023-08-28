@@ -18,6 +18,16 @@ const EventsTimeline: FC<EventsTimelineProps> = ({ timeline }) => (
             <p className="text-sm xs:text-base md:text-lg">
               {format(parseISO(event.date?.start), 'LLLL d, yyyy')}
             </p>
+            {!event.date?.start.includes('00:00:00.000Z') && (
+              <p className="text-xs xs:text-sm md:text-base">
+                {format(parseISO(event.date?.start), 'hh:mm aaa')}
+              </p>
+            )}
+            {event.date?.end && (
+              <p className="mt-2 text-sm xs:text-base md:text-lg">
+                &rarr; {format(parseISO(event.date?.end), 'LLLL d, yyyy')}
+              </p>
+            )}
           </div>
           <div className="mx-5 flex flex-col items-center">
             <span className="my-2 rounded-full bg-gray-500 p-2" />
@@ -31,7 +41,7 @@ const EventsTimeline: FC<EventsTimelineProps> = ({ timeline }) => (
               {event.information}
             </p>
             {event.location && (
-              <div className="mt-4 flex items-center gap-1 pb-6 md:gap-2">
+              <div className="mt-4 flex items-center gap-1 pb-10 md:gap-2">
                 <MapPin />
                 <p className="text-sm xs:text-base md:text-lg">
                   {event.location}
