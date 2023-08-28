@@ -8,7 +8,7 @@ type AnnouncementProps = {
 
 const Announcement: FC<AnnouncementProps> = ({ announcement }) => (
   <section>
-    <div className="overflow-hidden border-b border-white/20 bg-gradient-to-r from-indigo-900 to-sky-900 py-1.5">
+    <div className="overflow-hidden border-b border-white/20 bg-gradient-to-r from-indigo-900 to-sky-900 py-1.5 px-2">
       <div className="max-w-8xl relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
         <svg
           fill="none"
