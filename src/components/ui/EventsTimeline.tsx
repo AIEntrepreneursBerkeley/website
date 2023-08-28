@@ -1,7 +1,7 @@
 import { type Timeline } from 'contentlayer/generated';
 import { type FC } from 'react';
 import { format, parseISO } from 'date-fns';
-import { MapPin } from 'lucide-react';
+import { ExternalLink, MapPin } from 'lucide-react';
 import { Button } from '~/components/ui/Button';
 import Link from 'next/link';
 
@@ -40,14 +40,27 @@ const EventsTimeline: FC<EventsTimelineProps> = ({ timeline }) => (
             <p className="mt-2 text-sm xs:text-base md:text-lg">
               {event.information}
             </p>
-            {event.location && (
-              <div className="mt-4 flex items-center gap-1 pb-10 md:gap-2">
-                <MapPin />
-                <p className="text-sm xs:text-base md:text-lg">
-                  {event.location}
-                </p>
-              </div>
-            )}
+            <div className="mt-6 flex flex-col gap-4 pb-10">
+              {event.location && (
+                <div className="flex items-center gap-1 md:gap-2">
+                  <MapPin />
+                  <p className="text-xs xs:text-sm md:text-base">
+                    {event.location}
+                  </p>
+                </div>
+              )}
+              {event.url && (
+                <div className="flex items-center gap-1 md:gap-2">
+                  <a
+                    className="flex items-center gap-2 text-xs xs:text-sm md:text-base"
+                    href={event.url}
+                  >
+                    <ExternalLink />
+                    More Details
+                  </a>
+                </div>
+              )}
+            </div>
           </div>
         </li>
       ))}
