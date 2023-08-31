@@ -1,6 +1,7 @@
 import { type FC } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Button } from '~/components/ui/Button';
 
 type HeroProps = {
   startups: number;
@@ -34,6 +35,15 @@ const Hero: FC<HeroProps> = ({ startups, vc, attendees }) => (
             </Link>{' '}
             to our 10-week incubator today.
           </p>
+        </div>
+        <div className="my-6">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSecDykhE0JpOKA0W-sw0OQEW0Lhr1XHtChjibG0daSGcoiqcQ/viewform"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button>Interest Form</Button>
+          </a>
         </div>
         <div className="mt-12 flex max-w-lg justify-between md:max-w-xl">
           <div>
