@@ -36,15 +36,6 @@ const Hero: FC<HeroProps> = ({ startups, vc, attendees }) => (
             to our 10-week incubator today.
           </p>
         </div>
-        <div className="my-6">
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSecDykhE0JpOKA0W-sw0OQEW0Lhr1XHtChjibG0daSGcoiqcQ/viewform"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Button>Interest Form</Button>
-          </a>
-        </div>
         <div className="mt-12 flex max-w-lg justify-between md:max-w-xl">
           <div>
             <span className="block text-3xl font-semibold md:text-4xl lg:text-5xl">
