@@ -1,4 +1,5 @@
-import { makeSource, defineDatabase } from 'contentlayer-source-notion';
+import { defineDatabase, makeSource } from 'contentlayer-source-notion';
+
 import * as notion from '@notionhq/client';
 
 const client = new notion.Client({ auth: process.env.NOTION_TOKEN });
@@ -45,6 +46,11 @@ export const FrontPage = defineDatabase(() => ({
   name: 'FrontPage',
   databaseId: '3232e67617dd47859b2fc810c7dd2ba4',
 }));
+
+// export const Company = defineDatabase(() => ({
+//   name: 'Company',
+//   databaseId: '5f36feeac9274ffab9edb62745a19cfb',
+// }));
 
 export default makeSource({
   client,
