@@ -17,18 +17,18 @@ import theHouseFund from '@/logos/the-house-fund.svg';
 import unusualVentures from '@/logos/unusual-ventures.svg';
 import yCombinator from '@/logos/y-combinator.svg';
 
-import futurexcapital from '../../../public/logos/futurexcapital.png';
+// import futurexcapital from '../../../public/logos/futurexcapital.png';
 
 const Logos: FC = () => (
   <section className="mt-28 border-b border-dashed border-white/5 pb-6 md:mt-36 lg:mt-24">
     <div className="container">
       <Marquee>
-        <Image
+        {/* <Image
           className="h-14 w-auto object-cover brightness-0 invert"
           src={futurexcapital}
           alt="FutureX Capital"
           draggable={false}
-        />
+        /> */}
         <Image
           className="h-14 w-auto object-cover brightness-0 invert"
           src={pearVC}
