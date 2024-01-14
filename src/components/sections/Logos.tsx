@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { FC, type } from 'react';
+import { type FC, type } from 'react';
 import Marquee from '~/components/ui/Marquee';
 
 import a16z from '@/logos/a16z.svg';
@@ -16,12 +16,19 @@ import skydeck from '@/logos/skydeck.png';
 import theHouseFund from '@/logos/the-house-fund.svg';
 import unusualVentures from '@/logos/unusual-ventures.svg';
 import yCombinator from '@/logos/y-combinator.svg';
-import futurexcapital from '@logos/future-x-capital.png';
+
+import futurexcapital from '../../../public/logos/futurexcapital.png';
 
 const Logos: FC = () => (
   <section className="mt-28 border-b border-dashed border-white/5 pb-6 md:mt-36 lg:mt-24">
     <div className="container">
       <Marquee>
+        <Image
+          className="h-14 w-auto object-cover brightness-0 invert"
+          src={futurexcapital}
+          alt="FutureX Capital"
+          draggable={false}
+        />
         <Image
           className="h-14 w-auto object-cover brightness-0 invert"
           src={pearVC}
@@ -110,12 +117,6 @@ const Logos: FC = () => (
           className="h-10 w-auto object-cover brightness-0 invert"
           src={courtyardVentures}
           alt="Courtyard Ventures"
-          draggable={false}
-        />
-        <Image
-          className="h-10 w-auto object-cover brightness-0 invert"
-          src={futurexcapital}
-          alt="FutureX Capital"
           draggable={false}
         />
       </Marquee>
