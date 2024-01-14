@@ -1,6 +1,6 @@
-import { useEffect } from 'react';
-import { type NextPage } from 'next';
+import { type NextPage, type } from 'next';
 import Head from 'next/head';
+import { useEffect } from 'react';
 import Lines from '~/components/sections/Lines';
 import { Gradient } from '~/lib/gradient';
 

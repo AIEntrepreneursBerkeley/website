@@ -13,6 +13,7 @@
   "dependencies": {
     "@jsdevtools/rehype-toc": "^3.0.2",
     "@next-auth/prisma-adapter": "^1.0.5",
+    "@nodelib/fs.stat": "^3.0.0",
     "@notionhq/client": "^2.2.5",
     "@prisma/client": "^4.9.0",
     "@radix-ui/colors": "^1.0.1",
