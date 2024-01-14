@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { type FC, type } from 'react';
+import { type FC } from 'react';
 import Marquee from '~/components/ui/Marquee';
 
 import a16z from '@/logos/a16z.svg';
@@ -16,8 +16,7 @@ import skydeck from '@/logos/skydeck.png';
 import theHouseFund from '@/logos/the-house-fund.svg';
 import unusualVentures from '@/logos/unusual-ventures.svg';
 import yCombinator from '@/logos/y-combinator.svg';
-
-import futurexcapital from '../../../public/logos/futurexcapital.png';
+import futurexcapital from '@/logos/futurexcapital.png';
 
 const Logos: FC = () => (
   <section className="mt-28 border-b border-dashed border-white/5 pb-6 md:mt-36 lg:mt-24">
