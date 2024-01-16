@@ -6,7 +6,7 @@ const client = new notion.Client({ auth: process.env.NOTION_TOKEN });
 
 export const Post = defineDatabase(() => ({
   name: 'Post',
-  databaseId: '52eeaca6c811484fbeb4ee6a9e2090d5',
+  databaseId: 'd5023acd563d45f294dba4e38e4d7748',
   query: {
     filter: {
       property: 'Status',
@@ -29,30 +29,35 @@ export const Post = defineDatabase(() => ({
 
 export const Member = defineDatabase(() => ({
   name: 'Member',
-  databaseId: '7e1f3c999e9a4eec9f673e5edf722b1b',
+  databaseId: '1ee64024306a4714af57320fc8ca6834',
 }));
 
 export const Event = defineDatabase(() => ({
   name: 'Event',
-  databaseId: '032f6d66ba294df399c01499bab51cf9',
+  databaseId: '4be071d698344d49b476f1134dd33fd2',
 }));
 
 export const Timeline = defineDatabase(() => ({
   name: 'Timeline',
-  databaseId: '8adba69ae8c141679ec45f206fbd173c',
+  databaseId: 'a09ca00c83b7412c8547493cbd03653f',
 }));
 
 export const FrontPage = defineDatabase(() => ({
   name: 'FrontPage',
-  databaseId: '3232e67617dd47859b2fc810c7dd2ba4',
+  databaseId: '886cc9f862fe4935a8b12bcac8600cc3',
 }));
 
-// export const Company = defineDatabase(() => ({
-//   name: 'Company',
-//   databaseId: '5f36feeac9274ffab9edb62745a19cfb',
-// }));
+export const Company = defineDatabase(() => ({
+  name: 'Company',
+  databaseId: '993c74ec71f142938b21a9364a378a1f',
+}));
+
+export const Links = defineDatabase(() => ({
+  name: 'Links',
+  databaseId: '9bd60bbcd8804541b468cb2585c97f51',
+}));
 
 export default makeSource({
   client,
-  databaseTypes: [Post, Member, Event, Timeline, FrontPage],
+  databaseTypes: [Post, Member, Event, Timeline, FrontPage, Company, Links],
 });
