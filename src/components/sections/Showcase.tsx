@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { type FC } from 'react';
+import { FC, type } from 'react';
 
 const Showcase: FC = () => (
   <section className="relative my-24">
@@ -18,7 +18,7 @@ const Showcase: FC = () => (
           />
           <div className="absolute bottom-0 left-0 z-30 p-6">
             <p className="text-3xl font-semibold text-gray-50">
-              Fall 2023 Applications now open &rarr;
+              Spring 2024 Applications now open &rarr;
             </p>
             <p className="mt-6 text-gray-400">
               Join the next cohort of the 12 best AI teams in Berkeley, with an

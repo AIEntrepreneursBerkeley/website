@@ -1,8 +1,8 @@
-import { type FC } from 'react';
+import type { FC } from 'react';
+import { Timeline, type } from 'contentlayer/generated';
 import Image from 'next/image';
 import Logos from '~/components/sections/Logos';
 import EventsTimeline from '~/components/ui/EventsTimeline';
-import { type Timeline } from 'contentlayer/generated';
 
 type AboutProps = {
   timeline: Timeline[];

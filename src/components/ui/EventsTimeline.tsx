@@ -1,9 +1,10 @@
-import { type Timeline } from 'contentlayer/generated';
-import { type FC } from 'react';
+import { Timeline, type } from 'contentlayer/generated';
 import { format, parseISO } from 'date-fns';
 import { ExternalLink, MapPin } from 'lucide-react';
-import { Button } from '~/components/ui/Button';
 import Link from 'next/link';
+import { Button } from '~/components/ui/Button';
+
+import type { FC } from 'react';
 
 type EventsTimelineProps = {
   timeline: Timeline[];
