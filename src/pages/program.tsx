@@ -13,7 +13,7 @@ const ProgramPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>PROGRAM 2023</title>
+        <title>PROGRAM 2024</title>
       </Head>
       <div className="relative h-screen">
         <canvas
