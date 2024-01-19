@@ -1,7 +1,8 @@
-import { forwardRef } from 'react';
-import * as NavigationMenu from '@radix-ui/react-navigation-menu';
-import { cn } from '~/utils/cn';
 import { ChevronDown } from 'lucide-react';
+import { forwardRef } from 'react';
+import { cn } from '~/utils/cn';
+
+import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 
 const NavigationMenuDemo = () => (
   <NavigationMenu.Root className="NavigationMenuRoot">
@@ -15,7 +16,7 @@ const NavigationMenuDemo = () => (
             <li style={{ gridRow: 'span 3' }}>
               <NavigationMenu.Link asChild>
                 <a className="Callout" href="/#program">
-                  <div className="CalloutHeading">Program 2023</div>
+                  <div className="CalloutHeading">Program 2024</div>
                   <p className="CalloutText">
                     What we have planned for the next year.
                   </p>

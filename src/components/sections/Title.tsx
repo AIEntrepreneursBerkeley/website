@@ -1,4 +1,4 @@
-import { type FC } from 'react';
+import { type FC, type } from 'react';
 
 type TitleProps = {
   title: string;
