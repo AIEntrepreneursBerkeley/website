@@ -1,5 +1,5 @@
-import { Timeline, type } from 'contentlayer/generated';
-import { format, parseISO } from 'date-fns';
+import { type Timeline, type } from 'contentlayer/generated';
+import { add, format, parseISO } from 'date-fns';
 import { ExternalLink, MapPin } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '~/components/ui/Button';
@@ -16,19 +16,8 @@ const EventsTimeline: FC<EventsTimelineProps> = ({ timeline }) => (
       {timeline.map((event) => (
         <li className="flex min-h-[120px] justify-between">
           <div className="flex-1 text-right italic">
-            <p className="text-sm xs:text-base md:text-lg">
-              {format(parseISO(event.date?.start), 'LLLL d, yyyy')}
-            </p>
-            {!event.date?.start.includes('00:00:00.000Z') && (
-              <p className="text-xs xs:text-sm md:text-base">
-                {format(parseISO(event.date?.start), 'hh:mm aaa')}
-              </p>
-            )}
-            {event.date?.end && (
-              <p className="mt-2 text-sm xs:text-base md:text-lg">
-                &rarr; {format(parseISO(event.date?.end), 'LLLL d, yyyy')}
-              </p>
-            )}
+            {renderEvent(event.date?.start, false)}
+            {renderEvent(event.date?.end, true)}
           </div>
           <div className="mx-5 flex flex-col items-center">
             <span className="my-2 rounded-full bg-gray-500 p-2" />
@@ -73,5 +62,28 @@ const EventsTimeline: FC<EventsTimelineProps> = ({ timeline }) => (
     </div>
   </>
 );
+
+function renderEvent(time: string | undefined, isEnd: boolean) {
+  if (!time) return null;
+
+  const containsTime = !time.includes('00:00:00.000Z');
+
+  const arrow = isEnd ? '→' : '';
+
+  if (containsTime) {
+    return (
+      <p className="text-sm xs:text-base md:text-lg">
+        {arrow} {format(parseISO(time), 'LLLL d, yyyy hh:mm aaa')}
+      </p>
+    );
+  }
+
+  // Exported dates with no times are automatically '00:00:00.000Z', and therefore we need to add a day to the date
+  return (
+    <p className="text-xs xs:text-sm md:text-base">
+      {arrow} {format(add(parseISO(time), { days: 1 }), 'LLLL d, yyyy')}
+    </p>
+  );
+}
 
 export default EventsTimeline;
