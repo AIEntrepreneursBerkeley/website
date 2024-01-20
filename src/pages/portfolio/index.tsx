@@ -1,8 +1,10 @@
 import {
   allCompanies,
   allMembers,
+  allVCs,
   type Company,
   type Member,
+  type VCs,
 } from 'contentlayer/generated';
 import { type GetStaticProps, type NextPage } from 'next';
 import Head from 'next/head';
@@ -16,6 +18,7 @@ type TeamPageProps = {
   companies: {
     company: Company;
     founders: Member[];
+    VCs: VCs[];
   }[];
 };
 
@@ -28,11 +31,12 @@ const TeamPage: NextPage<TeamPageProps> = ({ companies }: TeamPageProps) => (
       <Title title="Portfolio" description="" />
       <div className="container mx-auto w-full p-4">
         <div className="flex flex-wrap justify-center gap-4 border">
-          {companies.map((companyWithFounders) => (
+          {companies.map((company) => (
             <CompanyCard
-              key={companyWithFounders.company._id}
-              company={companyWithFounders.company}
-              founders={companyWithFounders.founders}
+              key={company.company._id}
+              company={company.company}
+              founders={company.founders}
+              backers={company.VCs}
             />
           ))}
         </div>
@@ -46,26 +50,35 @@ export const getStaticProps: GetStaticProps = () => {
     (company) => company.activeOnWebsite
   );
 
-  // Loop through all active companies and store the founders
+  // Loop through all active companies and store the founders and VCs
   type CompanyWithFounders = {
     [key in string]: Member[];
   };
   const companiesToFounders: CompanyWithFounders = {};
 
-  activeCompanies.forEach((company) => {
+  type CompanyWithVCs = {
+    [key in string]: VCs[];
+  };
+  const companiesToVCs: CompanyWithVCs = {};
+
+  activeCompanies.forEach((company: Company) => {
     companiesToFounders[company._id] = allMembers.filter((member) =>
       company.founders.includes(member._id)
     );
+    companiesToVCs[company._id] = allVCs.filter((vc) =>
+      company.backers.includes(vc._id)
+    );
   });
 
-  const activeCompaniesWithFounders = activeCompanies.map((company) => ({
+  const activeCompaniesWithFoundersAndVCs = activeCompanies.map((company) => ({
     company,
     founders: companiesToFounders[company._id],
+    VCs: companiesToVCs[company._id],
   }));
 
   return {
     props: {
-      companies: activeCompaniesWithFounders,
+      companies: activeCompaniesWithFoundersAndVCs,
     },
   };
 };

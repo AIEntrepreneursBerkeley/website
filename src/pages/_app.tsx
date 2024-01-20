@@ -29,6 +29,11 @@ const signifier = localFont({
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <div className={`${inter.variable} ${signifier.variable} relative font-sans`}>
+    <style jsx global>{`
+      html {
+        font-family: ${inter.style.fontFamily};
+      }
+    `}</style>
     <Component {...pageProps} />
     <Analytics />
   </div>

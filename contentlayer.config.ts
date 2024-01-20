@@ -57,7 +57,21 @@ export const Links = defineDatabase(() => ({
   databaseId: '9bd60bbcd8804541b468cb2585c97f51',
 }));
 
+export const VCs = defineDatabase(() => ({
+  name: 'VCs',
+  databaseId: '07721bd8aa7442ca970a7c6843828c2b',
+}));
+
 export default makeSource({
   client,
-  databaseTypes: [Post, Member, Event, Timeline, FrontPage, Company, Links],
+  databaseTypes: [
+    Post,
+    Member,
+    Event,
+    Timeline,
+    FrontPage,
+    Company,
+    Links,
+    VCs,
+  ],
 });
