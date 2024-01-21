@@ -1,4 +1,4 @@
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, List } from 'lucide-react';
 import { forwardRef } from 'react';
 import { cn } from '~/utils/cn';
 
@@ -48,6 +48,9 @@ const NavigationMenuDemo = () => (
             </ListItem>
             <ListItem title="Blog" href="/blog">
               Blog Posts
+            </ListItem>
+            <ListItem title="Portfolio" href="/portfolio">
+              Builder's We've Backed
             </ListItem>
           </ul>
         </NavigationMenu.Content>
