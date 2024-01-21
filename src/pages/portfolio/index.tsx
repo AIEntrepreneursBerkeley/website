@@ -12,7 +12,7 @@ import SecondaryLayout from '~/components/layouts/SecondaryLayout';
 import Lines from '~/components/sections/Lines';
 import Team from '~/components/sections/Team';
 import Title from '~/components/sections/Title';
-import CompanyCard from './CompanyCard';
+import CompanyCard from '../../components/portfolio/CompanyCard';
 
 type TeamPageProps = {
   companies: {

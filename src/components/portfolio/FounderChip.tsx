@@ -1,5 +1,4 @@
-import React, { type FC } from 'react';
-import { type Member } from 'contentlayer/generated';
+import React from 'react';
 import { getLinkFromHTML } from '~/lib/helpers';
 
 type FounderChipProps = {
@@ -8,7 +7,7 @@ type FounderChipProps = {
   founderLink: string;
 };
 
-const FounderChip: FC<FounderChipProps> = ({
+const FounderChip = ({
   founderName,
   founderImage,
   founderLink,

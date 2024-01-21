@@ -19,7 +19,6 @@ import {
   CardHeader,
   CardTitle,
 } from '~/components/ui/ShadCard';
-import { type FC } from 'react';
 
 import aieb from '@/logos/aieb.svg';
 
@@ -34,7 +33,7 @@ type CompanyCardProps = {
   backers: VCs[];
 };
 
-const CompanyCard: FC<CompanyCardProps> = ({ company, founders, backers }) => (
+const CompanyCard = ({ company, founders, backers }: CompanyCardProps) => (
   <Dialog>
     <DialogTrigger>
       <Card className="h-[200px] w-[295px]">
@@ -108,11 +107,15 @@ const CompanyCard: FC<CompanyCardProps> = ({ company, founders, backers }) => (
   </Dialog>
 );
 
-const LogoOrAlt: FC<{
+const LogoOrAlt = ({
+  logo,
+  alt,
+  size,
+}: {
   logo: string | undefined;
   alt: string;
   size: number;
-}> = ({ logo, alt, size }) => {
+}) => {
   if (logo) {
     return (
       <img src={logo} alt={alt} width={size} height={size} className="mr-5" />
