@@ -28,9 +28,12 @@ const TeamPage: NextPage<TeamPageProps> = ({ companies }: TeamPageProps) => (
       <title>Portfolio — AI Entrepreneurs at Berkeley</title>
     </Head>
     <SecondaryLayout color="gray">
-      <Title title="Portfolio" description="" />
-      <div className="container mx-auto w-full p-4">
-        <div className="flex flex-wrap justify-center gap-4 border">
+      <Title
+        title="Portfolio"
+        description="We back the next generation of AI entrepreneurs"
+      />
+      <div className="container mx-auto w-full pb-4">
+        <div className="flex flex-wrap justify-center gap-4">
           {companies.map((company) => (
             <CompanyCard
               key={company.company._id}

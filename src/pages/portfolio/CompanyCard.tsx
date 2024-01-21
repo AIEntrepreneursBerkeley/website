@@ -39,7 +39,7 @@ const CompanyCard: FC<CompanyCardProps> = ({ company, founders, backers }) => (
     <DialogTrigger>
       <Card className="h-[200px] w-[295px]">
         <CardHeader>
-          <CardTitle className="flex flex-row items-center border">
+          <CardTitle className="flex flex-row items-center">
             {LogoOrAlt({
               logo: company.companyLogo,
               alt: company.companyName,
@@ -49,36 +49,42 @@ const CompanyCard: FC<CompanyCardProps> = ({ company, founders, backers }) => (
             {company.companyName}
           </CardTitle>
         </CardHeader>
-        <p className="text-lg">{company.shortDescription}</p>
-        <CardContent />
+        <CardContent>
+          <p className="text-base">{company.shortDescription}</p>
+        </CardContent>
       </Card>
     </DialogTrigger>
     <DialogContent className="w-11/12">
       <DialogHeader>
-        <DialogTitle className="flex flex-row items-center text-3xl">
-          {LogoOrAlt({
-            logo: company.companyLogo,
-            alt: company.companyName,
-            size: 90,
-          })}
-          <a
-            href={getLinkFromHTML(company.companyWebsite)}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <h1>{company.companyName}</h1>
-          </a>
+        <DialogTitle className="flex flex-row place-content-between items-center py-1 text-3xl">
+          <div className="flex flex-row">
+            {LogoOrAlt({
+              logo: company.companyLogo,
+              alt: company.companyName,
+              size: 90,
+            })}
+            <a
+              href={getLinkFromHTML(company.companyWebsite)}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <h1>{company.companyName}</h1>
+            </a>
+          </div>
+          <div>
+            <FocusAreaChip focusArea={company.batch} textSize="text-lg" />
+          </div>
         </DialogTitle>
-        <div className="flex flex-row">
+        <div className="flex flex-row pb-3">
           {company.focusAreas.map((focusArea) => (
-            <FocusAreaChip focusArea={focusArea} />
+            <FocusAreaChip focusArea={focusArea} textSize="text-sm" />
           ))}
         </div>
         {company.longDescription}
       </DialogHeader>
       <DialogFooter>
-        <div className="flex w-full flex-row place-content-between border">
-          <div className="flex flex-row flex-wrap border">
+        <div className="flex w-full flex-row place-content-between">
+          <div className="flex flex-row flex-wrap">
             {backers.map((backer: VCs) => (
               <FounderChip
                 founderName={backer.name}
@@ -87,7 +93,7 @@ const CompanyCard: FC<CompanyCardProps> = ({ company, founders, backers }) => (
               />
             ))}
           </div>
-          <div className="flex flex-row flex-wrap border">
+          <div className="flex flex-row flex-wrap">
             {founders.map((founder) => (
               <FounderChip
                 founderName={founder.name}
@@ -113,7 +119,9 @@ const LogoOrAlt: FC<{
     );
   }
 
-  <Image src={aieb} alt={alt} width={size} height={size} className="mr-5" />;
+  return (
+    <Image src={aieb} alt={alt} width={size} height={size} className="mr-5" />
+  );
 };
 
 export default CompanyCard;
