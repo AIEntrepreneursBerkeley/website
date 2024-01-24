@@ -60,18 +60,20 @@ const CompanyCard = ({ company, founders, backers }: CompanyCardProps) => (
             {LogoOrAlt({
               logo: company.companyLogo,
               alt: company.companyName,
-              size: 90,
+              size: 70,
             })}
-            <a
-              href={getLinkFromHTML(company.companyWebsite)}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <h1>{company.companyName}</h1>
-            </a>
-          </div>
-          <div>
-            <FocusAreaChip focusArea={company.batch} textSize="text-lg" />
+            <div className="flex flex-col">
+              <a
+                href={getLinkFromHTML(company.companyWebsite)}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <p className="text-3xl">{company.companyName}</p>
+              </a>
+              <div className="flex flex-row">
+                <FocusAreaChip focusArea={company.batch} textSize="text-xs" />
+              </div>
+            </div>
           </div>
         </DialogTitle>
         <div className="flex flex-row pb-3">
@@ -79,7 +81,7 @@ const CompanyCard = ({ company, founders, backers }: CompanyCardProps) => (
             <FocusAreaChip focusArea={focusArea} textSize="text-sm" />
           ))}
         </div>
-        {company.longDescription}
+        <p className="text-xs sm:text-lg">{company.longDescription}</p>
       </DialogHeader>
       <DialogFooter>
         <div className="flex w-full flex-row place-content-between">
