@@ -36,7 +36,7 @@ type CompanyCardProps = {
 const CompanyCard = ({ company, founders, backers }: CompanyCardProps) => (
   <Dialog>
     <DialogTrigger>
-      <Card className="h-[200px] w-[295px]">
+      <Card className="h-[200px] w-[295px] transition-all duration-100 hover:scale-105">
         <CardHeader>
           <CardTitle className="flex flex-row items-center">
             {LogoOrAlt({
