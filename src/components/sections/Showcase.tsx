@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { FC, type } from 'react';
+import { type FC, type } from 'react';
 
 const Showcase: FC = () => (
   <section className="relative my-24">
@@ -27,7 +27,10 @@ const Showcase: FC = () => (
           </div>
         </figure>
       </Link>
-      <a className="relative after:absolute after:inset-0 after:h-full after:w-full after:rounded-lg after:bg-darken-image after:shadow-border after:content-['']">
+      <Link
+        href="/portfolio"
+        className="relative after:absolute after:inset-0 after:h-full after:w-full after:rounded-lg after:bg-darken-image after:shadow-border after:content-['']"
+      >
         <figure className="relative flex h-full overflow-hidden rounded-xl">
           <Image
             src="/images/pedro.jpg"
@@ -44,7 +47,7 @@ const Showcase: FC = () => (
             </p>
           </div>
         </figure>
-      </a>
+      </Link>
       <Link
         className="relative after:absolute after:inset-0 after:h-full after:w-full after:rounded-lg after:bg-darken-image after:shadow-border after:transition-opacity after:duration-300 after:content-[''] hover:after:opacity-95"
         href="/team"
