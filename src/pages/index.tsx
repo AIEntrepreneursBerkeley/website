@@ -5,7 +5,7 @@ import Hero from '~/components/sections/Hero';
 import Logos from '~/components/sections/Logos';
 import About from '~/components/sections/About';
 import Showcase from '~/components/sections/Showcase';
-import Popup from '~/components/sections/Popup';
+//import Popup from '~/components/sections/Popup';
 import MainLayout from '~/components/layouts/MainLayout';
 import Announcement from '~/components/sections/Announcement';
 import {
@@ -43,7 +43,6 @@ const HomePage: NextPage<HomePageProps> = ({
         <Logos />
         <Showcase />
         <About timeline={timeline} />
-        <Popup />
       </main>
     </MainLayout>
   </>
