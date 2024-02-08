@@ -1,11 +1,6 @@
 import { z } from 'zod';
 
-import {
-  createTRPCRouter,
-  publicProcedure,
-  protectedProcedure,
-} from '~/server/api/trpc';
-import MailerLite from '@mailerlite/mailerlite-nodejs';
+import { createTRPCRouter, publicProcedure } from '~/server/api/trpc';
 import { TRPCError } from '@trpc/server';
 import axios from 'axios';
 
@@ -20,18 +15,17 @@ export const emailRouter = createTRPCRouter({
         });
       }
 
+      // For some reason, the mailerlite sdk was not working in production, so I just called the API directly
       const apiUrl = 'https://connect.mailerlite.com/api/subscribers';
       const apiKey = process.env.MAILERLITE_API_KEY;
       const config = {
         headers: {
           Authorization: `Bearer ${apiKey}`,
-          'Content-Type': 'application/json', // Specifying the content type
+          'Content-Type': 'application/json',
         },
       };
-      const mailerlite = new MailerLite({
-        api_key: process.env.MAILERLITE_API_KEY,
-      });
       const groupId = '112391380779665245';
+
       let params = {};
       // Check if inputted name has a space in it, if so, split it into first and last name
       if (input.name.includes(' ')) {
@@ -61,18 +55,5 @@ export const emailRouter = createTRPCRouter({
           message: 'Failed to add subscriber',
         });
       }
-
-      // mailerlite.subscribers
-      //   .createOrUpdate(params)
-      //   .then((response) => {
-      //     console.log(response.data);
-      //   })
-      //   .catch((error) => {
-      //     if (error.response) console.log(error.response.data);
-      //     throw new TRPCError({
-      //       code: 'INTERNAL_SERVER_ERROR',
-      //       message: 'Failed to add subscriber',
-      //     });
-      //   });
     }),
 });
