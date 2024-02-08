@@ -12,7 +12,7 @@ import Announcement from '~/components/sections/Announcement';
 import Hero from '~/components/sections/Hero';
 import Lines from '~/components/sections/Lines';
 import Logos from '~/components/sections/Logos';
-import Popup from '~/components/sections/Popup';
+// import Popup from '~/components/sections/Popup';
 import Showcase from '~/components/sections/Showcase';
 
 type HomePageProps = {
@@ -43,7 +43,6 @@ const HomePage: NextPage<HomePageProps> = ({
         <Logos />
         <Showcase />
         <About timeline={timeline} />
-        <Popup />
       </main>
     </MainLayout>
   </>
