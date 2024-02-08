@@ -4,6 +4,8 @@ import { Inter } from 'next/font/google';
 import localFont from 'next/font/local';
 import { Analytics } from '@vercel/analytics/react';
 
+import { api } from '~/utils/api';
+
 const inter = Inter({
   variable: '--font-inter',
   subsets: ['latin'],
@@ -39,4 +41,4 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
   </div>
 );
 
-export default MyApp;
+export default api.withTRPC(MyApp);

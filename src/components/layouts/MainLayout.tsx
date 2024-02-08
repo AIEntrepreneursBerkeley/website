@@ -1,4 +1,4 @@
-import { FC, ReactNode, type } from 'react';
+import { type FC, type ReactNode, type } from 'react';
 import Contact from '~/components/sections/Contact';
 import Globe from '~/components/sections/Globe';
 import Navbar from '~/components/sections/Navbar';

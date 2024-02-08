@@ -1,19 +1,19 @@
-import { type NextPage, type GetStaticProps } from 'next';
-import Head from 'next/head';
-import Lines from '~/components/sections/Lines';
-import Hero from '~/components/sections/Hero';
-import Logos from '~/components/sections/Logos';
-import About from '~/components/sections/About';
-import Showcase from '~/components/sections/Showcase';
-import Popup from '~/components/sections/Popup';
-import MainLayout from '~/components/layouts/MainLayout';
-import Announcement from '~/components/sections/Announcement';
 import {
   allFrontPages,
   allTimelines,
-  type Timeline,
   type FrontPage,
+  type Timeline,
 } from 'contentlayer/generated';
+import { type GetStaticProps, type NextPage } from 'next';
+import Head from 'next/head';
+import MainLayout from '~/components/layouts/MainLayout';
+import About from '~/components/sections/About';
+import Announcement from '~/components/sections/Announcement';
+import Hero from '~/components/sections/Hero';
+import Lines from '~/components/sections/Lines';
+import Logos from '~/components/sections/Logos';
+import Popup from '~/components/sections/Popup';
+import Showcase from '~/components/sections/Showcase';
 
 type HomePageProps = {
   announcement: FrontPage;
