@@ -19,7 +19,17 @@ const Newsletter: FC = () => {
     formState: { errors },
   } = useForm<EmailInputs>();
   const onSubmit: SubmitHandler<EmailInputs> = (data: EmailInputs) => {
-    subscriber.mutate(data);
+    subscriber.mutate(data, {
+      onSuccess: () => {
+        console.log('Success');
+        setSubmitted(true);
+      },
+      onError: (err) => {
+        console.log('Error');
+        console.error(err);
+        setSubmitted(false);
+      },
+    });
     setSubmitted(true);
   };
   return (

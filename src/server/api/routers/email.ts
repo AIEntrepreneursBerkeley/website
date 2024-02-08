@@ -6,10 +6,12 @@ import {
   protectedProcedure,
 } from '~/server/api/trpc';
 import MailerLite from '@mailerlite/mailerlite-nodejs';
+import { TRPCError } from '@trpc/server';
 
 const mailerlite = new MailerLite({
   api_key: process.env.MAILERLITE_API_KEY,
 });
+const groupId = '112391380779665245';
 
 export const emailRouter = createTRPCRouter({
   addSubscriber: publicProcedure
@@ -25,6 +27,7 @@ export const emailRouter = createTRPCRouter({
             name: nameArray[0],
             last_name: nameArray[1],
           },
+          groups: [groupId],
         };
       } else {
         params = {
@@ -32,6 +35,7 @@ export const emailRouter = createTRPCRouter({
           fields: {
             name: input.name,
           },
+          groups: [groupId],
         };
       }
 
@@ -39,11 +43,13 @@ export const emailRouter = createTRPCRouter({
         .createOrUpdate(params)
         .then((response) => {
           console.log(response.data);
-          return 'Subscribed successfully';
         })
         .catch((error) => {
           if (error.response) console.log(error.response.data);
-          return 'Failed to subscribe';
+          throw new TRPCError({
+            code: 'INTERNAL_SERVER_ERROR',
+            message: 'Failed to add subscriber',
+          });
         });
     }),
 });
