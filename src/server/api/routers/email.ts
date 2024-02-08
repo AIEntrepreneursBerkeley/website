@@ -8,15 +8,21 @@ import {
 import MailerLite from '@mailerlite/mailerlite-nodejs';
 import { TRPCError } from '@trpc/server';
 
-const mailerlite = new MailerLite({
-  api_key: process.env.MAILERLITE_API_KEY,
-});
-const groupId = '112391380779665245';
-
 export const emailRouter = createTRPCRouter({
   addSubscriber: publicProcedure
     .input(z.object({ name: z.string(), email: z.string().email() }))
     .mutation(({ input }) => {
+      if (!process.env.MAILERLITE_API_KEY) {
+        throw new TRPCError({
+          code: 'INTERNAL_SERVER_ERROR',
+          message: 'MailerLite API key not found',
+        });
+      }
+
+      const mailerlite = new MailerLite({
+        api_key: process.env.MAILERLITE_API_KEY,
+      });
+      const groupId = '112391380779665245';
       let params = {};
       // Check if inputted name has a space in it, if so, split it into first and last name
       if (input.name.includes(' ')) {
