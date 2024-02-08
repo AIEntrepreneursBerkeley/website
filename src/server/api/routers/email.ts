@@ -7,11 +7,12 @@ import {
 } from '~/server/api/trpc';
 import MailerLite from '@mailerlite/mailerlite-nodejs';
 import { TRPCError } from '@trpc/server';
+import axios from 'axios';
 
 export const emailRouter = createTRPCRouter({
   addSubscriber: publicProcedure
     .input(z.object({ name: z.string(), email: z.string().email() }))
-    .mutation(({ input }) => {
+    .mutation(async ({ input }) => {
       if (!process.env.MAILERLITE_API_KEY) {
         throw new TRPCError({
           code: 'INTERNAL_SERVER_ERROR',
@@ -19,6 +20,14 @@ export const emailRouter = createTRPCRouter({
         });
       }
 
+      const apiUrl = 'https://connect.mailerlite.com/api/subscribers';
+      const apiKey = process.env.MAILERLITE_API_KEY;
+      const config = {
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+          'Content-Type': 'application/json', // Specifying the content type
+        },
+      };
       const mailerlite = new MailerLite({
         api_key: process.env.MAILERLITE_API_KEY,
       });
@@ -44,18 +53,26 @@ export const emailRouter = createTRPCRouter({
           groups: [groupId],
         };
       }
+      const subscriber = await axios.post(apiUrl, params, config);
 
-      mailerlite.subscribers
-        .createOrUpdate(params)
-        .then((response) => {
-          console.log(response.data);
-        })
-        .catch((error) => {
-          if (error.response) console.log(error.response.data);
-          throw new TRPCError({
-            code: 'INTERNAL_SERVER_ERROR',
-            message: 'Failed to add subscriber',
-          });
+      if (subscriber.status !== 200) {
+        throw new TRPCError({
+          code: 'INTERNAL_SERVER_ERROR',
+          message: 'Failed to add subscriber',
         });
+      }
+
+      // mailerlite.subscribers
+      //   .createOrUpdate(params)
+      //   .then((response) => {
+      //     console.log(response.data);
+      //   })
+      //   .catch((error) => {
+      //     if (error.response) console.log(error.response.data);
+      //     throw new TRPCError({
+      //       code: 'INTERNAL_SERVER_ERROR',
+      //       message: 'Failed to add subscriber',
+      //     });
+      //   });
     }),
 });
