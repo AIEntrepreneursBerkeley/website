@@ -1,5 +1,6 @@
 import { type Member } from 'contentlayer/generated';
 import { type FC } from 'react';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 type ProfileProps = {
   cofounders: Member[];
@@ -8,12 +9,29 @@ type ProfileProps = {
 };
 
 const Profile: FC<ProfileProps> = ({ member }) => (
-  <section className="relative pb-36 md:pb-56">
-    <div className="container grid grid-cols-1 gap-y-6 gap-x-3.5 px-4 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-      <h1>{member.name}</h1>
-      <img src={member.image} alt="profile image" />
-    </div>
-  </section>
+  <div style={{ width: '100vw', height: '100vh' }}>
+    <Parallax pages={4}>
+      <ParallaxLayer
+        factor={2}
+        style={{
+          backgroundImage: `url(${member.image})`,
+          backgroundSize: 'cover',
+        }}
+      >
+        <h1>{member.name}</h1>
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={2} speed={0.5} factor={4}>
+        <h1>Where were you before AIEB?</h1>
+        <p>In the Trenches</p>
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={3}>
+        <h1>What was your experience like within AIEB?</h1>
+        <p>Amazing, AIEB made me</p>
+      </ParallaxLayer>
+    </Parallax>
+  </div>
 );
 
 export default Profile;

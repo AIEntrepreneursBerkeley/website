@@ -26,7 +26,6 @@ const ProfilePage: NextPage<ProfilePageProps> = ({ member }) => {
         </title>
       </Head>
       <SecondaryLayout color="gray">
-        <Lines width="max-w-7xl" numberLines={4} />
         {member && <Profile member={member} />}
       </SecondaryLayout>
     </>
