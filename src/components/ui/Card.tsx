@@ -22,13 +22,11 @@ const Card: FC<CardProps> = ({ name, image, position, linkedin }) => {
     return () => window.removeEventListener('mousemove', mouseMove);
   }, []);
 
+  const profileLink = `/profile/${encodeURIComponent(name)}`;
+
   return (
     <div className="px-2">
-      <a
-        href={linkedin.replaceAll(/<[^>]*>/g, '')}
-        target="_blank"
-        rel="noreferrer"
-      >
+      <a href={profileLink}>
         <div className="card" ref={card}>
           <div className="avatar">
             <Image
