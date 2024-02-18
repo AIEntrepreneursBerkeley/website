@@ -16,7 +16,7 @@ const MainLayout: FC<MainLayoutType> = ({ children }) => (
       <Newsletter />
       {/* <Globe /> */}
     </footer>
-    <Contact />
+    {/* <Contact /> */}
   </>
 );
 
