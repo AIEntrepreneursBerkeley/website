@@ -55,11 +55,11 @@ const EventsTimeline: FC<EventsTimelineProps> = ({ timeline }) => (
         </li>
       ))}
     </ul>
-    <div className="mt-12 flex justify-center">
+    {/* <div className="mt-12 flex justify-center">
       <Link href="/apply">
         <Button variant="default">Apply today &rarr;</Button>
       </Link>
-    </div>
+              </div> */}
   </>
 );
 
