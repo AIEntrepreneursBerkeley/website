@@ -35,9 +35,9 @@ const Newsletter: FC = () => {
     setSubmitted(true);
   };
   return (
-    <section className="relative flex flex-row bg-gradient-to-r from-purple-700 to-indigo-700 py-8">
+    <section className="relative flex flex-row bg-gradient-to-r from-purple-700 to-indigo-700 py-3">
       {submitted ? (
-        <p className="text-center container flex items-center justify-center font-medium text-white first-line:text-xs sm:text-sm md:text-base lg:text-lg">
+        <p className="container flex items-center justify-center text-center font-medium text-white first-line:text-xs sm:text-sm md:text-base lg:text-lg">
           Thank you for subscribing! 🎉
         </p>
       ) : (
@@ -67,7 +67,7 @@ const Newsletter: FC = () => {
           </form>
         </div>
       )}
-      <Link
+      {/* <Link
         href="https://join.slack.com/t/aieberkeley/shared_invite/zt-2com7j4g7-3DIrpYvdHigyc7ExkvLxTQ"
         className="p-2 pr-8"
       >
@@ -77,7 +77,7 @@ const Newsletter: FC = () => {
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-plain.svg"
           alt="Join our Slack community"
         />
-      </Link>
+      </Link> */}
     </section>
   );
 };
