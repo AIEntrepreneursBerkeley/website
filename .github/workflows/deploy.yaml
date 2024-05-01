@@ -20,13 +20,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: npm
 
       - name: Install node dependencies
-        run: npm ci
+        run: pnpm install
 
       - name: Build site
-        run: npm run build
+        run: pnpm run build
 
       - name: Deploy to OCF
         uses: burnett01/rsync-deployments@7.0.1
