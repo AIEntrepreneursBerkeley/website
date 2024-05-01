@@ -1,0 +1,39 @@
+# GitHub actions workflow to deploy to OCF on push and every 30 minutes
+
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "*/30 * * * *"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install node dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      - name: Deploy to OCF
+        uses: burnett01/rsync-deployment@7.0.1
+        with:
+          switches: -avPh --delete
+          path: out/
+          remote_path: ~/public_html/
+          remote_host: ssh.ocf.berkeley.edu
+          remote_user: aieb
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
