@@ -92,7 +92,7 @@ const FAQ: FC = () => (
 "
       >
         <AccordionTrigger>
-          HOw do I apply and when is the deadline?
+          How do I apply and when is the deadline?
         </AccordionTrigger>
         <AccordionContent>
           Reach out to us at{' '}
