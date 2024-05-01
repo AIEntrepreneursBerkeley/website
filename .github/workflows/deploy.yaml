@@ -32,6 +32,14 @@ jobs:
 
       - name: Build site
         run: pnpm run build
+        env:
+          MAILERLITE_API_KEY: ${{ secrets.MAILERLITE_API_KEY }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          NEXTAUTH_SECRET: ${{ secrets.NEXTAUTH_SECRET }}
+          DISCORD_CLIENT_SECRET: ${{ secrets.DISCORD_CLIENT_SECRET }}
+          DISCORD_CLIENT_ID: ${{ secrets.DISCORD_CLIENT_ID }}
+          NEXTAUTH_URL: https://aieb.studentorg.berkeley.edu
 
       - name: Deploy to OCF
         uses: burnett01/rsync-deployments@7.0.1
