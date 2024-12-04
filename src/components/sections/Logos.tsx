@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import { type FC, type } from 'react';
+import { type FC } from 'react';
 import Marquee from '~/components/ui/Marquee';
-
+import gumi from '@/logos/gum-logo.png';
 import a16z from '@/logos/a16z.svg';
 import antler from '@/logos/antler.svg';
 import bigIdeas from '@/logos/big-ideas.png';
@@ -116,6 +116,12 @@ const Logos: FC = () => (
           className="h-10 w-auto object-cover brightness-0 invert"
           src={courtyardVentures}
           alt="Courtyard Ventures"
+          draggable={false}
+        />
+        <Image
+          className="h-20 w-auto object-cover brightness-0 invert"
+          src={gumi}
+          alt="Gumi America"
           draggable={false}
         />
       </Marquee>
