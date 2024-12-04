@@ -17,6 +17,8 @@ import skydeck from '@/logos/skydeck.png';
 import theHouseFund from '@/logos/the-house-fund.svg';
 import unusualVentures from '@/logos/unusual-ventures.svg';
 import yCombinator from '@/logos/y-combinator.svg';
+import haas from '@/logos/haas_entr.png';
+
 
 const Logos: FC = () => (
   <section className="mt-28 border-b border-dashed border-white/5 pb-6 md:mt-36 lg:mt-24">
@@ -122,6 +124,12 @@ const Logos: FC = () => (
           className="h-20 w-auto object-cover brightness-0 invert"
           src={gumi}
           alt="Gumi America"
+          draggable={false}
+        />
+        <Image
+          className="h-20 w-auto object-cover brightness-0 invert"
+          src={haas}
+          alt="HAAS Entrepreneurs"
           draggable={false}
         />
       </Marquee>
