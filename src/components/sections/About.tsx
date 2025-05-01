@@ -43,7 +43,7 @@ const About: FC<AboutProps> = ({ timeline }) => (
     <div className="relative mx-auto max-w-5xl">
       <div className="mx-auto py-2 px-2 md:px-4 lg:px-4">
         <div className="px-2">
-          <h2 className="text-center font-serif font-normal">Program 2024</h2>
+          <h2 className="text-center font-serif font-normal">Program 2025</h2>
         </div>
         <p className="mt-10 text-center text-2xl">
           10 Weeks. 12 Teams. Propel your startup to the next level.
