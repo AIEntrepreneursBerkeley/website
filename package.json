@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
-    "dev": "rm -r .contentlayer/ & next dev",
+    "build": "node api.js && next build",
+    "dev": "node api.js && rm -r .contentlayer/ & next dev",
     "postinstall": "prisma generate",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "start": "next start"
+    "start": "node api.js && next start"
   },
   "dependencies": {
     "@jsdevtools/rehype-toc": "^3.0.2",
